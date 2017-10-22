@@ -1,0 +1,1751 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`fretMatrix 1`] = `
+Array [
+  Array [
+    Object {
+      "loc": Object {
+        "crd": 0,
+        "pos": 0,
+      },
+      "midi": 40,
+      "state": Object {
+        "selectionText": "",
+        "status": "unselected",
+      },
+    },
+    Object {
+      "loc": Object {
+        "crd": 0,
+        "pos": 1,
+      },
+      "midi": 41,
+      "state": Object {
+        "selectionText": "",
+        "status": "unselected",
+      },
+    },
+    Object {
+      "loc": Object {
+        "crd": 0,
+        "pos": 2,
+      },
+      "midi": 42,
+      "state": Object {
+        "selectionText": "",
+        "status": "unselected",
+      },
+    },
+    Object {
+      "loc": Object {
+        "crd": 0,
+        "pos": 3,
+      },
+      "midi": 43,
+      "state": Object {
+        "selectionText": "",
+        "status": "unselected",
+      },
+    },
+    Object {
+      "loc": Object {
+        "crd": 0,
+        "pos": 4,
+      },
+      "midi": 44,
+      "state": Object {
+        "selectionText": "",
+        "status": "unselected",
+      },
+    },
+    Object {
+      "loc": Object {
+        "crd": 0,
+        "pos": 5,
+      },
+      "midi": 45,
+      "state": Object {
+        "selectionText": "",
+        "status": "unselected",
+      },
+    },
+    Object {
+      "loc": Object {
+        "crd": 0,
+        "pos": 6,
+      },
+      "midi": 46,
+      "state": Object {
+        "selectionText": "",
+        "status": "unselected",
+      },
+    },
+    Object {
+      "loc": Object {
+        "crd": 0,
+        "pos": 7,
+      },
+      "midi": 47,
+      "state": Object {
+        "selectionText": "",
+        "status": "unselected",
+      },
+    },
+    Object {
+      "loc": Object {
+        "crd": 0,
+        "pos": 8,
+      },
+      "midi": 48,
+      "state": Object {
+        "selectionText": "",
+        "status": "unselected",
+      },
+    },
+    Object {
+      "loc": Object {
+        "crd": 0,
+        "pos": 9,
+      },
+      "midi": 49,
+      "state": Object {
+        "selectionText": "",
+        "status": "unselected",
+      },
+    },
+    Object {
+      "loc": Object {
+        "crd": 0,
+        "pos": 10,
+      },
+      "midi": 50,
+      "state": Object {
+        "selectionText": "",
+        "status": "unselected",
+      },
+    },
+    Object {
+      "loc": Object {
+        "crd": 0,
+        "pos": 11,
+      },
+      "midi": 51,
+      "state": Object {
+        "selectionText": "",
+        "status": "unselected",
+      },
+    },
+    Object {
+      "loc": Object {
+        "crd": 0,
+        "pos": 12,
+      },
+      "midi": 52,
+      "state": Object {
+        "selectionText": "",
+        "status": "unselected",
+      },
+    },
+  ],
+  Array [
+    Object {
+      "loc": Object {
+        "crd": 1,
+        "pos": 0,
+      },
+      "midi": 45,
+      "state": Object {
+        "selectionText": "",
+        "status": "unselected",
+      },
+    },
+    Object {
+      "loc": Object {
+        "crd": 1,
+        "pos": 1,
+      },
+      "midi": 46,
+      "state": Object {
+        "selectionText": "",
+        "status": "unselected",
+      },
+    },
+    Object {
+      "loc": Object {
+        "crd": 1,
+        "pos": 2,
+      },
+      "midi": 47,
+      "state": Object {
+        "selectionText": "",
+        "status": "unselected",
+      },
+    },
+    Object {
+      "loc": Object {
+        "crd": 1,
+        "pos": 3,
+      },
+      "midi": 48,
+      "state": Object {
+        "selectionText": "",
+        "status": "unselected",
+      },
+    },
+    Object {
+      "loc": Object {
+        "crd": 1,
+        "pos": 4,
+      },
+      "midi": 49,
+      "state": Object {
+        "selectionText": "",
+        "status": "unselected",
+      },
+    },
+    Object {
+      "loc": Object {
+        "crd": 1,
+        "pos": 5,
+      },
+      "midi": 50,
+      "state": Object {
+        "selectionText": "",
+        "status": "unselected",
+      },
+    },
+    Object {
+      "loc": Object {
+        "crd": 1,
+        "pos": 6,
+      },
+      "midi": 51,
+      "state": Object {
+        "selectionText": "",
+        "status": "unselected",
+      },
+    },
+    Object {
+      "loc": Object {
+        "crd": 1,
+        "pos": 7,
+      },
+      "midi": 52,
+      "state": Object {
+        "selectionText": "",
+        "status": "unselected",
+      },
+    },
+    Object {
+      "loc": Object {
+        "crd": 1,
+        "pos": 8,
+      },
+      "midi": 53,
+      "state": Object {
+        "selectionText": "",
+        "status": "unselected",
+      },
+    },
+    Object {
+      "loc": Object {
+        "crd": 1,
+        "pos": 9,
+      },
+      "midi": 54,
+      "state": Object {
+        "selectionText": "",
+        "status": "unselected",
+      },
+    },
+    Object {
+      "loc": Object {
+        "crd": 1,
+        "pos": 10,
+      },
+      "midi": 55,
+      "state": Object {
+        "selectionText": "",
+        "status": "unselected",
+      },
+    },
+    Object {
+      "loc": Object {
+        "crd": 1,
+        "pos": 11,
+      },
+      "midi": 56,
+      "state": Object {
+        "selectionText": "",
+        "status": "unselected",
+      },
+    },
+    Object {
+      "loc": Object {
+        "crd": 1,
+        "pos": 12,
+      },
+      "midi": 57,
+      "state": Object {
+        "selectionText": "",
+        "status": "unselected",
+      },
+    },
+  ],
+  Array [
+    Object {
+      "loc": Object {
+        "crd": 2,
+        "pos": 0,
+      },
+      "midi": 50,
+      "state": Object {
+        "selectionText": "",
+        "status": "unselected",
+      },
+    },
+    Object {
+      "loc": Object {
+        "crd": 2,
+        "pos": 1,
+      },
+      "midi": 51,
+      "state": Object {
+        "selectionText": "",
+        "status": "unselected",
+      },
+    },
+    Object {
+      "loc": Object {
+        "crd": 2,
+        "pos": 2,
+      },
+      "midi": 52,
+      "state": Object {
+        "selectionText": "",
+        "status": "unselected",
+      },
+    },
+    Object {
+      "loc": Object {
+        "crd": 2,
+        "pos": 3,
+      },
+      "midi": 53,
+      "state": Object {
+        "selectionText": "",
+        "status": "unselected",
+      },
+    },
+    Object {
+      "loc": Object {
+        "crd": 2,
+        "pos": 4,
+      },
+      "midi": 54,
+      "state": Object {
+        "selectionText": "",
+        "status": "unselected",
+      },
+    },
+    Object {
+      "loc": Object {
+        "crd": 2,
+        "pos": 5,
+      },
+      "midi": 55,
+      "state": Object {
+        "selectionText": "",
+        "status": "unselected",
+      },
+    },
+    Object {
+      "loc": Object {
+        "crd": 2,
+        "pos": 6,
+      },
+      "midi": 56,
+      "state": Object {
+        "selectionText": "",
+        "status": "unselected",
+      },
+    },
+    Object {
+      "loc": Object {
+        "crd": 2,
+        "pos": 7,
+      },
+      "midi": 57,
+      "state": Object {
+        "selectionText": "",
+        "status": "unselected",
+      },
+    },
+    Object {
+      "loc": Object {
+        "crd": 2,
+        "pos": 8,
+      },
+      "midi": 58,
+      "state": Object {
+        "selectionText": "",
+        "status": "unselected",
+      },
+    },
+    Object {
+      "loc": Object {
+        "crd": 2,
+        "pos": 9,
+      },
+      "midi": 59,
+      "state": Object {
+        "selectionText": "",
+        "status": "unselected",
+      },
+    },
+    Object {
+      "loc": Object {
+        "crd": 2,
+        "pos": 10,
+      },
+      "midi": 60,
+      "state": Object {
+        "selectionText": "",
+        "status": "unselected",
+      },
+    },
+    Object {
+      "loc": Object {
+        "crd": 2,
+        "pos": 11,
+      },
+      "midi": 61,
+      "state": Object {
+        "selectionText": "",
+        "status": "unselected",
+      },
+    },
+    Object {
+      "loc": Object {
+        "crd": 2,
+        "pos": 12,
+      },
+      "midi": 62,
+      "state": Object {
+        "selectionText": "",
+        "status": "unselected",
+      },
+    },
+  ],
+  Array [
+    Object {
+      "loc": Object {
+        "crd": 3,
+        "pos": 0,
+      },
+      "midi": 55,
+      "state": Object {
+        "selectionText": "",
+        "status": "unselected",
+      },
+    },
+    Object {
+      "loc": Object {
+        "crd": 3,
+        "pos": 1,
+      },
+      "midi": 56,
+      "state": Object {
+        "selectionText": "",
+        "status": "unselected",
+      },
+    },
+    Object {
+      "loc": Object {
+        "crd": 3,
+        "pos": 2,
+      },
+      "midi": 57,
+      "state": Object {
+        "selectionText": "",
+        "status": "unselected",
+      },
+    },
+    Object {
+      "loc": Object {
+        "crd": 3,
+        "pos": 3,
+      },
+      "midi": 58,
+      "state": Object {
+        "selectionText": "",
+        "status": "unselected",
+      },
+    },
+    Object {
+      "loc": Object {
+        "crd": 3,
+        "pos": 4,
+      },
+      "midi": 59,
+      "state": Object {
+        "selectionText": "",
+        "status": "unselected",
+      },
+    },
+    Object {
+      "loc": Object {
+        "crd": 3,
+        "pos": 5,
+      },
+      "midi": 60,
+      "state": Object {
+        "selectionText": "",
+        "status": "unselected",
+      },
+    },
+    Object {
+      "loc": Object {
+        "crd": 3,
+        "pos": 6,
+      },
+      "midi": 61,
+      "state": Object {
+        "selectionText": "",
+        "status": "unselected",
+      },
+    },
+    Object {
+      "loc": Object {
+        "crd": 3,
+        "pos": 7,
+      },
+      "midi": 62,
+      "state": Object {
+        "selectionText": "",
+        "status": "unselected",
+      },
+    },
+    Object {
+      "loc": Object {
+        "crd": 3,
+        "pos": 8,
+      },
+      "midi": 63,
+      "state": Object {
+        "selectionText": "",
+        "status": "unselected",
+      },
+    },
+    Object {
+      "loc": Object {
+        "crd": 3,
+        "pos": 9,
+      },
+      "midi": 64,
+      "state": Object {
+        "selectionText": "",
+        "status": "unselected",
+      },
+    },
+    Object {
+      "loc": Object {
+        "crd": 3,
+        "pos": 10,
+      },
+      "midi": 65,
+      "state": Object {
+        "selectionText": "",
+        "status": "unselected",
+      },
+    },
+    Object {
+      "loc": Object {
+        "crd": 3,
+        "pos": 11,
+      },
+      "midi": 66,
+      "state": Object {
+        "selectionText": "",
+        "status": "unselected",
+      },
+    },
+    Object {
+      "loc": Object {
+        "crd": 3,
+        "pos": 12,
+      },
+      "midi": 67,
+      "state": Object {
+        "selectionText": "",
+        "status": "unselected",
+      },
+    },
+  ],
+  Array [
+    Object {
+      "loc": Object {
+        "crd": 4,
+        "pos": 0,
+      },
+      "midi": 59,
+      "state": Object {
+        "selectionText": "",
+        "status": "unselected",
+      },
+    },
+    Object {
+      "loc": Object {
+        "crd": 4,
+        "pos": 1,
+      },
+      "midi": 60,
+      "state": Object {
+        "selectionText": "",
+        "status": "unselected",
+      },
+    },
+    Object {
+      "loc": Object {
+        "crd": 4,
+        "pos": 2,
+      },
+      "midi": 61,
+      "state": Object {
+        "selectionText": "",
+        "status": "unselected",
+      },
+    },
+    Object {
+      "loc": Object {
+        "crd": 4,
+        "pos": 3,
+      },
+      "midi": 62,
+      "state": Object {
+        "selectionText": "",
+        "status": "unselected",
+      },
+    },
+    Object {
+      "loc": Object {
+        "crd": 4,
+        "pos": 4,
+      },
+      "midi": 63,
+      "state": Object {
+        "selectionText": "",
+        "status": "unselected",
+      },
+    },
+    Object {
+      "loc": Object {
+        "crd": 4,
+        "pos": 5,
+      },
+      "midi": 64,
+      "state": Object {
+        "selectionText": "",
+        "status": "unselected",
+      },
+    },
+    Object {
+      "loc": Object {
+        "crd": 4,
+        "pos": 6,
+      },
+      "midi": 65,
+      "state": Object {
+        "selectionText": "",
+        "status": "unselected",
+      },
+    },
+    Object {
+      "loc": Object {
+        "crd": 4,
+        "pos": 7,
+      },
+      "midi": 66,
+      "state": Object {
+        "selectionText": "",
+        "status": "unselected",
+      },
+    },
+    Object {
+      "loc": Object {
+        "crd": 4,
+        "pos": 8,
+      },
+      "midi": 67,
+      "state": Object {
+        "selectionText": "",
+        "status": "unselected",
+      },
+    },
+    Object {
+      "loc": Object {
+        "crd": 4,
+        "pos": 9,
+      },
+      "midi": 68,
+      "state": Object {
+        "selectionText": "",
+        "status": "unselected",
+      },
+    },
+    Object {
+      "loc": Object {
+        "crd": 4,
+        "pos": 10,
+      },
+      "midi": 69,
+      "state": Object {
+        "selectionText": "",
+        "status": "unselected",
+      },
+    },
+    Object {
+      "loc": Object {
+        "crd": 4,
+        "pos": 11,
+      },
+      "midi": 70,
+      "state": Object {
+        "selectionText": "",
+        "status": "unselected",
+      },
+    },
+    Object {
+      "loc": Object {
+        "crd": 4,
+        "pos": 12,
+      },
+      "midi": 71,
+      "state": Object {
+        "selectionText": "",
+        "status": "unselected",
+      },
+    },
+  ],
+  Array [
+    Object {
+      "loc": Object {
+        "crd": 5,
+        "pos": 0,
+      },
+      "midi": 64,
+      "state": Object {
+        "selectionText": "",
+        "status": "unselected",
+      },
+    },
+    Object {
+      "loc": Object {
+        "crd": 5,
+        "pos": 1,
+      },
+      "midi": 65,
+      "state": Object {
+        "selectionText": "",
+        "status": "unselected",
+      },
+    },
+    Object {
+      "loc": Object {
+        "crd": 5,
+        "pos": 2,
+      },
+      "midi": 66,
+      "state": Object {
+        "selectionText": "",
+        "status": "unselected",
+      },
+    },
+    Object {
+      "loc": Object {
+        "crd": 5,
+        "pos": 3,
+      },
+      "midi": 67,
+      "state": Object {
+        "selectionText": "",
+        "status": "unselected",
+      },
+    },
+    Object {
+      "loc": Object {
+        "crd": 5,
+        "pos": 4,
+      },
+      "midi": 68,
+      "state": Object {
+        "selectionText": "",
+        "status": "unselected",
+      },
+    },
+    Object {
+      "loc": Object {
+        "crd": 5,
+        "pos": 5,
+      },
+      "midi": 69,
+      "state": Object {
+        "selectionText": "",
+        "status": "unselected",
+      },
+    },
+    Object {
+      "loc": Object {
+        "crd": 5,
+        "pos": 6,
+      },
+      "midi": 70,
+      "state": Object {
+        "selectionText": "",
+        "status": "unselected",
+      },
+    },
+    Object {
+      "loc": Object {
+        "crd": 5,
+        "pos": 7,
+      },
+      "midi": 71,
+      "state": Object {
+        "selectionText": "",
+        "status": "unselected",
+      },
+    },
+    Object {
+      "loc": Object {
+        "crd": 5,
+        "pos": 8,
+      },
+      "midi": 72,
+      "state": Object {
+        "selectionText": "",
+        "status": "unselected",
+      },
+    },
+    Object {
+      "loc": Object {
+        "crd": 5,
+        "pos": 9,
+      },
+      "midi": 73,
+      "state": Object {
+        "selectionText": "",
+        "status": "unselected",
+      },
+    },
+    Object {
+      "loc": Object {
+        "crd": 5,
+        "pos": 10,
+      },
+      "midi": 74,
+      "state": Object {
+        "selectionText": "",
+        "status": "unselected",
+      },
+    },
+    Object {
+      "loc": Object {
+        "crd": 5,
+        "pos": 11,
+      },
+      "midi": 75,
+      "state": Object {
+        "selectionText": "",
+        "status": "unselected",
+      },
+    },
+    Object {
+      "loc": Object {
+        "crd": 5,
+        "pos": 12,
+      },
+      "midi": 76,
+      "state": Object {
+        "selectionText": "",
+        "status": "unselected",
+      },
+    },
+  ],
+]
+`;
+
+exports[`fretMatrixForChord 1`] = `
+Array [
+  Array [
+    Object {
+      "loc": Object {
+        "crd": 0,
+        "pos": 0,
+      },
+      "midi": 40,
+      "state": Object {
+        "selectionText": "3M",
+        "status": "selected",
+      },
+    },
+    Object {
+      "loc": Object {
+        "crd": 0,
+        "pos": 1,
+      },
+      "midi": 41,
+      "state": Object {
+        "selectionText": "",
+        "status": "unselected",
+      },
+    },
+    Object {
+      "loc": Object {
+        "crd": 0,
+        "pos": 2,
+      },
+      "midi": 42,
+      "state": Object {
+        "selectionText": "",
+        "status": "unselected",
+      },
+    },
+    Object {
+      "loc": Object {
+        "crd": 0,
+        "pos": 3,
+      },
+      "midi": 43,
+      "state": Object {
+        "selectionText": "5P",
+        "status": "selected",
+      },
+    },
+    Object {
+      "loc": Object {
+        "crd": 0,
+        "pos": 4,
+      },
+      "midi": 44,
+      "state": Object {
+        "selectionText": "",
+        "status": "unselected",
+      },
+    },
+    Object {
+      "loc": Object {
+        "crd": 0,
+        "pos": 5,
+      },
+      "midi": 45,
+      "state": Object {
+        "selectionText": "",
+        "status": "unselected",
+      },
+    },
+    Object {
+      "loc": Object {
+        "crd": 0,
+        "pos": 6,
+      },
+      "midi": 46,
+      "state": Object {
+        "selectionText": "",
+        "status": "unselected",
+      },
+    },
+    Object {
+      "loc": Object {
+        "crd": 0,
+        "pos": 7,
+      },
+      "midi": 47,
+      "state": Object {
+        "selectionText": "",
+        "status": "unselected",
+      },
+    },
+    Object {
+      "loc": Object {
+        "crd": 0,
+        "pos": 8,
+      },
+      "midi": 48,
+      "state": Object {
+        "selectionText": "1P",
+        "status": "selected",
+      },
+    },
+    Object {
+      "loc": Object {
+        "crd": 0,
+        "pos": 9,
+      },
+      "midi": 49,
+      "state": Object {
+        "selectionText": "",
+        "status": "unselected",
+      },
+    },
+    Object {
+      "loc": Object {
+        "crd": 0,
+        "pos": 10,
+      },
+      "midi": 50,
+      "state": Object {
+        "selectionText": "",
+        "status": "unselected",
+      },
+    },
+    Object {
+      "loc": Object {
+        "crd": 0,
+        "pos": 11,
+      },
+      "midi": 51,
+      "state": Object {
+        "selectionText": "",
+        "status": "unselected",
+      },
+    },
+    Object {
+      "loc": Object {
+        "crd": 0,
+        "pos": 12,
+      },
+      "midi": 52,
+      "state": Object {
+        "selectionText": "3M",
+        "status": "selected",
+      },
+    },
+  ],
+  Array [
+    Object {
+      "loc": Object {
+        "crd": 1,
+        "pos": 0,
+      },
+      "midi": 45,
+      "state": Object {
+        "selectionText": "",
+        "status": "unselected",
+      },
+    },
+    Object {
+      "loc": Object {
+        "crd": 1,
+        "pos": 1,
+      },
+      "midi": 46,
+      "state": Object {
+        "selectionText": "",
+        "status": "unselected",
+      },
+    },
+    Object {
+      "loc": Object {
+        "crd": 1,
+        "pos": 2,
+      },
+      "midi": 47,
+      "state": Object {
+        "selectionText": "",
+        "status": "unselected",
+      },
+    },
+    Object {
+      "loc": Object {
+        "crd": 1,
+        "pos": 3,
+      },
+      "midi": 48,
+      "state": Object {
+        "selectionText": "1P",
+        "status": "selected",
+      },
+    },
+    Object {
+      "loc": Object {
+        "crd": 1,
+        "pos": 4,
+      },
+      "midi": 49,
+      "state": Object {
+        "selectionText": "",
+        "status": "unselected",
+      },
+    },
+    Object {
+      "loc": Object {
+        "crd": 1,
+        "pos": 5,
+      },
+      "midi": 50,
+      "state": Object {
+        "selectionText": "",
+        "status": "unselected",
+      },
+    },
+    Object {
+      "loc": Object {
+        "crd": 1,
+        "pos": 6,
+      },
+      "midi": 51,
+      "state": Object {
+        "selectionText": "",
+        "status": "unselected",
+      },
+    },
+    Object {
+      "loc": Object {
+        "crd": 1,
+        "pos": 7,
+      },
+      "midi": 52,
+      "state": Object {
+        "selectionText": "3M",
+        "status": "selected",
+      },
+    },
+    Object {
+      "loc": Object {
+        "crd": 1,
+        "pos": 8,
+      },
+      "midi": 53,
+      "state": Object {
+        "selectionText": "",
+        "status": "unselected",
+      },
+    },
+    Object {
+      "loc": Object {
+        "crd": 1,
+        "pos": 9,
+      },
+      "midi": 54,
+      "state": Object {
+        "selectionText": "",
+        "status": "unselected",
+      },
+    },
+    Object {
+      "loc": Object {
+        "crd": 1,
+        "pos": 10,
+      },
+      "midi": 55,
+      "state": Object {
+        "selectionText": "5P",
+        "status": "selected",
+      },
+    },
+    Object {
+      "loc": Object {
+        "crd": 1,
+        "pos": 11,
+      },
+      "midi": 56,
+      "state": Object {
+        "selectionText": "",
+        "status": "unselected",
+      },
+    },
+    Object {
+      "loc": Object {
+        "crd": 1,
+        "pos": 12,
+      },
+      "midi": 57,
+      "state": Object {
+        "selectionText": "",
+        "status": "unselected",
+      },
+    },
+  ],
+  Array [
+    Object {
+      "loc": Object {
+        "crd": 2,
+        "pos": 0,
+      },
+      "midi": 50,
+      "state": Object {
+        "selectionText": "",
+        "status": "unselected",
+      },
+    },
+    Object {
+      "loc": Object {
+        "crd": 2,
+        "pos": 1,
+      },
+      "midi": 51,
+      "state": Object {
+        "selectionText": "",
+        "status": "unselected",
+      },
+    },
+    Object {
+      "loc": Object {
+        "crd": 2,
+        "pos": 2,
+      },
+      "midi": 52,
+      "state": Object {
+        "selectionText": "3M",
+        "status": "selected",
+      },
+    },
+    Object {
+      "loc": Object {
+        "crd": 2,
+        "pos": 3,
+      },
+      "midi": 53,
+      "state": Object {
+        "selectionText": "",
+        "status": "unselected",
+      },
+    },
+    Object {
+      "loc": Object {
+        "crd": 2,
+        "pos": 4,
+      },
+      "midi": 54,
+      "state": Object {
+        "selectionText": "",
+        "status": "unselected",
+      },
+    },
+    Object {
+      "loc": Object {
+        "crd": 2,
+        "pos": 5,
+      },
+      "midi": 55,
+      "state": Object {
+        "selectionText": "5P",
+        "status": "selected",
+      },
+    },
+    Object {
+      "loc": Object {
+        "crd": 2,
+        "pos": 6,
+      },
+      "midi": 56,
+      "state": Object {
+        "selectionText": "",
+        "status": "unselected",
+      },
+    },
+    Object {
+      "loc": Object {
+        "crd": 2,
+        "pos": 7,
+      },
+      "midi": 57,
+      "state": Object {
+        "selectionText": "",
+        "status": "unselected",
+      },
+    },
+    Object {
+      "loc": Object {
+        "crd": 2,
+        "pos": 8,
+      },
+      "midi": 58,
+      "state": Object {
+        "selectionText": "",
+        "status": "unselected",
+      },
+    },
+    Object {
+      "loc": Object {
+        "crd": 2,
+        "pos": 9,
+      },
+      "midi": 59,
+      "state": Object {
+        "selectionText": "",
+        "status": "unselected",
+      },
+    },
+    Object {
+      "loc": Object {
+        "crd": 2,
+        "pos": 10,
+      },
+      "midi": 60,
+      "state": Object {
+        "selectionText": "1P",
+        "status": "selected",
+      },
+    },
+    Object {
+      "loc": Object {
+        "crd": 2,
+        "pos": 11,
+      },
+      "midi": 61,
+      "state": Object {
+        "selectionText": "",
+        "status": "unselected",
+      },
+    },
+    Object {
+      "loc": Object {
+        "crd": 2,
+        "pos": 12,
+      },
+      "midi": 62,
+      "state": Object {
+        "selectionText": "",
+        "status": "unselected",
+      },
+    },
+  ],
+  Array [
+    Object {
+      "loc": Object {
+        "crd": 3,
+        "pos": 0,
+      },
+      "midi": 55,
+      "state": Object {
+        "selectionText": "5P",
+        "status": "selected",
+      },
+    },
+    Object {
+      "loc": Object {
+        "crd": 3,
+        "pos": 1,
+      },
+      "midi": 56,
+      "state": Object {
+        "selectionText": "",
+        "status": "unselected",
+      },
+    },
+    Object {
+      "loc": Object {
+        "crd": 3,
+        "pos": 2,
+      },
+      "midi": 57,
+      "state": Object {
+        "selectionText": "",
+        "status": "unselected",
+      },
+    },
+    Object {
+      "loc": Object {
+        "crd": 3,
+        "pos": 3,
+      },
+      "midi": 58,
+      "state": Object {
+        "selectionText": "",
+        "status": "unselected",
+      },
+    },
+    Object {
+      "loc": Object {
+        "crd": 3,
+        "pos": 4,
+      },
+      "midi": 59,
+      "state": Object {
+        "selectionText": "",
+        "status": "unselected",
+      },
+    },
+    Object {
+      "loc": Object {
+        "crd": 3,
+        "pos": 5,
+      },
+      "midi": 60,
+      "state": Object {
+        "selectionText": "1P",
+        "status": "selected",
+      },
+    },
+    Object {
+      "loc": Object {
+        "crd": 3,
+        "pos": 6,
+      },
+      "midi": 61,
+      "state": Object {
+        "selectionText": "",
+        "status": "unselected",
+      },
+    },
+    Object {
+      "loc": Object {
+        "crd": 3,
+        "pos": 7,
+      },
+      "midi": 62,
+      "state": Object {
+        "selectionText": "",
+        "status": "unselected",
+      },
+    },
+    Object {
+      "loc": Object {
+        "crd": 3,
+        "pos": 8,
+      },
+      "midi": 63,
+      "state": Object {
+        "selectionText": "",
+        "status": "unselected",
+      },
+    },
+    Object {
+      "loc": Object {
+        "crd": 3,
+        "pos": 9,
+      },
+      "midi": 64,
+      "state": Object {
+        "selectionText": "3M",
+        "status": "selected",
+      },
+    },
+    Object {
+      "loc": Object {
+        "crd": 3,
+        "pos": 10,
+      },
+      "midi": 65,
+      "state": Object {
+        "selectionText": "",
+        "status": "unselected",
+      },
+    },
+    Object {
+      "loc": Object {
+        "crd": 3,
+        "pos": 11,
+      },
+      "midi": 66,
+      "state": Object {
+        "selectionText": "",
+        "status": "unselected",
+      },
+    },
+    Object {
+      "loc": Object {
+        "crd": 3,
+        "pos": 12,
+      },
+      "midi": 67,
+      "state": Object {
+        "selectionText": "5P",
+        "status": "selected",
+      },
+    },
+  ],
+  Array [
+    Object {
+      "loc": Object {
+        "crd": 4,
+        "pos": 0,
+      },
+      "midi": 59,
+      "state": Object {
+        "selectionText": "",
+        "status": "unselected",
+      },
+    },
+    Object {
+      "loc": Object {
+        "crd": 4,
+        "pos": 1,
+      },
+      "midi": 60,
+      "state": Object {
+        "selectionText": "1P",
+        "status": "selected",
+      },
+    },
+    Object {
+      "loc": Object {
+        "crd": 4,
+        "pos": 2,
+      },
+      "midi": 61,
+      "state": Object {
+        "selectionText": "",
+        "status": "unselected",
+      },
+    },
+    Object {
+      "loc": Object {
+        "crd": 4,
+        "pos": 3,
+      },
+      "midi": 62,
+      "state": Object {
+        "selectionText": "",
+        "status": "unselected",
+      },
+    },
+    Object {
+      "loc": Object {
+        "crd": 4,
+        "pos": 4,
+      },
+      "midi": 63,
+      "state": Object {
+        "selectionText": "",
+        "status": "unselected",
+      },
+    },
+    Object {
+      "loc": Object {
+        "crd": 4,
+        "pos": 5,
+      },
+      "midi": 64,
+      "state": Object {
+        "selectionText": "3M",
+        "status": "selected",
+      },
+    },
+    Object {
+      "loc": Object {
+        "crd": 4,
+        "pos": 6,
+      },
+      "midi": 65,
+      "state": Object {
+        "selectionText": "",
+        "status": "unselected",
+      },
+    },
+    Object {
+      "loc": Object {
+        "crd": 4,
+        "pos": 7,
+      },
+      "midi": 66,
+      "state": Object {
+        "selectionText": "",
+        "status": "unselected",
+      },
+    },
+    Object {
+      "loc": Object {
+        "crd": 4,
+        "pos": 8,
+      },
+      "midi": 67,
+      "state": Object {
+        "selectionText": "5P",
+        "status": "selected",
+      },
+    },
+    Object {
+      "loc": Object {
+        "crd": 4,
+        "pos": 9,
+      },
+      "midi": 68,
+      "state": Object {
+        "selectionText": "",
+        "status": "unselected",
+      },
+    },
+    Object {
+      "loc": Object {
+        "crd": 4,
+        "pos": 10,
+      },
+      "midi": 69,
+      "state": Object {
+        "selectionText": "",
+        "status": "unselected",
+      },
+    },
+    Object {
+      "loc": Object {
+        "crd": 4,
+        "pos": 11,
+      },
+      "midi": 70,
+      "state": Object {
+        "selectionText": "",
+        "status": "unselected",
+      },
+    },
+    Object {
+      "loc": Object {
+        "crd": 4,
+        "pos": 12,
+      },
+      "midi": 71,
+      "state": Object {
+        "selectionText": "",
+        "status": "unselected",
+      },
+    },
+  ],
+  Array [
+    Object {
+      "loc": Object {
+        "crd": 5,
+        "pos": 0,
+      },
+      "midi": 64,
+      "state": Object {
+        "selectionText": "3M",
+        "status": "selected",
+      },
+    },
+    Object {
+      "loc": Object {
+        "crd": 5,
+        "pos": 1,
+      },
+      "midi": 65,
+      "state": Object {
+        "selectionText": "",
+        "status": "unselected",
+      },
+    },
+    Object {
+      "loc": Object {
+        "crd": 5,
+        "pos": 2,
+      },
+      "midi": 66,
+      "state": Object {
+        "selectionText": "",
+        "status": "unselected",
+      },
+    },
+    Object {
+      "loc": Object {
+        "crd": 5,
+        "pos": 3,
+      },
+      "midi": 67,
+      "state": Object {
+        "selectionText": "5P",
+        "status": "selected",
+      },
+    },
+    Object {
+      "loc": Object {
+        "crd": 5,
+        "pos": 4,
+      },
+      "midi": 68,
+      "state": Object {
+        "selectionText": "",
+        "status": "unselected",
+      },
+    },
+    Object {
+      "loc": Object {
+        "crd": 5,
+        "pos": 5,
+      },
+      "midi": 69,
+      "state": Object {
+        "selectionText": "",
+        "status": "unselected",
+      },
+    },
+    Object {
+      "loc": Object {
+        "crd": 5,
+        "pos": 6,
+      },
+      "midi": 70,
+      "state": Object {
+        "selectionText": "",
+        "status": "unselected",
+      },
+    },
+    Object {
+      "loc": Object {
+        "crd": 5,
+        "pos": 7,
+      },
+      "midi": 71,
+      "state": Object {
+        "selectionText": "",
+        "status": "unselected",
+      },
+    },
+    Object {
+      "loc": Object {
+        "crd": 5,
+        "pos": 8,
+      },
+      "midi": 72,
+      "state": Object {
+        "selectionText": "1P",
+        "status": "selected",
+      },
+    },
+    Object {
+      "loc": Object {
+        "crd": 5,
+        "pos": 9,
+      },
+      "midi": 73,
+      "state": Object {
+        "selectionText": "",
+        "status": "unselected",
+      },
+    },
+    Object {
+      "loc": Object {
+        "crd": 5,
+        "pos": 10,
+      },
+      "midi": 74,
+      "state": Object {
+        "selectionText": "",
+        "status": "unselected",
+      },
+    },
+    Object {
+      "loc": Object {
+        "crd": 5,
+        "pos": 11,
+      },
+      "midi": 75,
+      "state": Object {
+        "selectionText": "",
+        "status": "unselected",
+      },
+    },
+    Object {
+      "loc": Object {
+        "crd": 5,
+        "pos": 12,
+      },
+      "midi": 76,
+      "state": Object {
+        "selectionText": "3M",
+        "status": "selected",
+      },
+    },
+  ],
+]
+`;

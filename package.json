@@ -1,0 +1,59 @@
+{
+  "name": "react-fretboard",
+  "version": "0.0.1",
+  "description": "Reusable React Fretboard Component",
+  "license": "MIT",
+  "main": "build/index.js",
+  "peerDependencies": {
+    "react": "^15.5.4"
+  },
+  "dependencies": {
+    "enzyme": "^3.1.0",
+    "lodash": "^4.17.4",
+    "prop-types": "^15.6.0",
+    "react": "^15.5.4",
+    "styled-components": "^2.2.1",
+    "tonal": "^1.0.0",
+    "webpack": "^2.6.1"
+  },
+  "scripts": {
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "build": "webpack",
+    "build:watch": "webpack --watch"
+  },
+  "author": {
+    "name": "Rob Boellaard",
+    "email": "devboell@gmail.com"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-core": "^6.24.1",
+    "babel-eslint": "^8.0.1",
+    "babel-loader": "^7.0.0",
+    "babel-plugin-transform-object-rest-spread": "^6.23.0",
+    "babel-preset-env": "^1.5.1",
+    "babel-preset-react": "^6.24.1",
+    "enzyme-to-json": "^3.1.2",
+    "eslint": "^4.9.0",
+    "eslint-config-airbnb": "^16.0.0",
+    "eslint-import-resolver-webpack": "^0.8.3",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-jsx-a11y": "^6.0.2",
+    "eslint-plugin-react": "^7.4.0",
+    "jest": "20.0.4"
+  },
+  "jest": {
+    "setupFiles": [
+      "./config/jestsetup.js"
+    ],
+    "snapshotSerializers": [
+      "<rootDir>/node_modules/enzyme-to-json/serializer"
+    ],
+    "testRegex": "tests/.*\\.test\\.js$",
+    "moduleDirectories": [
+      "node_modules",
+      "src"
+    ]
+  }
+}
