@@ -8,7 +8,7 @@ A reusable react component that displays a fretboard, and lets you select notes,
 
 or
 
-`npm install -S fretboard-component`
+`npm install fretboard-component`
 
 ## Usage
 
