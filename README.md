@@ -1,19 +1,19 @@
-## Fretboard component
+# Fretboard component
 
 A reusable react component that displays a fretboard, and lets you select notes, chords and scales.
 
-### installation
+## Installation
 
 `yarn add fretboard-component`
 
 or
 
-`npm install fretboard-component`
+`npm install -S fretboard-component`
 
-### usage
+## Usage
 
 Besides the Fretboard component, this lib exports several functions (see api) that
-generate a fretMatrix. You simply pass this fretMatrix as a prop. fretboard-component uses the [Tonal music theory library] internally, and adopts it's naming conventions for notes, chords, etc. Check out Tonal
+generate a fretMatrix. You simply pass this fretMatrix as a prop. `fretboard-component` uses the [Tonal music theory library](https://github.com/danigb/tonal/) internally, and adopts it's naming conventions for notes, chords, etc. Check out Tonal, because you might want to use it together with `fretboard-component`
 
 ```
 import React from 'react'
@@ -32,13 +32,13 @@ const App = () =>
 export default App
 ```
 
-### examples
+## Examples
 
 There's a live demo with many examples here: https://react-fretboard-demo.herokuapp.com
 
-### api
+## API
 
-#### props
+### props
 
   <b>settings</b>
 
@@ -56,9 +56,9 @@ There's a live demo with many examples here: https://react-fretboard-demo.heroku
 
   This prop is used to generate the Frets. See below for the functions by which you can create a fretMatrix. If no fretMatrix is supplied the Fretboard will use a default matrix of standard-tuning and width 13.
 
-#### functions
+### functions
   With these functions you can create a fretMatrix that has notes, intervals, chords and scales selected.
-  All these function have three in common:
+  All these function have three params in common:
   - *tuning*: an array of note names. F.i:
 
     `const standard = ['E2', 'A2', 'D3', 'G3', 'B3', 'E4']`
