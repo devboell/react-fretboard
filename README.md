@@ -15,7 +15,7 @@ or
 Besides the Fretboard component, this lib exports several functions (see [API](#functions)) that
 generate a fretMatrix. You simply pass this fretMatrix as a prop. `fretboard-component` uses the [Tonal music theory library](https://github.com/danigb/tonal/) internally, and adopts it's naming conventions for notes, chords, etc. Check out Tonal, because you might want to use it together with `fretboard-component`
 
-```
+```js
 import React from 'react'
 import Fretboard, { fretMatrixForChord } from 'react-fretboard'
 
@@ -92,10 +92,10 @@ There's a live demo with many examples here: https://react-fretboard-demo.heroku
   - *tonic* (required): a pc or a note that is the root of the scale.
   - *scale* (required): name of the scale. F.i: major, minor, phrygian, bebop) See Tonal.Scale.names() for all available scales.
 
-## CSS
+## CSS<a name="CSS"></a>
 
   `fretboard-component` uses [`styled-components`](https://github.com/styled-components/styled-components) for it's styling. You can provide your own theme by passing it through the theme prop. This the default theme:
-  ```
+  ```js
   {
     statusMap: {
       selected: 'yellow',
