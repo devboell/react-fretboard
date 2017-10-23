@@ -68,9 +68,9 @@ There's a live demo with many examples here: https://react-fretboard-demo.heroku
     `const standard = ['E2', 'A2', 'D3', 'G3', 'B3', 'E4']`
 
     `const spanish = ['D2', 'G2', 'D3', 'G3', 'B3', 'D4']`
-  - *width* (required): simply the number of frets. You can make it as small or big as you want. The fretboard is responsive in the horizontal direction (using percentages for fret width, and width: 100% for the Fretboard itself).
+  - *width* (required): simply the number of frets (including open position). You can make it as small or big as you want. The fretboard is responsive in the horizontal direction (using percentages for fret width, and width: 100% for the Fretboard itself).
 
-  - *showName* (optional): Use this setting to display the note name or interval name for a selected fret. Default is false.
+  - *showName* (optional): Use this arg to display the note name or interval name for a selected fret. Default is false.
 
 
 
