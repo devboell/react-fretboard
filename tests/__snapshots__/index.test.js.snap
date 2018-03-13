@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Fretboard component, snapshot 1`] = `
+<ViewPort>
+  <Boxes
+    nrOfFrets={12}
+    tuning={
+      Array [
+        "E2",
+        "A2",
+        "D3",
+        "G3",
+        "B3",
+        "E4",
+      ]
+    }
+  />
+</ViewPort>
+`;
