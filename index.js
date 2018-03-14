@@ -1,24 +1,30 @@
 import React from 'react'
 import pt from 'prop-types'
-import ViewPort from 'components/ViewPort'
 
-import Strings from './Strings'
-import Boxes from './Boxes'
+import ViewPort from './ViewPort'
+import BoxesGraphic from './BoxesGraphic'
+import StringsGraphic from './StringsGraphic'
+import Board from './Board'
+import Wrapper from './Wrapper'
 
-const boardTypes = {
-  boxes: Boxes,
-  strings: Strings,
+const boardGraphicTypes = {
+  boxes: BoxesGraphic,
+  strings: StringsGraphic,
 }
 
-const board = (tuning, nrOfFrets, type) => {
-  const Board = boardTypes[type]
-  return <Board {...{ tuning, nrOfFrets }} />
-}
 
-const Fretboard = ({ tuning, nrOfFrets, type }) =>
-  <ViewPort>
-    {board(tuning, nrOfFrets, type)}
-  </ViewPort>
+const Fretboard = ({ tuning, nrOfFrets, type }) => {
+  const BoardGraphic = boardGraphicTypes[type]
+
+  return (
+    <Wrapper>
+      <ViewPort>
+        <BoardGraphic {...{ tuning, nrOfFrets }} />
+        <Board {...{ tuning, nrOfFrets }} />
+      </ViewPort>
+    </Wrapper>
+  )
+}
 
 
 Fretboard.propTypes = {

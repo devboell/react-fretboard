@@ -36,7 +36,7 @@ const fretLine = (nrOfFrets, nrOfStrings) => (frt) => {
     />)
 }
 
-const Strings = ({ tuning, nrOfFrets }) => {
+const StringsGraphic = ({ tuning, nrOfFrets }) => {
   const nrOfStrings = tuning.length
   return (
     <g>
@@ -46,9 +46,9 @@ const Strings = ({ tuning, nrOfFrets }) => {
   )
 }
 
-Strings.propTypes = {
+StringsGraphic.propTypes = {
   tuning: pt.arrayOf(pt.string).isRequired,
   nrOfFrets: pt.number.isRequired,
 }
 
-export default Strings
+export default StringsGraphic

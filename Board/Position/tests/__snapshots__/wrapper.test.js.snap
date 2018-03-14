@@ -1,0 +1,8 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should return wrapper with correct width 1`] = `
+<div
+  className="sc-bdVaJa tEJaT"
+  width={10}
+/>
+`;

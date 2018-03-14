@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Position component, snapshot 1`] = `
+<styled.div
+  width={12}
+>
+  <Fret
+    key="note-A2"
+    note="A2"
+  />
+  <Fret
+    key="note-D3"
+    note="D3"
+  />
+  <Fret
+    key="note-G3"
+    note="G3"
+  />
+  <Fret
+    key="note-C4"
+    note="C4"
+  />
+  <Fret
+    key="note-E4"
+    note="E4"
+  />
+  <Fret
+    key="note-A4"
+    note="A4"
+  />
+</styled.div>
+`;
