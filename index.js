@@ -12,18 +12,24 @@ const boardGraphicTypes = {
   strings: StringsGraphic,
 }
 
+class Fretboard extends React.Component {
+  getChildContext() {
+    return { type: this.props.type }
+  }
 
-const Fretboard = ({ tuning, nrOfFrets, type }) => {
-  const BoardGraphic = boardGraphicTypes[type]
+  render() {
+    const { tuning, nrOfFrets, type } = this.props
+    const BoardGraphic = boardGraphicTypes[type]
 
-  return (
-    <Wrapper>
-      <ViewPort>
-        <BoardGraphic {...{ tuning, nrOfFrets }} />
-        <Board {...{ tuning, nrOfFrets }} />
-      </ViewPort>
-    </Wrapper>
-  )
+    return (
+      <Wrapper>
+        <ViewPort>
+          <BoardGraphic {...{ tuning, nrOfFrets }} />
+          <Board {...{ tuning, nrOfFrets }} />
+        </ViewPort>
+      </Wrapper>
+    )
+  }
 }
 
 
@@ -35,6 +41,10 @@ Fretboard.propTypes = {
 
 Fretboard.defaultProps = {
   type: 'boxes',
+}
+
+Fretboard.childContextTypes = {
+  type: pt.string,
 }
 
 export default Fretboard

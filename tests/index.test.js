@@ -9,5 +9,18 @@ const props = {
 
 it('Fretboard component, snapshot', () => {
   const wrapper = shallow(<Fretboard {...props} />)
+
   expect(wrapper).toMatchSnapshot()
+})
+
+it('Fretboard component with type strings, snapshot', () => {
+  const wrapper = shallow(<Fretboard {...props} type="strings" />)
+
+  expect(wrapper).toMatchSnapshot()
+})
+
+it('should return correct childContext', () => {
+  const wrapper = shallow(<Fretboard {...props} type="strings" />)
+
+  expect(wrapper.instance().getChildContext().type).toEqual('strings')
 })

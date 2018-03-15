@@ -5,28 +5,28 @@ exports[`Position component, snapshot 1`] = `
   width={12}
 >
   <Fret
-    key="note-A2"
-    note="A2"
-  />
-  <Fret
-    key="note-D3"
-    note="D3"
-  />
-  <Fret
-    key="note-G3"
-    note="G3"
-  />
-  <Fret
-    key="note-C4"
-    note="C4"
+    key="note-A4"
+    note="A4"
   />
   <Fret
     key="note-E4"
     note="E4"
   />
   <Fret
-    key="note-A4"
-    note="A4"
+    key="note-C4"
+    note="C4"
+  />
+  <Fret
+    key="note-G3"
+    note="G3"
+  />
+  <Fret
+    key="note-D3"
+    note="D3"
+  />
+  <Fret
+    key="note-A2"
+    note="A2"
   />
 </styled.div>
 `;

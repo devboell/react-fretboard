@@ -1,7 +1,17 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Fret component, snapshot 1`] = `
+exports[`Fret component boxes type, snapshot 1`] = `
 <styled.div>
-  E2
+  <BoxesFret
+    note="E2"
+  />
+</styled.div>
+`;
+
+exports[`Fret component strings type, snapshot 1`] = `
+<styled.div>
+  <StringsFret
+    note="E2"
+  />
 </styled.div>
 `;

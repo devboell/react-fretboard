@@ -1,5 +1,38 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Fretboard component with type strings, snapshot 1`] = `
+<styled.div>
+  <ViewPort>
+    <StringsGraphic
+      nrOfFrets={12}
+      tuning={
+        Array [
+          "E2",
+          "A2",
+          "D3",
+          "G3",
+          "B3",
+          "E4",
+        ]
+      }
+    />
+    <Board
+      nrOfFrets={12}
+      tuning={
+        Array [
+          "E2",
+          "A2",
+          "D3",
+          "G3",
+          "B3",
+          "E4",
+        ]
+      }
+    />
+  </ViewPort>
+</styled.div>
+`;
+
 exports[`Fretboard component, snapshot 1`] = `
 <styled.div>
   <ViewPort>

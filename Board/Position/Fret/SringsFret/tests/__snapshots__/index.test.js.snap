@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`StringsFret component, snapshot 1`] = `
+<styled.div>
+  E2
+</styled.div>
+`;
