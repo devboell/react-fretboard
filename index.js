@@ -1,11 +1,13 @@
 import React from 'react'
 import pt from 'prop-types'
-
+import { ThemeProvider } from 'styled-components'
+import defaultTheme from 'themes/fretboard-theme'
 import ViewPort from './ViewPort'
 import BoxesGraphic from './BoxesGraphic'
 import StringsGraphic from './StringsGraphic'
 import Board from './Board'
 import Wrapper from './Wrapper'
+
 
 const boardGraphicTypes = {
   boxes: BoxesGraphic,
@@ -22,12 +24,14 @@ class Fretboard extends React.Component {
     const BoardGraphic = boardGraphicTypes[type]
 
     return (
-      <Wrapper>
-        <ViewPort>
-          <BoardGraphic {...{ tuning, nrOfFrets }} />
-          <Board {...{ tuning, nrOfFrets }} />
-        </ViewPort>
-      </Wrapper>
+      <ThemeProvider theme={defaultTheme}>
+        <Wrapper>
+          <ViewPort>
+            <BoardGraphic {...{ tuning, nrOfFrets }} />
+            <Board {...{ tuning, nrOfFrets }} />
+          </ViewPort>
+        </Wrapper>
+      </ThemeProvider>
     )
   }
 }

@@ -5,7 +5,7 @@ const Wrapper = styled.div`
   justify-content: center;
   align-items: center;
   padding: 0 5%;
-  background-color: ivory;
+  background-color: ${props => props.theme.background};
 `
 
 export default Wrapper
