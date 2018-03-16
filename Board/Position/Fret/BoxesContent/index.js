@@ -3,13 +3,13 @@ import pt from 'prop-types'
 import Wrapper from './Wrapper'
 
 
-const StringsFret = ({ note }) =>
+const BoxesContent = ({ note }) =>
   <Wrapper>
     {note}
   </Wrapper>
 
-StringsFret.propTypes = {
+BoxesContent.propTypes = {
   note: pt.string.isRequired,
 }
 
-export default StringsFret
+export default BoxesContent

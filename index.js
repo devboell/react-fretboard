@@ -16,7 +16,10 @@ const boardGraphicTypes = {
 
 class Fretboard extends React.Component {
   getChildContext() {
-    return { type: this.props.type }
+    return {
+      type: this.props.type,
+      showNotes: this.props.showNotes,
+    }
   }
 
   render() {
@@ -41,14 +44,17 @@ Fretboard.propTypes = {
   tuning: pt.arrayOf(pt.string).isRequired,
   nrOfFrets: pt.number.isRequired,
   type: pt.string,
+  showNotes: pt.bool,
 }
 
 Fretboard.defaultProps = {
   type: 'boxes',
+  showNotes: true,
 }
 
 Fretboard.childContextTypes = {
   type: pt.string,
+  showNotes: pt.bool,
 }
 
 export default Fretboard

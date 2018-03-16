@@ -7,13 +7,13 @@ const props = {
 }
 
 it('Fret component boxes type, snapshot', () => {
-  const context = { context: { type: 'boxes' } }
+  const context = { context: { type: 'boxes', showNotes: true } }
   const wrapper = shallow(<Fret {...props} />, context)
   expect(wrapper).toMatchSnapshot()
 })
 
 it('Fret component strings type, snapshot', () => {
-  const context = { context: { type: 'strings' } }
+  const context = { context: { type: 'strings', showNotes: false } }
   const wrapper = shallow(<Fret {...props} />, context)
   expect(wrapper).toMatchSnapshot()
 })

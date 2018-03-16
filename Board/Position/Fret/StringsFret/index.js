@@ -1,19 +1,19 @@
 import React from 'react'
 import pt from 'prop-types'
-import BoxesContent from '../BoxesContent'
+import StringsContent from '../StringsContent'
 import Wrapper from './Wrapper'
 
 
-const BoxesFret = ({ note, showNotes }) =>
+const StringsFret = ({ note, showNotes }) =>
   <Wrapper>
     {showNotes &&
-      <BoxesContent note={note} />
+      <StringsContent note={note} />
     }
   </Wrapper>
 
-BoxesFret.propTypes = {
+StringsFret.propTypes = {
   note: pt.string.isRequired,
   showNotes: pt.bool.isRequired,
 }
 
-export default BoxesFret
+export default StringsFret

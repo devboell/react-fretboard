@@ -1,7 +1,7 @@
 import React from 'react'
 import pt from 'prop-types'
 import BoxesFret from './BoxesFret'
-import StringsFret from './SringsFret'
+import StringsFret from './StringsFret'
 
 
 import Wrapper from './Wrapper'
@@ -9,11 +9,12 @@ import Wrapper from './Wrapper'
 /* eslint-disable react/prefer-stateless-function */
 class Fret extends React.Component {
   render() {
-    const Outer = this.context.type === 'boxes' ? BoxesFret : StringsFret
+    const { type, showNotes } = this.context
+    const Outer = type === 'boxes' ? BoxesFret : StringsFret
 
     return (
       <Wrapper>
-        <Outer note={this.props.note} />
+        <Outer note={this.props.note} showNotes={showNotes} />
       </Wrapper>)
   }
 }
@@ -25,6 +26,7 @@ Fret.propTypes = {
 
 Fret.contextTypes = {
   type: pt.string.isRequired,
+  showNotes: pt.bool.isRequired,
 }
 
 export default Fret

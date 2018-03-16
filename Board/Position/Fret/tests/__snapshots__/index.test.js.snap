@@ -4,6 +4,7 @@ exports[`Fret component boxes type, snapshot 1`] = `
 <styled.div>
   <BoxesFret
     note="E2"
+    showNotes={true}
   />
 </styled.div>
 `;
@@ -12,6 +13,7 @@ exports[`Fret component strings type, snapshot 1`] = `
 <styled.div>
   <StringsFret
     note="E2"
+    showNotes={false}
   />
 </styled.div>
 `;

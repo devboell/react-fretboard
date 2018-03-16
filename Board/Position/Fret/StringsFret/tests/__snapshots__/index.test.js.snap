@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`StringsFret component makes snapshot 1`] = `
+<styled.div>
+  <StringsContent
+    note="E2"
+  />
+</styled.div>
+`;
+
+exports[`StringsFret component makes snapshot, showNotes={false} 1`] = `<styled.div />`;
