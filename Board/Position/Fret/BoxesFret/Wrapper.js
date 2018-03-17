@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 
 const Wrapper = styled.div`
   display: flex;
@@ -9,6 +9,7 @@ const Wrapper = styled.div`
   margin: 10% 5%;
   border: 1px solid darkgray;
   border-radius: 3px;
+  ${props => props.isHighlighted && css`background-color: ${props.theme.highlight};`}
 `
 
 export default Wrapper

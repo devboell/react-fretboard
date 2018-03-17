@@ -19,6 +19,7 @@ class Fretboard extends React.Component {
     return {
       type: this.props.type,
       showNotes: this.props.showNotes,
+      isHighlighted: this.props.isHighlighted,
     }
   }
 
@@ -45,16 +46,19 @@ Fretboard.propTypes = {
   nrOfFrets: pt.number.isRequired,
   type: pt.string,
   showNotes: pt.bool,
+  isHighlighted: pt.bool,
 }
 
 Fretboard.defaultProps = {
   type: 'boxes',
   showNotes: true,
+  isHighlighted: false,
 }
 
 Fretboard.childContextTypes = {
   type: pt.string,
   showNotes: pt.bool,
+  isHighlighted: pt.bool,
 }
 
 export default Fretboard

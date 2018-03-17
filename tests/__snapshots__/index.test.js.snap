@@ -5,6 +5,7 @@ exports[`Fretboard component with type strings, snapshot 1`] = `
   theme={
     Object {
       "background": "ivory",
+      "highlight": "orange",
     }
   }
 >
@@ -46,6 +47,7 @@ exports[`Fretboard component, snapshot 1`] = `
   theme={
     Object {
       "background": "ivory",
+      "highlight": "orange",
     }
   }
 >
