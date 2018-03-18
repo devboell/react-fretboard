@@ -19,3 +19,11 @@ exports[`Fret component Fret component strings type, snapshot 1`] = `
   />
 </styled.div>
 `;
+
+exports[`Fret component Fret component strings type, snapshot 2`] = `
+<styled.div>
+  <styled.div
+    isHighlighted={true}
+  />
+</styled.div>
+`;
