@@ -1,7 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`StringsContent component, snapshot 1`] = `
-<styled.div>
+<styled.div
+  isHighlighted={true}
+>
   E2
 </styled.div>
 `;

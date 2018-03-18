@@ -3,7 +3,7 @@
 exports[`ViewPort component, snapshot 1`] = `
 <svg
   fill="white"
-  height="100%"
+  height={200}
   shapeRendering="geometricPrecision"
   stroke="black"
   strokeWidth="1"

@@ -1,22 +1,27 @@
 import styled, { css } from 'styled-components'
 
+const highlightCSS = ({ theme }) => {
+  const radiusPerc = 80
+  const radius = Math.floor((theme.stringHeight / 100) * radiusPerc)
+
+  return css`
+    width: ${radius}px;
+    height: ${radius}px;
+    border-radius: 50%;
+    background-color: ${theme.highlight};
+  `
+}
+
+
 const Wrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  ${props => props.isHighlighted && css`
-    height:100%;
-    width: auto;
-    -moz-border-radius: 50%; 
-    -webkit-border-radius: 50%; 
-    border-radius: 50%;
-    background: #4679BD; 
-  `}
+
+  ${props => (props.isHighlighted
+    ? highlightCSS(props)
+    : css`width: 100%;`)
+} 
 `
-//     padding-bottom: 50%;
-
-//     background-color: ${props.theme.highlight};
-
 
 export default Wrapper

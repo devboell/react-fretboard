@@ -26,11 +26,12 @@ class Fretboard extends React.Component {
   render() {
     const { tuning, nrOfFrets, type } = this.props
     const BoardGraphic = boardGraphicTypes[type]
+    const height = tuning.length * defaultTheme.stringHeight
 
     return (
       <ThemeProvider theme={defaultTheme}>
-        <Wrapper>
-          <ViewPort>
+        <Wrapper height={height}>
+          <ViewPort height={height}>
             <BoardGraphic {...{ tuning, nrOfFrets }} />
             <Board {...{ tuning, nrOfFrets }} />
           </ViewPort>

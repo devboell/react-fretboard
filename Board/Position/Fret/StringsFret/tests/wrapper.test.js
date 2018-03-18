@@ -4,12 +4,21 @@ import 'jest-styled-components'
 
 import Wrapper from '../Wrapper'
 
-const props = {
+const defaultProps = {
   theme,
   isHighlighted: true,
 }
 
-it('should return wrapper with correct width', () => {
-  const wrapper = shallow(<Wrapper {...props} />)
-  expect(wrapper).toMatchSnapshot()
+describe('StringsFret Wrapper', () => {
+  it('should return width 100%', () => {
+    const wrapper = shallow(<Wrapper {...defaultProps} />)
+    expect(wrapper).toMatchSnapshot()
+  })
+
+  it('should return highlighted circle', () => {
+    const props = { ...defaultProps, isHighlighted: false }
+    const wrapper = shallow(<Wrapper {...props} />)
+    expect(wrapper).toMatchSnapshot()
+  })
 })
+

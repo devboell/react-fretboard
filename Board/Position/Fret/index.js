@@ -9,7 +9,9 @@ import Wrapper from './Wrapper'
 /* eslint-disable react/prefer-stateless-function */
 class Fret extends React.Component {
   render() {
-    const { type, showNotes, isHighlighted } = this.context
+    const {
+      type, showNotes, isHighlighted,
+    } = this.context
     const Outer = type === 'boxes' ? BoxesFret : StringsFret
 
     return (

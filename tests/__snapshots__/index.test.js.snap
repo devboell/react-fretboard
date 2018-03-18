@@ -6,11 +6,16 @@ exports[`Fretboard component with type strings, snapshot 1`] = `
     Object {
       "background": "ivory",
       "highlight": "orange",
+      "stringHeight": 40,
     }
   }
 >
-  <styled.div>
-    <ViewPort>
+  <styled.div
+    height={240}
+  >
+    <ViewPort
+      height={240}
+    >
       <StringsGraphic
         nrOfFrets={12}
         tuning={
@@ -48,11 +53,16 @@ exports[`Fretboard component, snapshot 1`] = `
     Object {
       "background": "ivory",
       "highlight": "orange",
+      "stringHeight": 40,
     }
   }
 >
-  <styled.div>
-    <ViewPort>
+  <styled.div
+    height={240}
+  >
+    <ViewPort
+      height={240}
+    >
       <BoxesGraphic
         nrOfFrets={12}
         tuning={

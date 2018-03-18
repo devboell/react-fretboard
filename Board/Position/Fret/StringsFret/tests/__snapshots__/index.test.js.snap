@@ -5,6 +5,7 @@ exports[`StringsFret component makes snapshot 1`] = `
   isHighlighted={false}
 >
   <StringsContent
+    isHighlighted={false}
     note="E2"
   />
 </styled.div>

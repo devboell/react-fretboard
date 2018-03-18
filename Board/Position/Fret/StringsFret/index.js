@@ -4,10 +4,12 @@ import StringsContent from '../StringsContent'
 import Wrapper from './Wrapper'
 
 
-const StringsFret = ({ note, showNotes, isHighlighted }) =>
-  <Wrapper isHighlighted={isHighlighted}>
+const StringsFret = ({
+  note, showNotes, isHighlighted,
+}) =>
+  <Wrapper {...{ isHighlighted }}>
     {showNotes &&
-      <StringsContent note={note} />
+      <StringsContent {...{ note, isHighlighted }} />
     }
   </Wrapper>
 

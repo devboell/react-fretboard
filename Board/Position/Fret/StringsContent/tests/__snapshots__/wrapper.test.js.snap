@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`should return wrapper with correct width 1`] = `
+exports[`StringsContent Wrapper should have correct background, isHeighlighted = false 1`] = `
 .c0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -16,6 +16,29 @@ exports[`should return wrapper with correct width 1`] = `
   align-items: center;
   padding: 0 5%;
   background-color: ivory;
+}
+
+<div
+  className="c0"
+/>
+`;
+
+exports[`StringsContent Wrapper should have correct background, isHeighlighted = true 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0 5%;
+  background-color: orange;
 }
 
 <div

@@ -1,14 +1,15 @@
 import React from 'react'
-import { node } from 'prop-types'
+import pt from 'prop-types'
 
 const ViewPort = ({
+  height,
   children,
 }) =>
   <svg
     xmlns="http://www.w3.org/2000/svg"
     version="1.1"
     width="100%"
-    height="100%"
+    height={height}
     stroke="black"
     strokeWidth="1"
     fill="white"
@@ -19,7 +20,8 @@ const ViewPort = ({
   </svg>
 
 ViewPort.propTypes = {
-  children: node.isRequired,
+  height: pt.number.isRequired,
+  children: pt.node.isRequired,
 }
 
 export default ViewPort
