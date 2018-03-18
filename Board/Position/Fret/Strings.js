@@ -1,4 +1,5 @@
-import styled, { css } from 'styled-components'
+import { css } from 'styled-components'
+import SkinWrapper from './SkinWrapper'
 
 const highlightCSS = ({ theme }) => {
   const radiusPerc = 80
@@ -12,16 +13,16 @@ const highlightCSS = ({ theme }) => {
   `
 }
 
+const defaultCSS = ({ theme }) =>
+  css`
+    padding: 0 5%;
+    background-color: ${theme.background};
+  `
 
-const Wrapper = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
+const Strings = SkinWrapper.extend`
   ${props => (props.isHighlighted
     ? highlightCSS(props)
-    : css`width: 100%;`)
-} 
-`
+    : defaultCSS(props))} 
+  `
 
-export default Wrapper
+export default Strings

@@ -1,10 +1,15 @@
 import React from 'react'
 import pt from 'prop-types'
-import BoxesFret from './BoxesFret'
-import StringsFret from './StringsFret'
-
+import Boxes from './Boxes'
+import Strings from './Strings'
+import Content from './Content'
 
 import Wrapper from './Wrapper'
+
+const fretsBySkin = {
+  boxes: Boxes,
+  strings: Strings,
+}
 
 /* eslint-disable react/prefer-stateless-function */
 class Fret extends React.Component {
@@ -12,15 +17,16 @@ class Fret extends React.Component {
     const {
       type, showNotes, isHighlighted,
     } = this.context
-    const Outer = type === 'boxes' ? BoxesFret : StringsFret
+
+    const SkinWrapper = fretsBySkin[type]
 
     return (
       <Wrapper>
-        <Outer
-          note={this.props.note}
-          showNotes={showNotes}
-          isHighlighted={isHighlighted}
-        />
+        <SkinWrapper isHighlighted={isHighlighted}>
+          {showNotes &&
+            <Content note={this.props.note} />
+          }
+        </SkinWrapper>
       </Wrapper>)
   }
 }

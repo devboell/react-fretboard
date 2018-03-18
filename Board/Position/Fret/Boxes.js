@@ -1,9 +1,7 @@
-import styled, { css } from 'styled-components'
+import { css } from 'styled-components'
+import SkinWrapper from './SkinWrapper'
 
-const Wrapper = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
+const Boxes = SkinWrapper.extend`
   height: 80%;
   width: 90%;
   margin: 10% 5%;
@@ -12,4 +10,4 @@ const Wrapper = styled.div`
   ${props => props.isHighlighted && css`background-color: ${props.theme.highlight};`}
 `
 
-export default Wrapper
+export default Boxes

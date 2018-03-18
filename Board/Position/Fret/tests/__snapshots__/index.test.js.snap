@@ -2,20 +2,20 @@
 
 exports[`Fret component Fret component boxes type, snapshot 1`] = `
 <styled.div>
-  <BoxesFret
+  <styled.div
     isHighlighted={false}
-    note="E2"
-    showNotes={true}
-  />
+  >
+    <Content
+      note="E2"
+    />
+  </styled.div>
 </styled.div>
 `;
 
 exports[`Fret component Fret component strings type, snapshot 1`] = `
 <styled.div>
-  <StringsFret
+  <styled.div
     isHighlighted={false}
-    note="E2"
-    showNotes={false}
   />
 </styled.div>
 `;

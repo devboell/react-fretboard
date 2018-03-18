@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`StringsContent Wrapper should have correct background, isHeighlighted = false 1`] = `
+exports[`Boxes wrapper correct css, isHighlighted=false 1`] = `
 .c0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -23,7 +23,7 @@ exports[`StringsContent Wrapper should have correct background, isHeighlighted =
 />
 `;
 
-exports[`StringsContent Wrapper should have correct background, isHeighlighted = true 1`] = `
+exports[`Boxes wrapper correct css, isHighlighted=true 1`] = `
 .c0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -37,7 +37,9 @@ exports[`StringsContent Wrapper should have correct background, isHeighlighted =
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 0 5%;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
   background-color: orange;
 }
 
