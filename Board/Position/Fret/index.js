@@ -1,6 +1,6 @@
 import React from 'react'
 import pt from 'prop-types'
-import { isEmpty } from 'ramda'
+import { isEmpty, isNil, compose } from 'ramda'
 import { isEqual } from 'lib/tonal-helpers'
 
 import Boxes from './Boxes'
@@ -19,17 +19,25 @@ class Fret extends React.Component {
   render() {
     const { note } = this.props
     const {
-      type, showNotes, selectedNotes,
+      type, showNotes, showSelection, selectedNotes,
     } = this.context
 
-    const isSelected = !isEmpty(selectedNotes.filter(isEqual(note)))
+    const selection = selectedNotes.filter(isEqual(note))[0]
+    const isSelected = !isNil(selection)
+
+    const content = compose(
+      result => (showSelection && isSelected ? selection : result),
+      result => (showNotes ? note : result),
+    )('')
+    const hasContent = !isEmpty(content)
+
     const SkinWrapper = fretsBySkin[type]
 
     return (
       <Wrapper>
         <SkinWrapper isHighlighted={isSelected}>
-          {showNotes &&
-            <Content note={note} />
+          {hasContent &&
+            <Content content={content} />
           }
         </SkinWrapper>
       </Wrapper>)
@@ -45,6 +53,7 @@ Fret.contextTypes = {
   selectedNotes: pt.arrayOf(pt.string).isRequired,
   type: pt.string.isRequired,
   showNotes: pt.bool.isRequired,
+  showSelection: pt.bool.isRequired,
 }
 
 export default Fret

@@ -20,6 +20,8 @@ class Fretboard extends React.Component {
       selectedNotes: this.props.selectedNotes,
       type: this.props.type,
       showNotes: this.props.showNotes,
+      showSelection: this.props.showSelection,
+
     }
   }
 
@@ -48,18 +50,21 @@ Fretboard.propTypes = {
   selectedNotes: pt.arrayOf(pt.string),
   type: pt.string,
   showNotes: pt.bool,
+  showSelection: pt.bool,
 }
 
 Fretboard.defaultProps = {
   selectedNotes: [],
   type: 'boxes',
   showNotes: true,
+  showSelection: true,
 }
 
 Fretboard.childContextTypes = {
   selectedNotes: pt.arrayOf(pt.string),
   type: pt.string,
   showNotes: pt.bool,
+  showSelection: pt.bool,
 }
 
 export default Fretboard

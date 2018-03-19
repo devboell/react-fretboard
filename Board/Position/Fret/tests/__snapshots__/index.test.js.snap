@@ -6,7 +6,7 @@ exports[`Fret component Fret component boxes type, snapshot 1`] = `
     isHighlighted={false}
   >
     <Content
-      note="E2"
+      content="E2"
     />
   </styled.div>
 </styled.div>
@@ -25,5 +25,17 @@ exports[`Fret component Fret component strings type, snapshot 2`] = `
   <styled.div
     isHighlighted={true}
   />
+</styled.div>
+`;
+
+exports[`Fret component Fret component strings type, snapshot 3`] = `
+<styled.div>
+  <styled.div
+    isHighlighted={true}
+  >
+    <Content
+      content="E2"
+    />
+  </styled.div>
 </styled.div>
 `;

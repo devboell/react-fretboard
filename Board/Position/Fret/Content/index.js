@@ -3,13 +3,13 @@ import pt from 'prop-types'
 import Wrapper from './Wrapper'
 
 
-const Content = ({ note }) =>
+const Content = ({ content }) =>
   <Wrapper>
-    {note}
+    {content}
   </Wrapper>
 
 Content.propTypes = {
-  note: pt.string.isRequired,
+  content: pt.string.isRequired,
 }
 
 export default Content
