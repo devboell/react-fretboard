@@ -14,22 +14,20 @@ describe('Fret component', () => {
     showSelection: true,
   }
 
-  it('Fret component boxes type, snapshot', () => {
+  it('defaultContext, snapshot', () => {
     const wrapper = shallow(<Fret {...props} />, { context: defaultContext })
     expect(wrapper).toMatchSnapshot()
   })
 
-  it('Fret component strings type, snapshot', () => {
+  it('type=strings, showNotes-false, snapshot', () => {
     const context = { ...defaultContext, type: 'strings', showNotes: false }
     const wrapper = shallow(<Fret {...props} />, { context })
     expect(wrapper).toMatchSnapshot()
   })
 
-  it('Fret component strings type, snapshot', () => {
+  it('showSelection=false, note is selected, snapshot', () => {
     const context = {
       ...defaultContext,
-      type: 'strings',
-      showNotes: false,
       showSelection: false,
       selectedNotes: ['E2'],
     }
@@ -37,12 +35,9 @@ describe('Fret component', () => {
     expect(wrapper).toMatchSnapshot()
   })
 
-  it('Fret component strings type, snapshot', () => {
+  it('note is selected, snapshot', () => {
     const context = {
       ...defaultContext,
-      type: 'strings',
-      showNotes: false,
-      showSelection: true,
       selectedNotes: ['E2'],
     }
     const wrapper = shallow(<Fret {...props} />, { context })

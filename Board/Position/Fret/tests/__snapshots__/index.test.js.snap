@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Fret component Fret component boxes type, snapshot 1`] = `
+exports[`Fret component defaultContext, snapshot 1`] = `
 <styled.div>
   <styled.div
     isHighlighted={false}
@@ -12,23 +12,7 @@ exports[`Fret component Fret component boxes type, snapshot 1`] = `
 </styled.div>
 `;
 
-exports[`Fret component Fret component strings type, snapshot 1`] = `
-<styled.div>
-  <styled.div
-    isHighlighted={false}
-  />
-</styled.div>
-`;
-
-exports[`Fret component Fret component strings type, snapshot 2`] = `
-<styled.div>
-  <styled.div
-    isHighlighted={true}
-  />
-</styled.div>
-`;
-
-exports[`Fret component Fret component strings type, snapshot 3`] = `
+exports[`Fret component note is selected, snapshot 1`] = `
 <styled.div>
   <styled.div
     isHighlighted={true}
@@ -37,5 +21,25 @@ exports[`Fret component Fret component strings type, snapshot 3`] = `
       content="E2"
     />
   </styled.div>
+</styled.div>
+`;
+
+exports[`Fret component showSelection=false, note is selected, snapshot 1`] = `
+<styled.div>
+  <styled.div
+    isHighlighted={true}
+  >
+    <Content
+      content="E2"
+    />
+  </styled.div>
+</styled.div>
+`;
+
+exports[`Fret component type=strings, showNotes-false, snapshot 1`] = `
+<styled.div>
+  <styled.div
+    isHighlighted={false}
+  />
 </styled.div>
 `;
