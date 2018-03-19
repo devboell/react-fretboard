@@ -3,7 +3,8 @@
 exports[`Fret component defaultContext, snapshot 1`] = `
 <styled.div>
   <styled.div
-    isHighlighted={false}
+    isHighlighted={true}
+    status="oct2"
   >
     <Content
       content="E2"
@@ -12,10 +13,11 @@ exports[`Fret component defaultContext, snapshot 1`] = `
 </styled.div>
 `;
 
-exports[`Fret component note is selected, snapshot 1`] = `
+exports[`Fret component note is selected, showOctaves=false, snapshot 1`] = `
 <styled.div>
   <styled.div
     isHighlighted={true}
+    status="selected"
   >
     <Content
       content="E2"
@@ -28,6 +30,7 @@ exports[`Fret component showSelection=false, note is selected, snapshot 1`] = `
 <styled.div>
   <styled.div
     isHighlighted={true}
+    status="selected"
   >
     <Content
       content="E2"
@@ -39,7 +42,8 @@ exports[`Fret component showSelection=false, note is selected, snapshot 1`] = `
 exports[`Fret component type=strings, showNotes-false, snapshot 1`] = `
 <styled.div>
   <styled.div
-    isHighlighted={false}
+    isHighlighted={true}
+    status="oct2"
   />
 </styled.div>
 `;

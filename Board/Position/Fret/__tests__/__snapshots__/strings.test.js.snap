@@ -15,7 +15,7 @@ exports[`Boxes wrapper correct css, isHighlighted=false 1`] = `
   -ms-flex-align: center;
   align-items: center;
   padding: 0 5%;
-  background-color: ivory;
+  background-color: transparent;
 }
 
 <div
@@ -40,7 +40,6 @@ exports[`Boxes wrapper correct css, isHighlighted=true 1`] = `
   width: 32px;
   height: 32px;
   border-radius: 50%;
-  background-color: orange;
 }
 
 <div

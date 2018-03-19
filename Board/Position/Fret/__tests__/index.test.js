@@ -8,10 +8,11 @@ describe('Fret component', () => {
     note: 'E2',
   }
   const defaultContext = {
-    selectedNotes: ['C4'],
     type: 'boxes',
     showNotes: true,
+    showOctaves: true,
     showSelection: true,
+    selectedNotes: ['C4'],
   }
 
   it('defaultContext, snapshot', () => {
@@ -35,9 +36,10 @@ describe('Fret component', () => {
     expect(wrapper).toMatchSnapshot()
   })
 
-  it('note is selected, snapshot', () => {
+  it('note is selected, showOctaves=false, snapshot', () => {
     const context = {
       ...defaultContext,
+      showOctaves: false,
       selectedNotes: ['E2'],
     }
     const wrapper = shallow(<Fret {...props} />, { context })

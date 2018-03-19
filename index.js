@@ -17,11 +17,11 @@ const boardGraphicTypes = {
 class Fretboard extends React.Component {
   getChildContext() {
     return {
-      selectedNotes: this.props.selectedNotes,
       type: this.props.type,
       showNotes: this.props.showNotes,
+      showOctaves: this.props.showOctaves,
       showSelection: this.props.showSelection,
-
+      selectedNotes: this.props.selectedNotes,
     }
   }
 
@@ -47,24 +47,27 @@ class Fretboard extends React.Component {
 Fretboard.propTypes = {
   tuning: pt.arrayOf(pt.string).isRequired,
   nrOfFrets: pt.number.isRequired,
-  selectedNotes: pt.arrayOf(pt.string),
   type: pt.string,
   showNotes: pt.bool,
+  showOctaves: pt.bool,
   showSelection: pt.bool,
+  selectedNotes: pt.arrayOf(pt.string),
 }
 
 Fretboard.defaultProps = {
-  selectedNotes: [],
   type: 'boxes',
   showNotes: true,
-  showSelection: true,
+  showOctaves: true,
+  showSelection: false,
+  selectedNotes: [],
 }
 
 Fretboard.childContextTypes = {
-  selectedNotes: pt.arrayOf(pt.string),
   type: pt.string,
   showNotes: pt.bool,
+  showOctaves: pt.bool,
   showSelection: pt.bool,
+  selectedNotes: pt.arrayOf(pt.string),
 }
 
 export default Fretboard

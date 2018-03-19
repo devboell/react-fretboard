@@ -45,7 +45,6 @@ exports[`Boxes wrapper correct css, isHighlighted=true 1`] = `
   margin: 10% 5%;
   border: 1px solid darkgray;
   border-radius: 3px;
-  background-color: orange;
 }
 
 <div

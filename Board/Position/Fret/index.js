@@ -1,13 +1,22 @@
 import React from 'react'
 import pt from 'prop-types'
 import { isEmpty, isNil, compose } from 'ramda'
-import { isEqual } from 'lib/tonal-helpers'
+import { isEqual, oct } from 'lib/tonal-helpers'
 
 import Boxes from './Boxes'
 import Strings from './Strings'
 import Content from './Content'
 
 import Wrapper from './Wrapper'
+
+const octStatusMap = {
+  2: 'oct2',
+  3: 'oct3',
+  4: 'oct4',
+  5: 'oct5',
+}
+
+const octStatus = note => octStatusMap[oct(note)]
 
 const fretsBySkin = {
   boxes: Boxes,
@@ -19,7 +28,11 @@ class Fret extends React.Component {
   render() {
     const { note } = this.props
     const {
-      type, showNotes, showSelection, selectedNotes,
+      type,
+      showNotes,
+      showOctaves,
+      showSelection,
+      selectedNotes,
     } = this.context
 
     const selection = selectedNotes.filter(isEqual(note))[0]
@@ -31,11 +44,18 @@ class Fret extends React.Component {
     )('')
     const hasContent = !isEmpty(content)
 
+
+    const status = compose(
+      result => (isSelected ? 'selected' : result),
+      result => (showOctaves ? octStatus(note) : result),
+    )('none')
+    const isHighlighted = status !== 'none'
+
     const SkinWrapper = fretsBySkin[type]
 
     return (
       <Wrapper>
-        <SkinWrapper isHighlighted={isSelected}>
+        <SkinWrapper {...{ isHighlighted, status }}>
           {hasContent &&
             <Content content={content} />
           }
@@ -50,10 +70,11 @@ Fret.propTypes = {
 }
 
 Fret.contextTypes = {
-  selectedNotes: pt.arrayOf(pt.string).isRequired,
   type: pt.string.isRequired,
   showNotes: pt.bool.isRequired,
+  showOctaves: pt.bool.isRequired,
   showSelection: pt.bool.isRequired,
+  selectedNotes: pt.arrayOf(pt.string).isRequired,
 }
 
 export default Fret
