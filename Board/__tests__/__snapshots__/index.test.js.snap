@@ -18,7 +18,7 @@ exports[`Board component, snapshot 1`] = `
       ]
     }
   />
-  <Board
+  <BoardPositions
     nrOfFrets={12}
     tuning={
       Array [

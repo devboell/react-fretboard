@@ -12,16 +12,16 @@ const positions = (tuning, nrOfFrets) => (n) => {
   return <Position key={`pos-${pos}`} {...{ tuning, width, pos }} />
 }
 
-const Board = ({ tuning, nrOfFrets }) =>
+const BoardPositions = ({ tuning, nrOfFrets }) =>
   <foreignObject width="100%" height="100%">
     <Wrapper>
       {times(positions(tuning, nrOfFrets), nrOfFrets)}
     </Wrapper>
   </foreignObject>
 
-Board.propTypes = {
+BoardPositions.propTypes = {
   tuning: pt.arrayOf(pt.string).isRequired,
   nrOfFrets: pt.number.isRequired,
 }
 
-export default Board
+export default BoardPositions
