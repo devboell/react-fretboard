@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Nut component, snapshot 1`] = `
+<ViewPort
+  offset={10}
+  width={5}
+>
+  <g />
+</ViewPort>
+`;

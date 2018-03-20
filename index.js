@@ -2,17 +2,13 @@ import React from 'react'
 import pt from 'prop-types'
 import { ThemeProvider } from 'styled-components'
 import defaultTheme from 'themes/fretboard-theme'
-import ViewPort from './ViewPort'
-import BoxesGraphic from './BoxesGraphic'
-import StringsGraphic from './StringsGraphic'
+import ViewPortMain from './ViewPortMain'
+import OpenPosition from './OpenPosition'
+import Nut from './Nut'
 import Board from './Board'
+
 import Wrapper from './Wrapper'
 
-
-const boardGraphicTypes = {
-  boxes: BoxesGraphic,
-  strings: StringsGraphic,
-}
 
 class Fretboard extends React.Component {
   getChildContext() {
@@ -27,16 +23,30 @@ class Fretboard extends React.Component {
 
   render() {
     const { tuning, nrOfFrets, type } = this.props
-    const BoardGraphic = boardGraphicTypes[type]
-    const height = tuning.length * defaultTheme.stringHeight
+    const { dimensions: { openWidth, nutWidth, stringHeight } } = defaultTheme
+    const height = tuning.length * stringHeight
+    const boardWidth = 100 - openWidth - nutWidth
 
     return (
       <ThemeProvider theme={defaultTheme}>
         <Wrapper height={height}>
-          <ViewPort height={height}>
-            <BoardGraphic {...{ tuning, nrOfFrets }} />
-            <Board {...{ tuning, nrOfFrets }} />
-          </ViewPort>
+          <ViewPortMain>
+            <OpenPosition
+              width={openWidth}
+              tuning={tuning}
+            />
+            <Nut
+              width={nutWidth}
+              offset={openWidth}
+            />
+            <Board
+              type={type}
+              width={boardWidth}
+              offset={nutWidth + openWidth}
+              tuning={tuning}
+              nrOfFrets={nrOfFrets}
+            />
+          </ViewPortMain>
         </Wrapper>
       </ThemeProvider>
     )
@@ -57,7 +67,7 @@ Fretboard.propTypes = {
 Fretboard.defaultProps = {
   type: 'boxes',
   showNotes: true,
-  showOctaves: true,
+  showOctaves: false,
   showSelection: false,
   selectedNotes: [],
 }

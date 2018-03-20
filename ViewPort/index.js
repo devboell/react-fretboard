@@ -2,26 +2,27 @@ import React from 'react'
 import pt from 'prop-types'
 
 const ViewPort = ({
-  height,
+  width,
+  offset,
   children,
 }) =>
   <svg
-    xmlns="http://www.w3.org/2000/svg"
-    version="1.1"
-    width="100%"
-    height={height}
-    stroke="black"
-    strokeWidth="1"
-    fill="white"
-    shapeRendering="geometricPrecision"
-    style={{ overflow: 'visible' }}
+    width={`${width}%`}
+    height="100%"
+    x={`${offset}%`}
+    y="0"
   >
     {children}
   </svg>
 
 ViewPort.propTypes = {
-  height: pt.number.isRequired,
-  children: pt.node.isRequired,
+  width: pt.number.isRequired,
+  offset: pt.number.isRequired,
+  children: pt.node,
+}
+
+ViewPort.defaultProps = {
+  children: <g />,
 }
 
 export default ViewPort

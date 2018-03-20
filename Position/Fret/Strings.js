@@ -3,7 +3,7 @@ import SkinWrapper from './SkinWrapper'
 
 const highlightCSS = ({ theme, status }) => {
   const radiusPerc = 80
-  const radius = Math.floor((theme.stringHeight / 100) * radiusPerc)
+  const radius = Math.floor((theme.dimensions.stringHeight / 100) * radiusPerc)
 
   return css`
     width: ${radius}px;

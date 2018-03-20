@@ -1,0 +1,191 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Board component, snapshot 1`] = `
+<foreignObject
+  height="100%"
+  width="100%"
+>
+  <styled.div>
+    <Position
+      key="pos-1"
+      pos={1}
+      tuning={
+        Array [
+          "E2",
+          "A2",
+          "D3",
+          "G3",
+          "B3",
+          "E4",
+        ]
+      }
+      width={11.225137463661309}
+    />
+    <Position
+      key="pos-2"
+      pos={2}
+      tuning={
+        Array [
+          "E2",
+          "A2",
+          "D3",
+          "G3",
+          "B3",
+          "E4",
+        ]
+      }
+      width={10.595118908270846}
+    />
+    <Position
+      key="pos-3"
+      pos={3}
+      tuning={
+        Array [
+          "E2",
+          "A2",
+          "D3",
+          "G3",
+          "B3",
+          "E4",
+        ]
+      }
+      width={10.00046057732496}
+    />
+    <Position
+      key="pos-4"
+      pos={4}
+      tuning={
+        Array [
+          "E2",
+          "A2",
+          "D3",
+          "G3",
+          "B3",
+          "E4",
+        ]
+      }
+      width={9.439177853922969}
+    />
+    <Position
+      key="pos-5"
+      pos={5}
+      tuning={
+        Array [
+          "E2",
+          "A2",
+          "D3",
+          "G3",
+          "B3",
+          "E4",
+        ]
+      }
+      width={8.909397509151805}
+    />
+    <Position
+      key="pos-6"
+      pos={6}
+      tuning={
+        Array [
+          "E2",
+          "A2",
+          "D3",
+          "G3",
+          "B3",
+          "E4",
+        ]
+      }
+      width={8.40935145035865}
+    />
+    <Position
+      key="pos-7"
+      pos={7}
+      tuning={
+        Array [
+          "E2",
+          "A2",
+          "D3",
+          "G3",
+          "B3",
+          "E4",
+        ]
+      }
+      width={7.937370820306075}
+    />
+    <Position
+      key="pos-8"
+      pos={8}
+      tuning={
+        Array [
+          "E2",
+          "A2",
+          "D3",
+          "G3",
+          "B3",
+          "E4",
+        ]
+      }
+      width={7.491880427516126}
+    />
+    <Position
+      key="pos-9"
+      pos={9}
+      tuning={
+        Array [
+          "E2",
+          "A2",
+          "D3",
+          "G3",
+          "B3",
+          "E4",
+        ]
+      }
+      width={7.071393489215215}
+    />
+    <Position
+      key="pos-10"
+      pos={10}
+      tuning={
+        Array [
+          "E2",
+          "A2",
+          "D3",
+          "G3",
+          "B3",
+          "E4",
+        ]
+      }
+      width={6.674506669334813}
+    />
+    <Position
+      key="pos-11"
+      pos={11}
+      tuning={
+        Array [
+          "E2",
+          "A2",
+          "D3",
+          "G3",
+          "B3",
+          "E4",
+        ]
+      }
+      width={6.299895395007778}
+    />
+    <Position
+      key="pos-12"
+      pos={12}
+      tuning={
+        Array [
+          "E2",
+          "A2",
+          "D3",
+          "G3",
+          "B3",
+          "E4",
+        ]
+      }
+      width={5.946309435929531}
+    />
+  </styled.div>
+</foreignObject>
+`;
