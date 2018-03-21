@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NutGraphicStrings component, snapshot 1`] = `
+<rect
+  fill="black"
+  height="83.33333333333334%"
+  width="100%"
+  x="0"
+  y="8.333333333333334%"
+/>
+`;

@@ -13,10 +13,10 @@ const Board = ({
   offset,
 }) => {
   const BoardGraphic = boardGraphic(skinType)
-
+  const nrOfStrings = tuning.length
   return (
     <ViewPort {...{ width, offset }}>
-      <BoardGraphic {...{ tuning, nrOfFrets }} />
+      <BoardGraphic {...{ nrOfStrings, nrOfFrets }} />
       <BoardPositions {...{ tuning, nrOfFrets }} />
     </ViewPort>
   )

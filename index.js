@@ -36,8 +36,10 @@ class Fretboard extends React.Component {
               tuning={tuning}
             />
             <Nut
+              skinType={skinType}
               width={nutWidth}
               offset={openWidth}
+              tuning={tuning}
             />
             <Board
               skinType={skinType}

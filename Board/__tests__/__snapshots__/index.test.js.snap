@@ -7,16 +7,7 @@ exports[`Board component, snapshot 1`] = `
 >
   <BoardGraphicStrings
     nrOfFrets={12}
-    tuning={
-      Array [
-        "E2",
-        "A2",
-        "D3",
-        "G3",
-        "B3",
-        "E4",
-      ]
-    }
+    nrOfStrings={6}
   />
   <BoardPositions
     nrOfFrets={12}

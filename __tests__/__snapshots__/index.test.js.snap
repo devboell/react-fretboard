@@ -6,7 +6,7 @@ exports[`Fretboard component with skinType strings, snapshot 1`] = `
     Object {
       "background": "white",
       "dimensions": Object {
-        "nutWidth": 1,
+        "nutWidth": 0.75,
         "openWidth": 10,
         "stringHeight": 30,
       },
@@ -39,11 +39,6 @@ exports[`Fretboard component with skinType strings, snapshot 1`] = `
       />
       <Nut
         offset={10}
-        width={1}
-      />
-      <Board
-        nrOfFrets={12}
-        offset={11}
         skinType="strings"
         tuning={
           Array [
@@ -55,7 +50,23 @@ exports[`Fretboard component with skinType strings, snapshot 1`] = `
             "E4",
           ]
         }
-        width={89}
+        width={0.75}
+      />
+      <Board
+        nrOfFrets={12}
+        offset={10.75}
+        skinType="strings"
+        tuning={
+          Array [
+            "E2",
+            "A2",
+            "D3",
+            "G3",
+            "B3",
+            "E4",
+          ]
+        }
+        width={89.25}
       />
     </ViewPortMain>
   </styled.div>
@@ -68,7 +79,7 @@ exports[`Fretboard component, snapshot 1`] = `
     Object {
       "background": "white",
       "dimensions": Object {
-        "nutWidth": 1,
+        "nutWidth": 0.75,
         "openWidth": 10,
         "stringHeight": 30,
       },
@@ -101,11 +112,6 @@ exports[`Fretboard component, snapshot 1`] = `
       />
       <Nut
         offset={10}
-        width={1}
-      />
-      <Board
-        nrOfFrets={12}
-        offset={11}
         skinType="boxes"
         tuning={
           Array [
@@ -117,7 +123,23 @@ exports[`Fretboard component, snapshot 1`] = `
             "E4",
           ]
         }
-        width={89}
+        width={0.75}
+      />
+      <Board
+        nrOfFrets={12}
+        offset={10.75}
+        skinType="boxes"
+        tuning={
+          Array [
+            "E2",
+            "A2",
+            "D3",
+            "G3",
+            "B3",
+            "E4",
+          ]
+        }
+        width={89.25}
       />
     </ViewPortMain>
   </styled.div>

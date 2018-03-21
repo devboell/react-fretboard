@@ -1,6 +1,6 @@
 import React from 'react'
 import pt from 'prop-types'
-import { times } from 'ramda'
+import { times, range } from 'ramda'
 import { stringCenter, fretOffset } from 'lib/fretboard'
 
 
@@ -36,18 +36,15 @@ const fretLine = (nrOfFrets, nrOfStrings) => (frt) => {
     />)
 }
 
-const BoardGraphicStrings = ({ tuning, nrOfFrets }) => {
-  const nrOfStrings = tuning.length
-  return (
-    <g>
-      {times(stringLine(nrOfStrings), nrOfStrings)}
-      {times(fretLine(nrOfFrets, nrOfStrings), nrOfFrets)}
-    </g>
-  )
-}
+const BoardGraphicStrings = ({ nrOfStrings, nrOfFrets }) =>
+  <g>
+    {times(stringLine(nrOfStrings), nrOfStrings)}
+    {range(1, nrOfFrets).map(fretLine(nrOfFrets, nrOfStrings))}
+  </g>
+
 
 BoardGraphicStrings.propTypes = {
-  tuning: pt.arrayOf(pt.string).isRequired,
+  nrOfStrings: pt.number.isRequired,
   nrOfFrets: pt.number.isRequired,
 }
 

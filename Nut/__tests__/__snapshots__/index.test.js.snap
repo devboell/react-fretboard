@@ -5,6 +5,8 @@ exports[`Nut component, snapshot 1`] = `
   offset={10}
   width={5}
 >
-  <g />
+  <NutGraphicBoxes
+    nrOfStrings={6}
+  />
 </ViewPort>
 `;
