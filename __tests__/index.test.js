@@ -13,14 +13,14 @@ it('Fretboard component, snapshot', () => {
   expect(wrapper).toMatchSnapshot()
 })
 
-it('Fretboard component with type strings, snapshot', () => {
-  const wrapper = shallow(<Fretboard {...props} type="strings" />)
+it('Fretboard component with skinType strings, snapshot', () => {
+  const wrapper = shallow(<Fretboard {...props} skinType="strings" />)
 
   expect(wrapper).toMatchSnapshot()
 })
 
 it('should return correct childContext', () => {
-  const wrapper = shallow(<Fretboard {...props} type="strings" />)
+  const wrapper = shallow(<Fretboard {...props} skinType="strings" />)
 
-  expect(wrapper.instance().getChildContext().type).toEqual('strings')
+  expect(wrapper.instance().getChildContext().skinType).toEqual('strings')
 })

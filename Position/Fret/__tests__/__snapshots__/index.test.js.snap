@@ -39,7 +39,7 @@ exports[`Fret component showSelection=false, note is selected, snapshot 1`] = `
 </styled.div>
 `;
 
-exports[`Fret component type=strings, showNotes-false, snapshot 1`] = `
+exports[`Fret component skinType=strings, showNotes-false, snapshot 1`] = `
 <styled.div>
   <styled.div
     isHighlighted={true}

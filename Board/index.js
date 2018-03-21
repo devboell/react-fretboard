@@ -1,25 +1,18 @@
 import React from 'react'
 import pt from 'prop-types'
-
+import { boardGraphic } from 'components/Fretboard/skins'
 import ViewPort from 'components/Fretboard/ViewPort'
 
-import BoxesGraphic from './BoxesGraphic'
-import StringsGraphic from './StringsGraphic'
 import BoardPositions from './BoardPositions'
-
-const boardGraphicTypes = {
-  boxes: BoxesGraphic,
-  strings: StringsGraphic,
-}
 
 const Board = ({
   tuning,
   nrOfFrets,
-  type,
+  skinType,
   width,
   offset,
 }) => {
-  const BoardGraphic = boardGraphicTypes[type]
+  const BoardGraphic = boardGraphic(skinType)
 
   return (
     <ViewPort {...{ width, offset }}>
@@ -32,7 +25,7 @@ const Board = ({
 Board.propTypes = {
   tuning: pt.arrayOf(pt.string).isRequired,
   nrOfFrets: pt.number.isRequired,
-  type: pt.string.isRequired,
+  skinType: pt.string.isRequired,
   width: pt.number.isRequired,
   offset: pt.number.isRequired,
 }

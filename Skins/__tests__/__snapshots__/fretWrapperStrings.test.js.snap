@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Boxes wrapper correct css, isHighlighted=false 1`] = `
+exports[`FretWrapperStrings wrapper correct css, isHighlighted=false 1`] = `
 .c0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -23,7 +23,7 @@ exports[`Boxes wrapper correct css, isHighlighted=false 1`] = `
 />
 `;
 
-exports[`Boxes wrapper correct css, isHighlighted=true 1`] = `
+exports[`FretWrapperStrings wrapper correct css, isHighlighted=true 1`] = `
 .c0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -37,8 +37,8 @@ exports[`Boxes wrapper correct css, isHighlighted=true 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  width: 32px;
-  height: 32px;
+  width: 24px;
+  height: 24px;
   border-radius: 50%;
 }
 

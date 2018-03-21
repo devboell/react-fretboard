@@ -3,10 +3,9 @@ import pt from 'prop-types'
 import { isEmpty, isNil, compose } from 'ramda'
 import { isEqual, oct } from 'lib/tonal-helpers'
 
-import Boxes from './Boxes'
-import Strings from './Strings'
-import Content from './Content'
+import { fretWrapper } from 'components/Fretboard/skins'
 
+import Content from './Content'
 import Wrapper from './Wrapper'
 
 const octStatusMap = {
@@ -18,17 +17,12 @@ const octStatusMap = {
 
 const octStatus = note => octStatusMap[oct(note)]
 
-const fretsBySkin = {
-  boxes: Boxes,
-  strings: Strings,
-}
-
 /* eslint-disable react/prefer-stateless-function */
 class Fret extends React.Component {
   render() {
     const { note } = this.props
     const {
-      type,
+      skinType,
       showNotes,
       showOctaves,
       showSelection,
@@ -51,7 +45,7 @@ class Fret extends React.Component {
     )('none')
     const isHighlighted = status !== 'none'
 
-    const SkinWrapper = fretsBySkin[type]
+    const SkinWrapper = fretWrapper(skinType)
 
     return (
       <Wrapper>
@@ -70,7 +64,7 @@ Fret.propTypes = {
 }
 
 Fret.contextTypes = {
-  type: pt.string.isRequired,
+  skinType: pt.string.isRequired,
   showNotes: pt.bool.isRequired,
   showOctaves: pt.bool.isRequired,
   showSelection: pt.bool.isRequired,

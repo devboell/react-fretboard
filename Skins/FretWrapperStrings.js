@@ -1,5 +1,5 @@
 import { css } from 'styled-components'
-import SkinWrapper from './SkinWrapper'
+import FretWrapper from './FretWrapper'
 
 const highlightCSS = ({ theme, status }) => {
   const radiusPerc = 80
@@ -19,10 +19,10 @@ const defaultCSS = ({ theme }) =>
     background-color: ${theme.background};
   `
 
-const Strings = SkinWrapper.extend`
+const FretWrapperStrings = FretWrapper.extend`
   ${props => (props.isHighlighted
     ? highlightCSS(props)
     : defaultCSS(props))} 
   `
 
-export default Strings
+export default FretWrapperStrings

@@ -1,11 +1,11 @@
 import { css } from 'styled-components'
-import SkinWrapper from './SkinWrapper'
+import FretWrapper from './FretWrapper'
 
 
 const background = ({ theme, isHighlighted, status }) =>
   isHighlighted && css`background-color: ${theme.highlight[status]};`
 
-const Boxes = SkinWrapper.extend`
+const Boxes = FretWrapper.extend`
   height: 80%;
   width: 90%;
   margin: 10% 5%;

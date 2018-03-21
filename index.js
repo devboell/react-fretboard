@@ -13,7 +13,7 @@ import Wrapper from './Wrapper'
 class Fretboard extends React.Component {
   getChildContext() {
     return {
-      type: this.props.type,
+      skinType: this.props.skinType,
       showNotes: this.props.showNotes,
       showOctaves: this.props.showOctaves,
       showSelection: this.props.showSelection,
@@ -22,7 +22,7 @@ class Fretboard extends React.Component {
   }
 
   render() {
-    const { tuning, nrOfFrets, type } = this.props
+    const { tuning, nrOfFrets, skinType } = this.props
     const { dimensions: { openWidth, nutWidth, stringHeight } } = defaultTheme
     const height = tuning.length * stringHeight
     const boardWidth = 100 - openWidth - nutWidth
@@ -40,7 +40,7 @@ class Fretboard extends React.Component {
               offset={openWidth}
             />
             <Board
-              type={type}
+              skinType={skinType}
               width={boardWidth}
               offset={nutWidth + openWidth}
               tuning={tuning}
@@ -57,7 +57,7 @@ class Fretboard extends React.Component {
 Fretboard.propTypes = {
   tuning: pt.arrayOf(pt.string).isRequired,
   nrOfFrets: pt.number.isRequired,
-  type: pt.string,
+  skinType: pt.string,
   showNotes: pt.bool,
   showOctaves: pt.bool,
   showSelection: pt.bool,
@@ -65,7 +65,7 @@ Fretboard.propTypes = {
 }
 
 Fretboard.defaultProps = {
-  type: 'boxes',
+  skinType: 'boxes',
   showNotes: true,
   showOctaves: false,
   showSelection: false,
@@ -73,7 +73,7 @@ Fretboard.defaultProps = {
 }
 
 Fretboard.childContextTypes = {
-  type: pt.string,
+  skinType: pt.string,
   showNotes: pt.bool,
   showOctaves: pt.bool,
   showSelection: pt.bool,

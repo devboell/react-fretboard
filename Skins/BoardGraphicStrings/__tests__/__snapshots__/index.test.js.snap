@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Strings component, snapshot 1`] = `
+exports[`BoardGraphicStrings component, snapshot 1`] = `
 <g>
   <line
     key="str-0"

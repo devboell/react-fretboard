@@ -1,14 +1,14 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Fretboard component with type strings, snapshot 1`] = `
+exports[`Fretboard component with skinType strings, snapshot 1`] = `
 <ThemeProvider
   theme={
     Object {
       "background": "white",
       "dimensions": Object {
-        "nutWidth": 5,
+        "nutWidth": 1,
         "openWidth": 10,
-        "stringHeight": 40,
+        "stringHeight": 30,
       },
       "highlight": Object {
         "oct2": "blue",
@@ -21,7 +21,7 @@ exports[`Fretboard component with type strings, snapshot 1`] = `
   }
 >
   <styled.div
-    height={240}
+    height={180}
   >
     <ViewPortMain>
       <OpenPosition
@@ -39,11 +39,12 @@ exports[`Fretboard component with type strings, snapshot 1`] = `
       />
       <Nut
         offset={10}
-        width={5}
+        width={1}
       />
       <Board
         nrOfFrets={12}
-        offset={15}
+        offset={11}
+        skinType="strings"
         tuning={
           Array [
             "E2",
@@ -54,8 +55,7 @@ exports[`Fretboard component with type strings, snapshot 1`] = `
             "E4",
           ]
         }
-        type="strings"
-        width={85}
+        width={89}
       />
     </ViewPortMain>
   </styled.div>
@@ -68,9 +68,9 @@ exports[`Fretboard component, snapshot 1`] = `
     Object {
       "background": "white",
       "dimensions": Object {
-        "nutWidth": 5,
+        "nutWidth": 1,
         "openWidth": 10,
-        "stringHeight": 40,
+        "stringHeight": 30,
       },
       "highlight": Object {
         "oct2": "blue",
@@ -83,7 +83,7 @@ exports[`Fretboard component, snapshot 1`] = `
   }
 >
   <styled.div
-    height={240}
+    height={180}
   >
     <ViewPortMain>
       <OpenPosition
@@ -101,11 +101,12 @@ exports[`Fretboard component, snapshot 1`] = `
       />
       <Nut
         offset={10}
-        width={5}
+        width={1}
       />
       <Board
         nrOfFrets={12}
-        offset={15}
+        offset={11}
+        skinType="boxes"
         tuning={
           Array [
             "E2",
@@ -116,8 +117,7 @@ exports[`Fretboard component, snapshot 1`] = `
             "E4",
           ]
         }
-        type="boxes"
-        width={85}
+        width={89}
       />
     </ViewPortMain>
   </styled.div>

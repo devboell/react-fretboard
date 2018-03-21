@@ -5,7 +5,7 @@ exports[`Board component, snapshot 1`] = `
   offset={10}
   width={90}
 >
-  <StringsGraphic
+  <BoardGraphicStrings
     nrOfFrets={12}
     tuning={
       Array [

@@ -2,7 +2,7 @@ import React from 'react'
 import 'jest-styled-components'
 
 import theme from 'themes/fretboard-theme'
-import Strings from '../Strings'
+import FretWrapperBoxes from '../FretWrapperBoxes'
 
 const defaultProps = {
   isHighlighted: true,
@@ -11,13 +11,13 @@ const defaultProps = {
 
 describe('Boxes wrapper', () => {
   it('correct css, isHighlighted=true', () => {
-    const wrapper = shallow(<Strings {...defaultProps} />)
+    const wrapper = shallow(<FretWrapperBoxes {...defaultProps} />)
     expect(wrapper).toMatchSnapshot()
   })
 
   it('correct css, isHighlighted=false', () => {
     const props = { ...defaultProps, isHighlighted: false }
-    const wrapper = shallow(<Strings {...props} />)
+    const wrapper = shallow(<FretWrapperBoxes {...props} />)
     expect(wrapper).toMatchSnapshot()
   })
 })
