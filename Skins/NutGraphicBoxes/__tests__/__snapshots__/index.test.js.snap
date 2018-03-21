@@ -1,3 +1,14 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`NutGraphicBoxes component, snapshot 1`] = `<g />`;
+exports[`NutGraphicBoxes component, snapshot 1`] = `
+<rect
+  fill="lightgray"
+  height="96%"
+  rx="3"
+  ry="3"
+  stroke="none"
+  width="90%"
+  x="5%"
+  y="2%"
+/>
+`;
