@@ -21,54 +21,63 @@ exports[`Fretboard component with skinType strings, snapshot 1`] = `
   }
 >
   <styled.div
-    height={180}
+    height={210}
   >
-    <ViewPortMain>
-      <OpenPosition
-        tuning={
-          Array [
-            "E2",
-            "A2",
-            "D3",
-            "G3",
-            "B3",
-            "E4",
-          ]
-        }
-        width={10}
-      />
-      <Nut
-        offset={10}
-        skinType="strings"
-        tuning={
-          Array [
-            "E2",
-            "A2",
-            "D3",
-            "G3",
-            "B3",
-            "E4",
-          ]
-        }
-        width={0.75}
-      />
-      <Board
+    <styled.div
+      height={180}
+    >
+      <ViewPortMain>
+        <OpenPosition
+          tuning={
+            Array [
+              "E2",
+              "A2",
+              "D3",
+              "G3",
+              "B3",
+              "E4",
+            ]
+          }
+          width={10}
+        />
+        <Nut
+          offset={10}
+          skinType="strings"
+          tuning={
+            Array [
+              "E2",
+              "A2",
+              "D3",
+              "G3",
+              "B3",
+              "E4",
+            ]
+          }
+          width={0.75}
+        />
+        <Board
+          nrOfFrets={12}
+          offset={10.75}
+          skinType="strings"
+          tuning={
+            Array [
+              "E2",
+              "A2",
+              "D3",
+              "G3",
+              "B3",
+              "E4",
+            ]
+          }
+          width={89.25}
+        />
+      </ViewPortMain>
+      <PositionLabels
         nrOfFrets={12}
-        offset={10.75}
-        skinType="strings"
-        tuning={
-          Array [
-            "E2",
-            "A2",
-            "D3",
-            "G3",
-            "B3",
-            "E4",
-          ]
-        }
-        width={89.25}
+        nutWidth={0.75}
+        openWidth={10}
       />
-    </ViewPortMain>
+    </styled.div>
   </styled.div>
 </ThemeProvider>
 `;
@@ -94,54 +103,140 @@ exports[`Fretboard component, snapshot 1`] = `
   }
 >
   <styled.div
+    height={210}
+  >
+    <styled.div
+      height={180}
+    >
+      <ViewPortMain>
+        <OpenPosition
+          tuning={
+            Array [
+              "E2",
+              "A2",
+              "D3",
+              "G3",
+              "B3",
+              "E4",
+            ]
+          }
+          width={10}
+        />
+        <Nut
+          offset={10}
+          skinType="boxes"
+          tuning={
+            Array [
+              "E2",
+              "A2",
+              "D3",
+              "G3",
+              "B3",
+              "E4",
+            ]
+          }
+          width={0.75}
+        />
+        <Board
+          nrOfFrets={12}
+          offset={10.75}
+          skinType="boxes"
+          tuning={
+            Array [
+              "E2",
+              "A2",
+              "D3",
+              "G3",
+              "B3",
+              "E4",
+            ]
+          }
+          width={89.25}
+        />
+      </ViewPortMain>
+      <PositionLabels
+        nrOfFrets={12}
+        nutWidth={0.75}
+        openWidth={10}
+      />
+    </styled.div>
+  </styled.div>
+</ThemeProvider>
+`;
+
+exports[`should return component w/out positionLabels 1`] = `
+<ThemeProvider
+  theme={
+    Object {
+      "background": "white",
+      "dimensions": Object {
+        "nutWidth": 0.75,
+        "openWidth": 10,
+        "stringHeight": 30,
+      },
+      "highlight": Object {
+        "oct2": "blue",
+        "oct3": "dodgerblue",
+        "oct4": "lightblue",
+        "oct5": "lightgray",
+        "selected": "orange",
+      },
+    }
+  }
+>
+  <styled.div
     height={180}
   >
-    <ViewPortMain>
-      <OpenPosition
-        tuning={
-          Array [
-            "E2",
-            "A2",
-            "D3",
-            "G3",
-            "B3",
-            "E4",
-          ]
-        }
-        width={10}
-      />
-      <Nut
-        offset={10}
-        skinType="boxes"
-        tuning={
-          Array [
-            "E2",
-            "A2",
-            "D3",
-            "G3",
-            "B3",
-            "E4",
-          ]
-        }
-        width={0.75}
-      />
-      <Board
-        nrOfFrets={12}
-        offset={10.75}
-        skinType="boxes"
-        tuning={
-          Array [
-            "E2",
-            "A2",
-            "D3",
-            "G3",
-            "B3",
-            "E4",
-          ]
-        }
-        width={89.25}
-      />
-    </ViewPortMain>
+    <styled.div
+      height={180}
+    >
+      <ViewPortMain>
+        <OpenPosition
+          tuning={
+            Array [
+              "E2",
+              "A2",
+              "D3",
+              "G3",
+              "B3",
+              "E4",
+            ]
+          }
+          width={10}
+        />
+        <Nut
+          offset={10}
+          skinType="boxes"
+          tuning={
+            Array [
+              "E2",
+              "A2",
+              "D3",
+              "G3",
+              "B3",
+              "E4",
+            ]
+          }
+          width={0.75}
+        />
+        <Board
+          nrOfFrets={12}
+          offset={10.75}
+          skinType="boxes"
+          tuning={
+            Array [
+              "E2",
+              "A2",
+              "D3",
+              "G3",
+              "B3",
+              "E4",
+            ]
+          }
+          width={89.25}
+        />
+      </ViewPortMain>
+    </styled.div>
   </styled.div>
 </ThemeProvider>
 `;

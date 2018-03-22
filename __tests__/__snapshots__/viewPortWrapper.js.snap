@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should return ViewPortWrapper with correct height 1`] = `
+.c0 {
+  width: 100%;
+  height: 40px;
+}
+
+<div
+  className="c0"
+  height={40}
+/>
+`;

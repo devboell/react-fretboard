@@ -6,8 +6,10 @@ import ViewPortMain from './ViewPortMain'
 import OpenPosition from './OpenPosition'
 import Nut from './Nut'
 import Board from './Board'
+import PositionLabels from './PositionLabels'
 
 import Wrapper from './Wrapper'
+import ViewPortWrapper from './ViewPortWrapper'
 
 
 class Fretboard extends React.Component {
@@ -22,33 +24,47 @@ class Fretboard extends React.Component {
   }
 
   render() {
-    const { tuning, nrOfFrets, skinType } = this.props
+    const {
+      tuning, nrOfFrets, skinType, showPositionLabels,
+    } = this.props
     const { dimensions: { openWidth, nutWidth, stringHeight } } = defaultTheme
-    const height = tuning.length * stringHeight
+    const boardHeight = tuning.length * stringHeight
+    const totalHeight = showPositionLabels ? boardHeight + stringHeight : boardHeight
     const boardWidth = 100 - openWidth - nutWidth
 
     return (
       <ThemeProvider theme={defaultTheme}>
-        <Wrapper height={height}>
-          <ViewPortMain>
-            <OpenPosition
-              width={openWidth}
-              tuning={tuning}
-            />
-            <Nut
-              skinType={skinType}
-              width={nutWidth}
-              offset={openWidth}
-              tuning={tuning}
-            />
-            <Board
-              skinType={skinType}
-              width={boardWidth}
-              offset={nutWidth + openWidth}
-              tuning={tuning}
-              nrOfFrets={nrOfFrets}
-            />
-          </ViewPortMain>
+        <Wrapper height={totalHeight}>
+          <ViewPortWrapper height={boardHeight}>
+            <ViewPortMain>
+              <OpenPosition
+                width={openWidth}
+                tuning={tuning}
+              />
+              <Nut
+                skinType={skinType}
+                width={nutWidth}
+                offset={openWidth}
+                tuning={tuning}
+              />
+              <Board
+                skinType={skinType}
+                width={boardWidth}
+                offset={nutWidth + openWidth}
+                tuning={tuning}
+                nrOfFrets={nrOfFrets}
+              />
+            </ViewPortMain>
+            {showPositionLabels &&
+              <PositionLabels
+                {...{
+                  nutWidth,
+                  openWidth,
+                  nrOfFrets,
+                }}
+              />
+            }
+          </ViewPortWrapper>
         </Wrapper>
       </ThemeProvider>
     )
@@ -63,6 +79,7 @@ Fretboard.propTypes = {
   showNotes: pt.bool,
   showOctaves: pt.bool,
   showSelection: pt.bool,
+  showPositionLabels: pt.bool,
   selectedNotes: pt.arrayOf(pt.string),
 }
 
@@ -71,6 +88,7 @@ Fretboard.defaultProps = {
   showNotes: true,
   showOctaves: false,
   showSelection: false,
+  showPositionLabels: true,
   selectedNotes: [],
 }
 
