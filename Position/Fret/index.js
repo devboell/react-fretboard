@@ -20,13 +20,14 @@ const octStatus = note => octStatusMap[oct(note)]
 /* eslint-disable react/prefer-stateless-function */
 class Fret extends React.Component {
   render() {
-    const { note } = this.props
+    const { note, loc } = this.props
     const {
       skinType,
       showNotes,
       showOctaves,
       showSelection,
       selectedNotes,
+      clickAction,
     } = this.context
 
     const selection = selectedNotes.filter(isEqual(note))[0]
@@ -48,7 +49,7 @@ class Fret extends React.Component {
     const SkinWrapper = fretWrapper(skinType)
 
     return (
-      <Wrapper>
+      <Wrapper onClick={() => clickAction(note, loc)}>
         <SkinWrapper {...{ isHighlighted, status }}>
           {hasContent &&
             <Content content={content} />
@@ -58,9 +59,14 @@ class Fret extends React.Component {
   }
 }
 
+const locShape = {
+  str: pt.number.isRequired,
+  pos: pt.number.isRequired,
+}
 
 Fret.propTypes = {
   note: pt.string.isRequired,
+  loc: pt.shape(locShape).isRequired,
 }
 
 Fret.contextTypes = {
@@ -69,6 +75,7 @@ Fret.contextTypes = {
   showOctaves: pt.bool.isRequired,
   showSelection: pt.bool.isRequired,
   selectedNotes: pt.arrayOf(pt.string).isRequired,
+  clickAction: pt.func.isRequired,
 }
 
 export default Fret

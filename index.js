@@ -20,6 +20,7 @@ class Fretboard extends React.Component {
       showOctaves: this.props.showOctaves,
       showSelection: this.props.showSelection,
       selectedNotes: this.props.selectedNotes,
+      clickAction: this.props.clickAction,
     }
   }
 
@@ -81,6 +82,7 @@ Fretboard.propTypes = {
   showSelection: pt.bool,
   showPositionLabels: pt.bool,
   selectedNotes: pt.arrayOf(pt.string),
+  clickAction: pt.func,
 }
 
 Fretboard.defaultProps = {
@@ -90,6 +92,7 @@ Fretboard.defaultProps = {
   showSelection: false,
   showPositionLabels: true,
   selectedNotes: [],
+  clickAction: (note, loc) => ({ note, loc }),
 }
 
 Fretboard.childContextTypes = {
@@ -98,6 +101,7 @@ Fretboard.childContextTypes = {
   showOctaves: pt.bool,
   showSelection: pt.bool,
   selectedNotes: pt.arrayOf(pt.string),
+  clickAction: pt.func,
 }
 
 export default Fretboard

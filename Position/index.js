@@ -7,9 +7,10 @@ import Fret from './Fret'
 
 const Position = ({ tuning, width, pos }) =>
   <Wrapper {...{ width }}>
-    {reverse(tuning).map((openNote) => {
+    {reverse(tuning).map((openNote, str) => {
       const note = transpose(openNote)(pos)
-      return <Fret key={`note-${note}`} {...{ note }} />
+      const loc = { str, pos }
+      return <Fret key={`note-${note}`} {...{ note, loc }} />
     })}
   </Wrapper>
 

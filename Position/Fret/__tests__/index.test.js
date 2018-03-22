@@ -4,8 +4,11 @@ import Fret from '../index'
 
 
 describe('Fret component', () => {
+  const clickAction = jest.fn()
+
   const props = {
     note: 'E2',
+    loc: { str: 5, pos: 0 },
   }
   const defaultContext = {
     skinType: 'boxes',
@@ -13,6 +16,7 @@ describe('Fret component', () => {
     showOctaves: true,
     showSelection: true,
     selectedNotes: ['C4'],
+    clickAction,
   }
 
   it('defaultContext, snapshot', () => {
@@ -44,5 +48,11 @@ describe('Fret component', () => {
     }
     const wrapper = shallow(<Fret {...props} />, { context })
     expect(wrapper).toMatchSnapshot()
+  })
+
+  it('clickAction gets called with correct args', () => {
+    const wrapper = shallow(<Fret {...props} />, { context: defaultContext })
+    wrapper.simulate('click')
+    expect(clickAction).toBeCalledWith('E2', { str: 5, pos: 0 })
   })
 })

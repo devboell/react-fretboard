@@ -1,7 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Fret component defaultContext, snapshot 1`] = `
-<styled.div>
+<styled.div
+  onClick={[Function]}
+>
   <styled.div
     isHighlighted={true}
     status="oct2"
@@ -14,7 +16,9 @@ exports[`Fret component defaultContext, snapshot 1`] = `
 `;
 
 exports[`Fret component note is selected, showOctaves=false, snapshot 1`] = `
-<styled.div>
+<styled.div
+  onClick={[Function]}
+>
   <styled.div
     isHighlighted={true}
     status="selected"
@@ -27,7 +31,9 @@ exports[`Fret component note is selected, showOctaves=false, snapshot 1`] = `
 `;
 
 exports[`Fret component showSelection=false, note is selected, snapshot 1`] = `
-<styled.div>
+<styled.div
+  onClick={[Function]}
+>
   <styled.div
     isHighlighted={true}
     status="selected"
@@ -40,7 +46,9 @@ exports[`Fret component showSelection=false, note is selected, snapshot 1`] = `
 `;
 
 exports[`Fret component skinType=strings, showNotes-false, snapshot 1`] = `
-<styled.div>
+<styled.div
+  onClick={[Function]}
+>
   <styled.div
     isHighlighted={true}
     status="oct2"
