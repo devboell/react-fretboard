@@ -1,12 +1,126 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Fret component defaultContext, snapshot 1`] = `
+exports[`Fret component -- other selection -- should not show selection if selectedLocation doesn't match 1`] = `
+<styled.div
+  onClick={[Function]}
+>
+  <styled.div
+    isHighlighted={false}
+    status="none"
+  />
+</styled.div>
+`;
+
+exports[`Fret component -- other selection -- should not show selection if selectedNote doesn't match 1`] = `
+<styled.div
+  onClick={[Function]}
+>
+  <styled.div
+    isHighlighted={false}
+    status="none"
+  />
+</styled.div>
+`;
+
+exports[`Fret component -- selectedLocations & highlights -- showOctaves=false, loc selected 1`] = `
+<styled.div
+  onClick={[Function]}
+>
+  <styled.div
+    isHighlighted={true}
+    status="foo"
+  />
+</styled.div>
+`;
+
+exports[`Fret component -- selectedLocations & highlights -- showOctaves=true, loc selected 1`] = `
+<styled.div
+  onClick={[Function]}
+>
+  <styled.div
+    isHighlighted={true}
+    status="foo"
+  />
+</styled.div>
+`;
+
+exports[`Fret component -- selectedLocations & labels -- showSelection=false, loc selected 1`] = `
+<styled.div
+  onClick={[Function]}
+>
+  <styled.div
+    isHighlighted={true}
+    status="foo"
+  />
+</styled.div>
+`;
+
+exports[`Fret component -- selectedLocations & labels -- showSelection=true, loc selected 1`] = `
+<styled.div
+  onClick={[Function]}
+>
+  <styled.div
+    isHighlighted={true}
+    status="foo"
+  >
+    <Content
+      content="root"
+    />
+  </styled.div>
+</styled.div>
+`;
+
+exports[`Fret component -- selectedNotes & highlights -- showOctaves=false, note selected 1`] = `
+<styled.div
+  onClick={[Function]}
+>
+  <styled.div
+    isHighlighted={true}
+    status="foo"
+  />
+</styled.div>
+`;
+
+exports[`Fret component -- selectedNotes & highlights -- showOctaves=true, no note selected 1`] = `
 <styled.div
   onClick={[Function]}
 >
   <styled.div
     isHighlighted={true}
     status="oct2"
+  />
+</styled.div>
+`;
+
+exports[`Fret component -- selectedNotes & highlights -- showOctaves=true, note selected 1`] = `
+<styled.div
+  onClick={[Function]}
+>
+  <styled.div
+    isHighlighted={true}
+    status="foo"
+  />
+</styled.div>
+`;
+
+exports[`Fret component -- selectedNotes & labels -- showSelection=false, showNotes=false, note selected 1`] = `
+<styled.div
+  onClick={[Function]}
+>
+  <styled.div
+    isHighlighted={true}
+    status="selected"
+  />
+</styled.div>
+`;
+
+exports[`Fret component -- selectedNotes & labels -- showSelection=false, showNotes=true, no note selected 1`] = `
+<styled.div
+  onClick={[Function]}
+>
+  <styled.div
+    isHighlighted={false}
+    status="none"
   >
     <Content
       content="E2"
@@ -15,7 +129,37 @@ exports[`Fret component defaultContext, snapshot 1`] = `
 </styled.div>
 `;
 
-exports[`Fret component note is selected, showOctaves=false, snapshot 1`] = `
+exports[`Fret component -- selectedNotes & labels -- showSelection=true, showNotes=false, note selected 1`] = `
+<styled.div
+  onClick={[Function]}
+>
+  <styled.div
+    isHighlighted={true}
+    status="selected"
+  >
+    <Content
+      content="root"
+    />
+  </styled.div>
+</styled.div>
+`;
+
+exports[`Fret component -- selectedNotes & labels -- showSelection=true, showNotes=true, note selected 1`] = `
+<styled.div
+  onClick={[Function]}
+>
+  <styled.div
+    isHighlighted={true}
+    status="selected"
+  >
+    <Content
+      content="root"
+    />
+  </styled.div>
+</styled.div>
+`;
+
+exports[`Fret component -- selectedNotes & labels -- showSelection=true, showNotes=true, note selected 2`] = `
 <styled.div
   onClick={[Function]}
 >
@@ -30,28 +174,13 @@ exports[`Fret component note is selected, showOctaves=false, snapshot 1`] = `
 </styled.div>
 `;
 
-exports[`Fret component showSelection=false, note is selected, snapshot 1`] = `
+exports[`Fret component defaultContext, no selections 1`] = `
 <styled.div
   onClick={[Function]}
 >
   <styled.div
-    isHighlighted={true}
-    status="selected"
-  >
-    <Content
-      content="E2"
-    />
-  </styled.div>
-</styled.div>
-`;
-
-exports[`Fret component skinType=strings, showNotes-false, snapshot 1`] = `
-<styled.div
-  onClick={[Function]}
->
-  <styled.div
-    isHighlighted={true}
-    status="oct2"
+    isHighlighted={false}
+    status="none"
   />
 </styled.div>
 `;

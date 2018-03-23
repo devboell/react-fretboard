@@ -2,6 +2,10 @@ import React from 'react'
 import pt from 'prop-types'
 import { ThemeProvider } from 'styled-components'
 import defaultTheme from 'themes/fretboard-theme'
+
+import { locShape, noteSelectionShape, locSelectionShape } from 'lib/shapes'
+import { ensureNoteObjects, ensureLocObjects } from 'lib/fretboard'
+
 import ViewPortMain from './ViewPortMain'
 import OpenPosition from './OpenPosition'
 import Nut from './Nut'
@@ -19,7 +23,8 @@ class Fretboard extends React.Component {
       showNotes: this.props.showNotes,
       showOctaves: this.props.showOctaves,
       showSelection: this.props.showSelection,
-      selectedNotes: this.props.selectedNotes,
+      selectedNotes: ensureNoteObjects(this.props.selectedNotes),
+      selectedLocations: ensureLocObjects(this.props.selectedLocations),
       clickAction: this.props.clickAction,
     }
   }
@@ -81,7 +86,8 @@ Fretboard.propTypes = {
   showOctaves: pt.bool,
   showSelection: pt.bool,
   showPositionLabels: pt.bool,
-  selectedNotes: pt.arrayOf(pt.string),
+  selectedNotes: pt.arrayOf(pt.oneOfType([pt.string, noteSelectionShape])),
+  selectedLocations: pt.arrayOf(pt.oneOfType([locShape, locSelectionShape])),
   clickAction: pt.func,
 }
 
@@ -92,6 +98,7 @@ Fretboard.defaultProps = {
   showSelection: false,
   showPositionLabels: true,
   selectedNotes: [],
+  selectedLocations: [],
   clickAction: (note, loc) => ({ note, loc }),
 }
 
@@ -100,7 +107,8 @@ Fretboard.childContextTypes = {
   showNotes: pt.bool,
   showOctaves: pt.bool,
   showSelection: pt.bool,
-  selectedNotes: pt.arrayOf(pt.string),
+  selectedNotes: pt.arrayOf(noteSelectionShape),
+  selectedLocations: pt.arrayOf(locSelectionShape),
   clickAction: pt.func,
 }
 

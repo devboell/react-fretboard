@@ -1,8 +1,8 @@
 import React from 'react'
 import pt from 'prop-types'
-import { isEmpty, isNil, compose } from 'ramda'
+import { isEmpty, isNil, equals, compose } from 'ramda'
 import { isEqual, oct } from 'lib/tonal-helpers'
-
+import { locShape, noteSelectionShape, locSelectionShape } from 'lib/shapes'
 import { fretWrapper } from 'components/Fretboard/skins'
 
 import Content from './Content'
@@ -27,21 +27,36 @@ class Fret extends React.Component {
       showOctaves,
       showSelection,
       selectedNotes,
+      selectedLocations,
       clickAction,
     } = this.context
 
-    const selection = selectedNotes.filter(isEqual(note))[0]
+    const findNote = (acc, curr) => (
+      isEqual(note)(curr.note)
+        ? curr
+        : acc
+    )
+
+    const findLoc = (acc, curr) => (
+      equals(loc)(curr.loc)
+        ? curr
+        : acc
+    )
+
+    const noteSelection = selectedNotes.reduce(findNote, undefined)
+    const locSelection = selectedLocations.reduce(findLoc, undefined)
+
+    const selection = noteSelection || locSelection
     const isSelected = !isNil(selection)
 
     const content = compose(
-      result => (showSelection && isSelected ? selection : result),
+      result => (showSelection && isSelected ? selection.label : result),
       result => (showNotes ? note : result),
     )('')
     const hasContent = !isEmpty(content)
 
-
     const status = compose(
-      result => (isSelected ? 'selected' : result),
+      result => (isSelected ? selection.status : result),
       result => (showOctaves ? octStatus(note) : result),
     )('none')
     const isHighlighted = status !== 'none'
@@ -59,14 +74,10 @@ class Fret extends React.Component {
   }
 }
 
-const locShape = {
-  str: pt.number.isRequired,
-  pos: pt.number.isRequired,
-}
 
 Fret.propTypes = {
   note: pt.string.isRequired,
-  loc: pt.shape(locShape).isRequired,
+  loc: locShape.isRequired,
 }
 
 Fret.contextTypes = {
@@ -74,7 +85,8 @@ Fret.contextTypes = {
   showNotes: pt.bool.isRequired,
   showOctaves: pt.bool.isRequired,
   showSelection: pt.bool.isRequired,
-  selectedNotes: pt.arrayOf(pt.string).isRequired,
+  selectedNotes: pt.arrayOf(noteSelectionShape).isRequired,
+  selectedLocations: pt.arrayOf(locSelectionShape).isRequired,
   clickAction: pt.func.isRequired,
 }
 
