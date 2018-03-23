@@ -2,8 +2,8 @@ import { css } from 'styled-components'
 import FretWrapper from './FretWrapper'
 
 
-const background = ({ theme, isHighlighted, status }) =>
-  isHighlighted && css`background-color: ${theme.highlight[status]};`
+const background = ({ color, isHighlighted }) =>
+  isHighlighted && css`background-color: ${color};`
 
 const Boxes = FretWrapper.extend`
   height: 80%;

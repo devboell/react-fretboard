@@ -1,7 +1,7 @@
 import { css } from 'styled-components'
 import FretWrapper from './FretWrapper'
 
-const highlightCSS = ({ theme, status }) => {
+const highlightCSS = ({ theme, color }) => {
   const radiusPerc = 80
   const radius = Math.floor((theme.dimensions.stringHeight / 100) * radiusPerc)
 
@@ -9,7 +9,7 @@ const highlightCSS = ({ theme, status }) => {
     width: ${radius}px;
     height: ${radius}px;
     border-radius: 50%;
-    background-color: ${theme.highlight[status]};
+    background-color: ${color};
   `
 }
 
