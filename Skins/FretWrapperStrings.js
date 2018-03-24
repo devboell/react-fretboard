@@ -2,7 +2,7 @@ import { css } from 'styled-components'
 import FretWrapper from './FretWrapper'
 
 const highlightCSS = ({ theme, color }) => {
-  const radiusPerc = 80
+  const radiusPerc = theme.skins.strings.highlightSize
   const radius = Math.floor((theme.dimensions.stringHeight / 100) * radiusPerc)
 
   return css`
@@ -10,6 +10,7 @@ const highlightCSS = ({ theme, color }) => {
     height: ${radius}px;
     border-radius: 50%;
     background-color: ${color};
+    border: ${props => props.theme.skins.strings.highlightBorder}
   `
 }
 

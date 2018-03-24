@@ -37,9 +37,10 @@ exports[`FretWrapperStrings wrapper correct css, isHighlighted=true 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  width: 24px;
-  height: 24px;
+  width: 25px;
+  height: 25px;
   border-radius: 50%;
+  border: 1px solid gray;
 }
 
 <div
