@@ -10,7 +10,7 @@ exports[`Fretboard component with skinType strings, snapshot 1`] = `
         "openWidth": 10,
         "stringHeight": 30,
       },
-      "fontSize": 10,
+      "fontSize": 12,
       "octaveMap": Object {
         "2": "rgb(95, 190, 244)",
         "3": "rgb(135, 219, 244)",
@@ -102,7 +102,7 @@ exports[`Fretboard component, snapshot 1`] = `
         "openWidth": 10,
         "stringHeight": 30,
       },
-      "fontSize": 10,
+      "fontSize": 12,
       "octaveMap": Object {
         "2": "rgb(95, 190, 244)",
         "3": "rgb(135, 219, 244)",
@@ -194,7 +194,7 @@ exports[`should return component w/out positionLabels 1`] = `
         "openWidth": 10,
         "stringHeight": 30,
       },
-      "fontSize": 10,
+      "fontSize": 12,
       "octaveMap": Object {
         "2": "rgb(95, 190, 244)",
         "3": "rgb(135, 219, 244)",

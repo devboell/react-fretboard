@@ -16,7 +16,7 @@ exports[`should return Label snapshot 1`] = `
   align-items: center;
   height: 100%;
   width: 10%;
-  font-size: 10px;
+  font-size: 12px;
 }
 
 <div

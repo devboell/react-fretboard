@@ -1,12 +1,11 @@
 import React from 'react'
 import pt from 'prop-types'
-// import { isNil } from 'ramda'
-// import { Note } from 'tonal'
+import { isNil } from 'ramda'
+import { Note } from 'tonal'
 import Wrapper from './Wrapper'
 
-/*
-const formatSharp = sh => sh.replace('#', '\u266F')
-const formatFlat = fl => fl.replace('b', '\u266D')
+const formatSharp = sh => sh // sh.replace('#', '\u266F')
+const formatFlat = fl => fl // fl.replace('b', '\u266D')
 
 const formatEnharmonics = ([sh, fl]) =>
   `${formatSharp(sh)}/${formatFlat(fl)}`
@@ -19,30 +18,25 @@ const formatNote = (note, showEnharmonic) => {
     ? formatEnharmonics([note, enharmonic])
     : formatSharp(note)
 }
-*/
-
 /* the content width is a big problem, some options to exlore:
-- format this way 'D#/Eb5'
+- format this way 'D#|Eb5'
 - make ur own glyph
 - showPcs/pitches option
+- equal length frets
 */
-
-const Content = ({ content }) =>
-  /*
+const Content = ({ content }) => {
   const showEnharmonic = true
   const isNote = !isNil(Note.name(content))
   const note = isNote
     ? formatNote(content, showEnharmonic)
     : undefined
 
-  {note || content}
-  */
-
-  (
+  return (
     <Wrapper>
-      {content}
+      {note || content}
     </Wrapper>
   )
+}
 
 
 Content.propTypes = {

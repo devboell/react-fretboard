@@ -17,6 +17,7 @@ const highlightCSS = ({ theme, color }) => {
 const defaultCSS = ({ theme }) =>
   css`
     padding: 0 5%;
+    max-width: 60%;
     background-color: ${theme.background};
   `
 
