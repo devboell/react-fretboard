@@ -5,8 +5,8 @@ exports[`Fret component -- other selection -- should not show selection if selec
   onClick={[Function]}
 >
   <styled.div
+    color="none"
     isHighlighted={false}
-    status="none"
   />
 </styled.div>
 `;
@@ -16,8 +16,8 @@ exports[`Fret component -- other selection -- should not show selection if selec
   onClick={[Function]}
 >
   <styled.div
+    color="none"
     isHighlighted={false}
-    status="none"
   />
 </styled.div>
 `;
@@ -28,7 +28,6 @@ exports[`Fret component -- selectedLocations & highlights -- showOctaves=false, 
 >
   <styled.div
     isHighlighted={true}
-    status="foo"
   />
 </styled.div>
 `;
@@ -39,7 +38,6 @@ exports[`Fret component -- selectedLocations & highlights -- showOctaves=true, l
 >
   <styled.div
     isHighlighted={true}
-    status="foo"
   />
 </styled.div>
 `;
@@ -50,7 +48,6 @@ exports[`Fret component -- selectedLocations & labels -- showSelection=false, lo
 >
   <styled.div
     isHighlighted={true}
-    status="foo"
   />
 </styled.div>
 `;
@@ -61,7 +58,6 @@ exports[`Fret component -- selectedLocations & labels -- showSelection=true, loc
 >
   <styled.div
     isHighlighted={true}
-    status="foo"
   >
     <Content
       content="root"
@@ -76,7 +72,6 @@ exports[`Fret component -- selectedNotes & highlights -- showOctaves=false, note
 >
   <styled.div
     isHighlighted={true}
-    status="foo"
   />
 </styled.div>
 `;
@@ -86,8 +81,8 @@ exports[`Fret component -- selectedNotes & highlights -- showOctaves=true, no no
   onClick={[Function]}
 >
   <styled.div
+    color="rgb(95, 190, 244)"
     isHighlighted={true}
-    status="oct2"
   />
 </styled.div>
 `;
@@ -98,7 +93,6 @@ exports[`Fret component -- selectedNotes & highlights -- showOctaves=true, note 
 >
   <styled.div
     isHighlighted={true}
-    status="foo"
   />
 </styled.div>
 `;
@@ -108,8 +102,8 @@ exports[`Fret component -- selectedNotes & labels -- showSelection=false, showNo
   onClick={[Function]}
 >
   <styled.div
+    color="rgb(255, 252, 127)"
     isHighlighted={true}
-    status="selected"
   />
 </styled.div>
 `;
@@ -119,8 +113,8 @@ exports[`Fret component -- selectedNotes & labels -- showSelection=false, showNo
   onClick={[Function]}
 >
   <styled.div
+    color="none"
     isHighlighted={false}
-    status="none"
   >
     <Content
       content="E2"
@@ -134,8 +128,8 @@ exports[`Fret component -- selectedNotes & labels -- showSelection=true, showNot
   onClick={[Function]}
 >
   <styled.div
+    color="rgb(255, 252, 127)"
     isHighlighted={true}
-    status="selected"
   >
     <Content
       content="root"
@@ -149,8 +143,8 @@ exports[`Fret component -- selectedNotes & labels -- showSelection=true, showNot
   onClick={[Function]}
 >
   <styled.div
+    color="rgb(255, 252, 127)"
     isHighlighted={true}
-    status="selected"
   >
     <Content
       content="root"
@@ -164,8 +158,8 @@ exports[`Fret component -- selectedNotes & labels -- showSelection=true, showNot
   onClick={[Function]}
 >
   <styled.div
+    color="rgb(255, 252, 127)"
     isHighlighted={true}
-    status="selected"
   >
     <Content
       content="E2"
@@ -179,8 +173,8 @@ exports[`Fret component defaultContext, no selections 1`] = `
   onClick={[Function]}
 >
   <styled.div
+    color="none"
     isHighlighted={false}
-    status="none"
   />
 </styled.div>
 `;

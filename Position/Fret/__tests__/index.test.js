@@ -1,6 +1,6 @@
 import React from 'react'
-
-import Fret from '../index'
+import theme from 'themes/fretboard-theme'
+import { Fret } from '../index'
 
 
 describe('Fret component', () => {
@@ -9,6 +9,7 @@ describe('Fret component', () => {
   const props = {
     note: 'E2',
     loc: { str: 5, pos: 0 },
+    theme,
   }
   const defaultContext = {
     skinType: 'boxes',

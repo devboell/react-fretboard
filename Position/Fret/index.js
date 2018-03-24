@@ -2,7 +2,8 @@ import React from 'react'
 import pt from 'prop-types'
 import { isEmpty, isNil, equals, compose } from 'ramda'
 import { withTheme } from 'styled-components'
-import { isEqual, oct } from 'lib/tonal-helpers'
+import { Note } from 'tonal'
+import { isEqual } from 'lib/tonal-helpers'
 import { locShape, noteSelectionShape, locSelectionShape } from 'lib/shapes'
 import { fretWrapper } from 'components/Fretboard/skins'
 
@@ -11,7 +12,7 @@ import Wrapper from './Wrapper'
 
 
 /* eslint-disable react/prefer-stateless-function */
-class Fret extends React.Component {
+export class Fret extends React.Component {
   render() {
     const { note, loc, theme } = this.props
     const {
@@ -50,7 +51,7 @@ class Fret extends React.Component {
 
     const color = compose(
       result => (isSelected ? theme.statusMap[selection.status] : result),
-      result => (showOctaves ? theme.octaveMap[oct(note)] : result),
+      result => (showOctaves ? theme.octaveMap[Note.oct(note)] : result),
     )('none')
     const isHighlighted = color !== 'none'
 

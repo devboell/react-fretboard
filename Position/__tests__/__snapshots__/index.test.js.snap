@@ -4,7 +4,7 @@ exports[`Position component, snapshot 1`] = `
 <styled.div
   width={12}
 >
-  <Fret
+  <WithTheme(Fret)
     key="note-A4"
     loc={
       Object {
@@ -14,7 +14,7 @@ exports[`Position component, snapshot 1`] = `
     }
     note="A4"
   />
-  <Fret
+  <WithTheme(Fret)
     key="note-E4"
     loc={
       Object {
@@ -24,7 +24,7 @@ exports[`Position component, snapshot 1`] = `
     }
     note="E4"
   />
-  <Fret
+  <WithTheme(Fret)
     key="note-C4"
     loc={
       Object {
@@ -34,7 +34,7 @@ exports[`Position component, snapshot 1`] = `
     }
     note="C4"
   />
-  <Fret
+  <WithTheme(Fret)
     key="note-G3"
     loc={
       Object {
@@ -44,7 +44,7 @@ exports[`Position component, snapshot 1`] = `
     }
     note="G3"
   />
-  <Fret
+  <WithTheme(Fret)
     key="note-D3"
     loc={
       Object {
@@ -54,7 +54,7 @@ exports[`Position component, snapshot 1`] = `
     }
     note="D3"
   />
-  <Fret
+  <WithTheme(Fret)
     key="note-A2"
     loc={
       Object {
