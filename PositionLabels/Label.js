@@ -6,6 +6,7 @@ const Label = styled.div`
   align-items: center;
   height: 100%;
   width: ${props => props.width}%;
+  font-size: ${props => props.theme.fontSize}px;
 `
 
 export default Label
