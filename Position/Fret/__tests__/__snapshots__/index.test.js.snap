@@ -61,6 +61,7 @@ exports[`Fret component -- selectedLocations & labels -- showSelection=true, loc
   >
     <Content
       content="root"
+      showEnharmonics={false}
     />
   </styled.div>
 </styled.div>
@@ -118,6 +119,7 @@ exports[`Fret component -- selectedNotes & labels -- showSelection=false, showNo
   >
     <Content
       content="E2"
+      showEnharmonics={false}
     />
   </styled.div>
 </styled.div>
@@ -133,6 +135,7 @@ exports[`Fret component -- selectedNotes & labels -- showSelection=true, showNot
   >
     <Content
       content="root"
+      showEnharmonics={false}
     />
   </styled.div>
 </styled.div>
@@ -148,6 +151,7 @@ exports[`Fret component -- selectedNotes & labels -- showSelection=true, showNot
   >
     <Content
       content="root"
+      showEnharmonics={false}
     />
   </styled.div>
 </styled.div>
@@ -163,6 +167,7 @@ exports[`Fret component -- selectedNotes & labels -- showSelection=true, showNot
   >
     <Content
       content="E2"
+      showEnharmonics={false}
     />
   </styled.div>
 </styled.div>

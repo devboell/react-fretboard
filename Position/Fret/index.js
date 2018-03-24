@@ -20,6 +20,7 @@ export class Fret extends React.Component {
       showNotes,
       showOctaves,
       showSelection,
+      showEnharmonics,
       selectedNotes,
       selectedLocations,
       clickAction,
@@ -61,7 +62,7 @@ export class Fret extends React.Component {
       <Wrapper onClick={() => clickAction(note, loc)}>
         <SkinWrapper {...{ isHighlighted, color }}>
           {hasContent &&
-            <Content content={content} />
+            <Content {...{ content, showEnharmonics }} />
           }
         </SkinWrapper>
       </Wrapper>)
@@ -80,6 +81,7 @@ Fret.contextTypes = {
   showNotes: pt.bool.isRequired,
   showOctaves: pt.bool.isRequired,
   showSelection: pt.bool.isRequired,
+  showEnharmonics: pt.bool.isRequired,
   selectedNotes: pt.arrayOf(noteSelectionShape).isRequired,
   selectedLocations: pt.arrayOf(locSelectionShape).isRequired,
   clickAction: pt.func.isRequired,

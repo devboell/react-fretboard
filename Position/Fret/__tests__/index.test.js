@@ -16,6 +16,7 @@ describe('Fret component', () => {
     showNotes: false,
     showOctaves: false,
     showSelection: false,
+    showEnharmonics: false,
     selectedNotes: [],
     selectedLocations: [],
     clickAction,

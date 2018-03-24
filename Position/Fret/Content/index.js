@@ -10,11 +10,11 @@ const formatFlat = fl => fl // fl.replace('b', '\u266D')
 const formatEnharmonics = ([sh, fl]) =>
   `${formatSharp(sh)}/${formatFlat(fl)}`
 
-const formatNote = (note, showEnharmonic) => {
+const formatNote = (note, showEnharmonics) => {
   const enharmonic = Note.enharmonic(note)
   const hasEnharmonic = note !== enharmonic
 
-  return showEnharmonic && hasEnharmonic
+  return showEnharmonics && hasEnharmonic
     ? formatEnharmonics([note, enharmonic])
     : formatSharp(note)
 }
@@ -24,11 +24,10 @@ const formatNote = (note, showEnharmonic) => {
 - showPcs/pitches option
 - equal length frets
 */
-const Content = ({ content }) => {
-  const showEnharmonic = true
+const Content = ({ content, showEnharmonics }) => {
   const isNote = !isNil(Note.name(content))
   const note = isNote
-    ? formatNote(content, showEnharmonic)
+    ? formatNote(content, showEnharmonics)
     : undefined
 
   return (
@@ -41,6 +40,7 @@ const Content = ({ content }) => {
 
 Content.propTypes = {
   content: pt.string.isRequired,
+  showEnharmonics: pt.bool.isRequired,
 }
 
 export default Content

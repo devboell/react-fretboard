@@ -1,5 +1,17 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Content component, content not note 1`] = `
+<styled.div>
+  foo
+</styled.div>
+`;
+
+exports[`Content component, showEnharmonics: true 1`] = `
+<styled.div>
+  F#2/Gb2
+</styled.div>
+`;
+
 exports[`Content component, snapshot 1`] = `
 <styled.div>
   E2
