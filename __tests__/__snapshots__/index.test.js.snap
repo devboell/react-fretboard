@@ -10,12 +10,22 @@ exports[`Fretboard component with skinType strings, snapshot 1`] = `
         "openWidth": 10,
         "stringHeight": 30,
       },
-      "highlight": Object {
-        "oct2": "blue",
-        "oct3": "dodgerblue",
-        "oct4": "lightblue",
-        "oct5": "lightgray",
-        "selected": "orange",
+      "fontSize": 10,
+      "octaveMap": Object {
+        "2": "rgb(95, 190, 244)",
+        "3": "rgb(135, 219, 244)",
+        "4": "rgb(205, 240, 247)",
+        "5": "rgb(242, 246, 247)",
+      },
+      "skins": Object {
+        "strings": Object {
+          "highlightBorder": "1px solid gray",
+          "highlightSize": 85,
+        },
+      },
+      "statusMap": Object {
+        "selected": "rgb(255, 252, 127)",
+        "unselected": "white",
       },
     }
   }
@@ -92,12 +102,22 @@ exports[`Fretboard component, snapshot 1`] = `
         "openWidth": 10,
         "stringHeight": 30,
       },
-      "highlight": Object {
-        "oct2": "blue",
-        "oct3": "dodgerblue",
-        "oct4": "lightblue",
-        "oct5": "lightgray",
-        "selected": "orange",
+      "fontSize": 10,
+      "octaveMap": Object {
+        "2": "rgb(95, 190, 244)",
+        "3": "rgb(135, 219, 244)",
+        "4": "rgb(205, 240, 247)",
+        "5": "rgb(242, 246, 247)",
+      },
+      "skins": Object {
+        "strings": Object {
+          "highlightBorder": "1px solid gray",
+          "highlightSize": 85,
+        },
+      },
+      "statusMap": Object {
+        "selected": "rgb(255, 252, 127)",
+        "unselected": "white",
       },
     }
   }
@@ -174,12 +194,22 @@ exports[`should return component w/out positionLabels 1`] = `
         "openWidth": 10,
         "stringHeight": 30,
       },
-      "highlight": Object {
-        "oct2": "blue",
-        "oct3": "dodgerblue",
-        "oct4": "lightblue",
-        "oct5": "lightgray",
-        "selected": "orange",
+      "fontSize": 10,
+      "octaveMap": Object {
+        "2": "rgb(95, 190, 244)",
+        "3": "rgb(135, 219, 244)",
+        "4": "rgb(205, 240, 247)",
+        "5": "rgb(242, 246, 247)",
+      },
+      "skins": Object {
+        "strings": Object {
+          "highlightBorder": "1px solid gray",
+          "highlightSize": 85,
+        },
+      },
+      "statusMap": Object {
+        "selected": "rgb(255, 252, 127)",
+        "unselected": "white",
       },
     }
   }
