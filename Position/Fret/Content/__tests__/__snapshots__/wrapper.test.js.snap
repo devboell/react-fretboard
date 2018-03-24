@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should return wrapper with correct width 1`] = `
+.c0 {
+  text-align: center;
+  vertical-align: middle;
+  font-size: 10px;
+  overflow-x: hidden;
+  text-overflow: clip;
+}
+
+<div
+  className="c0"
+/>
+`;
