@@ -7,4 +7,5 @@ const FretWrapper = styled.div`
   align-items: center;
 `
 
+/** @component */
 export default FretWrapper

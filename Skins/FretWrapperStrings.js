@@ -27,4 +27,5 @@ const FretWrapperStrings = FretWrapper.extend`
     : defaultCSS(props))} 
   `
 
+/** @component */
 export default FretWrapperStrings

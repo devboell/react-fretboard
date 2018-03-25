@@ -6,4 +6,5 @@ const Wrapper = styled.div`
   background-color: ${props => props.theme.background};
 `
 
+/** @component */
 export default Wrapper

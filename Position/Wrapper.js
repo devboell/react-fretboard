@@ -7,4 +7,5 @@ const Wrapper = styled.div`
   width: ${props => props.width}%;
 `
 
+/** @component */
 export default Wrapper

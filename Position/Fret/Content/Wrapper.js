@@ -8,4 +8,5 @@ const Wrapper = styled.div`
   text-overflow: clip;
 `
 
+/** @component */
 export default Wrapper

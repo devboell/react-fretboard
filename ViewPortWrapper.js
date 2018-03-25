@@ -5,4 +5,5 @@ const ViewPortWrapper = styled.div`
   height: ${props => props.height}px;
 `
 
+/** @component */
 export default ViewPortWrapper

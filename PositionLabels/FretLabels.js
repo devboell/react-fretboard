@@ -5,4 +5,6 @@ const FretLabels = styled.div`
   height: 100%;
   width: ${props => props.width}%;
 `
+
+/** @component */
 export default FretLabels

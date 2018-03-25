@@ -1,6 +1,6 @@
 import React from 'react'
 
-import Content from '../index'
+import Content from '../Content'
 
 const defaultProps = {
   content: 'E2',

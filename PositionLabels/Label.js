@@ -9,4 +9,5 @@ const Label = styled.div`
   font-size: ${props => props.theme.fontSize}px;
 `
 
+/** @component */
 export default Label

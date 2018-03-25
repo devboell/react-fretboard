@@ -3,7 +3,7 @@ import pt from 'prop-types'
 import { reverse } from 'ramda'
 import { transpose } from 'lib/tonal-helpers'
 import Wrapper from './Wrapper'
-import Fret from './Fret'
+import Fret from './Fret/Fret'
 
 const Position = ({ tuning, width, pos }) =>
   <Wrapper {...{ width }}>

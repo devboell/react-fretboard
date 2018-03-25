@@ -6,4 +6,5 @@ const PositionWrapper = styled.div`
   height: 100%;
 `
 
+/** @component */
 export default PositionWrapper

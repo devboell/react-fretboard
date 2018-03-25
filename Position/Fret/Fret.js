@@ -7,7 +7,7 @@ import { isEqual } from 'lib/tonal-helpers'
 import { locShape, noteSelectionShape, locSelectionShape } from 'lib/shapes'
 import { fretWrapper } from 'components/Fretboard/skins'
 
-import Content from './Content'
+import Content from './Content/Content'
 import Wrapper from './Wrapper'
 
 

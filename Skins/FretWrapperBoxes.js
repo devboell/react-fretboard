@@ -14,4 +14,5 @@ const Boxes = FretWrapper.extend`
   ${props => background(props)}
 `
 
+/** @component */
 export default Boxes
