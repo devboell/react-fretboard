@@ -6,10 +6,8 @@ import defaultTheme from 'themes/fretboard-theme'
 import { locShape, noteSelectionShape, locSelectionShape } from 'lib/shapes'
 import { ensureNoteObjects, ensureLocObjects } from 'lib/fretboard'
 
-import ViewPortMain from './ViewPortMain'
-import OpenPosition from './OpenPosition'
-import Nut from './Nut'
-import Board from './Board'
+
+import Neck from './Neck'
 import PositionLabels from './PositionLabels'
 
 import Wrapper from './Wrapper'
@@ -32,35 +30,25 @@ class Fretboard extends React.Component {
 
   render() {
     const {
-      tuning, nrOfFrets, skinType, showPositionLabels,
+      tuning,
+      nrOfFrets,
+      showPositionLabels,
+      skinType,
     } = this.props
-    const { dimensions: { openWidth, nutWidth, stringHeight } } = defaultTheme
-    const boardHeight = tuning.length * stringHeight
-    // const totalHeight = showPositionLabels ? boardHeight + stringHeight : boardHeight
-    const boardWidth = 100 - openWidth - nutWidth
+    const { dimensions } = defaultTheme
+    const { openWidth, nutWidth } = dimensions
 
     return (
       <ThemeProvider theme={defaultTheme}>
         <Wrapper>
-          <ViewPortMain height={boardHeight}>
-            <OpenPosition
-              width={openWidth}
-              tuning={tuning}
-            />
-            <Nut
-              skinType={skinType}
-              width={nutWidth}
-              offset={openWidth}
-              tuning={tuning}
-            />
-            <Board
-              skinType={skinType}
-              width={boardWidth}
-              offset={nutWidth + openWidth}
-              tuning={tuning}
-              nrOfFrets={nrOfFrets}
-            />
-          </ViewPortMain>
+          <Neck
+            {...{
+              tuning,
+              nrOfFrets,
+              dimensions,
+              skinType,
+            }}
+          />
           {showPositionLabels &&
             <PositionLabels
               {...{

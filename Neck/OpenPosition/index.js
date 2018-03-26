@@ -1,8 +1,8 @@
 import React from 'react'
 import pt from 'prop-types'
 
-import Position from 'components/Fretboard/Position'
-import ViewPort from 'components/Fretboard/ViewPort'
+import Position from 'components/Fretboard/Neck/Position'
+import ViewPort from 'components/Fretboard/Neck/ViewPort'
 
 const OpenPosition = ({ width, tuning }) =>
   <ViewPort width={width} offset={0}>

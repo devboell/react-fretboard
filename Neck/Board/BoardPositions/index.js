@@ -3,7 +3,7 @@ import pt from 'prop-types'
 import { times } from 'ramda'
 import { fretWidth } from 'lib/fretboard'
 
-import Position from 'components/Fretboard/Position'
+import Position from 'components/Fretboard/Neck/Position'
 import Wrapper from './Wrapper'
 
 const positions = (tuning, nrOfFrets) => (n) => {

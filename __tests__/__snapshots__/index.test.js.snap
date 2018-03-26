@@ -31,54 +31,27 @@ exports[`Fretboard component with skinType strings, snapshot 1`] = `
   }
 >
   <styled.div>
-    <ViewPortMain
-      height={180}
-    >
-      <OpenPosition
-        tuning={
-          Array [
-            "E2",
-            "A2",
-            "D3",
-            "G3",
-            "B3",
-            "E4",
-          ]
+    <Neck
+      dimensions={
+        Object {
+          "nutWidth": 0.75,
+          "openWidth": 10,
+          "stringHeight": 30,
         }
-        width={10}
-      />
-      <Nut
-        offset={10}
-        skinType="strings"
-        tuning={
-          Array [
-            "E2",
-            "A2",
-            "D3",
-            "G3",
-            "B3",
-            "E4",
-          ]
-        }
-        width={0.75}
-      />
-      <Board
-        nrOfFrets={12}
-        offset={10.75}
-        skinType="strings"
-        tuning={
-          Array [
-            "E2",
-            "A2",
-            "D3",
-            "G3",
-            "B3",
-            "E4",
-          ]
-        }
-        width={89.25}
-      />
-    </ViewPortMain>
+      }
+      nrOfFrets={12}
+      skinType="strings"
+      tuning={
+        Array [
+          "E2",
+          "A2",
+          "D3",
+          "G3",
+          "B3",
+          "E4",
+        ]
+      }
+    />
     <PositionLabels
       nrOfFrets={12}
       nutWidth={0.75}
@@ -119,54 +92,27 @@ exports[`Fretboard component, snapshot 1`] = `
   }
 >
   <styled.div>
-    <ViewPortMain
-      height={180}
-    >
-      <OpenPosition
-        tuning={
-          Array [
-            "E2",
-            "A2",
-            "D3",
-            "G3",
-            "B3",
-            "E4",
-          ]
+    <Neck
+      dimensions={
+        Object {
+          "nutWidth": 0.75,
+          "openWidth": 10,
+          "stringHeight": 30,
         }
-        width={10}
-      />
-      <Nut
-        offset={10}
-        skinType="boxes"
-        tuning={
-          Array [
-            "E2",
-            "A2",
-            "D3",
-            "G3",
-            "B3",
-            "E4",
-          ]
-        }
-        width={0.75}
-      />
-      <Board
-        nrOfFrets={12}
-        offset={10.75}
-        skinType="boxes"
-        tuning={
-          Array [
-            "E2",
-            "A2",
-            "D3",
-            "G3",
-            "B3",
-            "E4",
-          ]
-        }
-        width={89.25}
-      />
-    </ViewPortMain>
+      }
+      nrOfFrets={12}
+      skinType="boxes"
+      tuning={
+        Array [
+          "E2",
+          "A2",
+          "D3",
+          "G3",
+          "B3",
+          "E4",
+        ]
+      }
+    />
     <PositionLabels
       nrOfFrets={12}
       nutWidth={0.75}
@@ -207,54 +153,27 @@ exports[`should return component w/out positionLabels 1`] = `
   }
 >
   <styled.div>
-    <ViewPortMain
-      height={180}
-    >
-      <OpenPosition
-        tuning={
-          Array [
-            "E2",
-            "A2",
-            "D3",
-            "G3",
-            "B3",
-            "E4",
-          ]
+    <Neck
+      dimensions={
+        Object {
+          "nutWidth": 0.75,
+          "openWidth": 10,
+          "stringHeight": 30,
         }
-        width={10}
-      />
-      <Nut
-        offset={10}
-        skinType="boxes"
-        tuning={
-          Array [
-            "E2",
-            "A2",
-            "D3",
-            "G3",
-            "B3",
-            "E4",
-          ]
-        }
-        width={0.75}
-      />
-      <Board
-        nrOfFrets={12}
-        offset={10.75}
-        skinType="boxes"
-        tuning={
-          Array [
-            "E2",
-            "A2",
-            "D3",
-            "G3",
-            "B3",
-            "E4",
-          ]
-        }
-        width={89.25}
-      />
-    </ViewPortMain>
+      }
+      nrOfFrets={12}
+      skinType="boxes"
+      tuning={
+        Array [
+          "E2",
+          "A2",
+          "D3",
+          "G3",
+          "B3",
+          "E4",
+        ]
+      }
+    />
   </styled.div>
 </ThemeProvider>
 `;

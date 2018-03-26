@@ -1,7 +1,7 @@
 import React from 'react'
 import pt from 'prop-types'
 import { nutGraphic } from 'components/Fretboard/skins'
-import ViewPort from 'components/Fretboard/ViewPort'
+import ViewPort from 'components/Fretboard/Neck/ViewPort'
 
 const Nut = ({
   tuning,
