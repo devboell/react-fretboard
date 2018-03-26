@@ -5,7 +5,6 @@ exports[`Fret component -- other selection -- should not show selection if selec
   onClick={[Function]}
 >
   <styled.div
-    color="none"
     isHighlighted={false}
   />
 </styled.div>
@@ -16,7 +15,6 @@ exports[`Fret component -- other selection -- should not show selection if selec
   onClick={[Function]}
 >
   <styled.div
-    color="none"
     isHighlighted={false}
   />
 </styled.div>
@@ -27,7 +25,7 @@ exports[`Fret component -- selectedLocations & highlights -- showOctaves=false, 
   onClick={[Function]}
 >
   <styled.div
-    isHighlighted={true}
+    isHighlighted={false}
   />
 </styled.div>
 `;
@@ -37,7 +35,7 @@ exports[`Fret component -- selectedLocations & highlights -- showOctaves=true, l
   onClick={[Function]}
 >
   <styled.div
-    isHighlighted={true}
+    isHighlighted={false}
   />
 </styled.div>
 `;
@@ -47,7 +45,7 @@ exports[`Fret component -- selectedLocations & labels -- showSelection=false, lo
   onClick={[Function]}
 >
   <styled.div
-    isHighlighted={true}
+    isHighlighted={false}
   />
 </styled.div>
 `;
@@ -57,7 +55,7 @@ exports[`Fret component -- selectedLocations & labels -- showSelection=true, loc
   onClick={[Function]}
 >
   <styled.div
-    isHighlighted={true}
+    isHighlighted={false}
   >
     <Content
       content="root"
@@ -72,7 +70,7 @@ exports[`Fret component -- selectedNotes & highlights -- showOctaves=false, note
   onClick={[Function]}
 >
   <styled.div
-    isHighlighted={true}
+    isHighlighted={false}
   />
 </styled.div>
 `;
@@ -93,7 +91,7 @@ exports[`Fret component -- selectedNotes & highlights -- showOctaves=true, note 
   onClick={[Function]}
 >
   <styled.div
-    isHighlighted={true}
+    isHighlighted={false}
   />
 </styled.div>
 `;
@@ -114,7 +112,6 @@ exports[`Fret component -- selectedNotes & labels -- showSelection=false, showNo
   onClick={[Function]}
 >
   <styled.div
-    color="none"
     isHighlighted={false}
   >
     <Content
@@ -178,7 +175,6 @@ exports[`Fret component defaultContext, no selections 1`] = `
   onClick={[Function]}
 >
   <styled.div
-    color="none"
     isHighlighted={false}
   />
 </styled.div>

@@ -1,13 +1,18 @@
 import React from 'react'
 import pt from 'prop-types'
-import { isEmpty, isNil, equals, compose } from 'ramda'
+import { isNil } from 'ramda'
 import { withTheme } from 'styled-components'
-import { Note } from 'tonal'
-import { isEqual } from 'lib/tonal-helpers'
+
 import { locShape, noteSelectionShape, locSelectionShape } from 'lib/shapes'
+import {
+  selectedNote,
+  selectedLoc,
+  decideContent,
+  decideColor,
+} from 'lib/fret'
 import { fretWrapper } from 'components/Fretboard/Skins/skins'
 
-import Content from './Content/Content'
+import Content from './Content'
 import Wrapper from './Wrapper'
 
 
@@ -26,42 +31,33 @@ export class Fret extends React.Component {
       clickAction,
     } = this.context
 
-    const findNote = (acc, curr) => (
-      isEqual(note)(curr.note)
-        ? curr
-        : acc
-    )
-
-    const findLoc = (acc, curr) => (
-      equals(loc)(curr.loc)
-        ? curr
-        : acc
-    )
-
-    const noteSelection = selectedNotes.reduce(findNote, undefined)
-    const locSelection = selectedLocations.reduce(findLoc, undefined)
-
+    const noteSelection = selectedNote(note, selectedNotes)
+    const locSelection = selectedLoc(loc, selectedLocations)
     const selection = noteSelection || locSelection
-    const isSelected = !isNil(selection)
 
-    const content = compose(
-      result => (showSelection && isSelected ? selection.label : result),
-      result => (showNotes ? note : result),
-    )('')
-    const hasContent = !isEmpty(content)
 
-    const color = compose(
-      result => (isSelected ? theme.statusMap[selection.status] : result),
-      result => (showOctaves ? theme.octaveMap[Note.oct(note)] : result),
-    )('none')
-    const isHighlighted = color !== 'none'
+    const content = decideContent(
+      showSelection,
+      selection,
+      showNotes,
+      note,
+    )
+
+    const color = decideColor(
+      selection,
+      theme,
+      showOctaves,
+      note,
+    )
+
+    const isHighlighted = !isNil(color)
 
     const SkinWrapper = fretWrapper(skinType)
 
     return (
       <Wrapper onClick={() => clickAction(note, loc)}>
         <SkinWrapper {...{ isHighlighted, color }}>
-          {hasContent &&
+          {content &&
             <Content {...{ content, showEnharmonics }} />
           }
         </SkinWrapper>

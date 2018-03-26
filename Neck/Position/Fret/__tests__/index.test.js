@@ -1,6 +1,6 @@
 import React from 'react'
 import theme from 'themes/fretboard-theme'
-import { Fret } from '../Fret'
+import { Fret } from '../index'
 
 
 describe('Fret component', () => {
