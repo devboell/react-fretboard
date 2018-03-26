@@ -1,9 +1,8 @@
 import styled from 'styled-components'
 
-const ViewPortWrapper = styled.div`
-  width: 100%;
+const Wrapper = styled.div`
   height: ${props => props.height}px;
 `
 
 /** @component */
-export default ViewPortWrapper
+export default Wrapper

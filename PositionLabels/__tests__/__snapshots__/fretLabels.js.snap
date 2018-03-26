@@ -6,7 +6,6 @@ exports[`should return FretLabels snapshot 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  height: 100%;
   width: 10%;
 }
 

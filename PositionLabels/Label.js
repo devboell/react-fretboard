@@ -4,7 +4,7 @@ const Label = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100%;
+  height: ${props => props.theme.dimensions.stringHeight}px;
   width: ${props => props.width}%;
   font-size: ${props => props.theme.fontSize}px;
 `

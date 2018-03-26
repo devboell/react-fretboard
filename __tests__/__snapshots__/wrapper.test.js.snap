@@ -3,12 +3,9 @@
 exports[`should return wrapper with correct width 1`] = `
 .c0 {
   width: 100%;
-  height: 40px;
-  background-color: white;
 }
 
 <div
   className="c0"
-  height={40}
 />
 `;

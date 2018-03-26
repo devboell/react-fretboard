@@ -1,21 +1,25 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ViewPort component, snapshot 1`] = `
-<svg
-  fill="white"
-  height="100%"
-  shapeRendering="geometricPrecision"
-  stroke="black"
-  strokeWidth="1"
-  style={
-    Object {
-      "overflow": "visible",
-    }
-  }
-  version="1.1"
-  width="100%"
-  xmlns="http://www.w3.org/2000/svg"
+<styled.div
+  height={200}
 >
-  <g />
-</svg>
+  <svg
+    fill="white"
+    height="100%"
+    shapeRendering="geometricPrecision"
+    stroke="black"
+    strokeWidth="1"
+    style={
+      Object {
+        "overflow": "visible",
+      }
+    }
+    version="1.1"
+    width="100%"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <g />
+  </svg>
+</styled.div>
 `;
