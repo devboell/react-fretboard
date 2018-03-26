@@ -1,6 +1,6 @@
 import React from 'react'
 import pt from 'prop-types'
-import { boardGraphic } from 'components/Fretboard/skins'
+import { boardGraphic } from 'components/Fretboard/Skins/skins'
 
 import ViewPort from 'components/Fretboard/Neck/ViewPort'
 import BoardPositions from './BoardPositions'

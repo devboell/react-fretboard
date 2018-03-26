@@ -1,6 +1,6 @@
 import React from 'react'
 import pt from 'prop-types'
-import { nutGraphic } from 'components/Fretboard/skins'
+import { nutGraphic } from 'components/Fretboard/Skins/skins'
 import ViewPort from 'components/Fretboard/Neck/ViewPort'
 
 const Nut = ({

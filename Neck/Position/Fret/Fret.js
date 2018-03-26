@@ -5,7 +5,7 @@ import { withTheme } from 'styled-components'
 import { Note } from 'tonal'
 import { isEqual } from 'lib/tonal-helpers'
 import { locShape, noteSelectionShape, locSelectionShape } from 'lib/shapes'
-import { fretWrapper } from 'components/Fretboard/skins'
+import { fretWrapper } from 'components/Fretboard/Skins/skins'
 
 import Content from './Content/Content'
 import Wrapper from './Wrapper'
