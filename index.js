@@ -66,8 +66,8 @@ class Fretboard extends React.Component {
 
 
 Fretboard.propTypes = {
-  tuning: pt.arrayOf(pt.string).isRequired,
-  nrOfFrets: pt.number.isRequired,
+  tuning: pt.arrayOf(pt.string),
+  nrOfFrets: pt.number,
   skinType: pt.string,
   showNotes: pt.bool,
   showOctaves: pt.bool,
@@ -80,8 +80,10 @@ Fretboard.propTypes = {
 }
 
 Fretboard.defaultProps = {
+  tuning: ['E2', 'A2', 'D3', 'G3', 'B3', 'E4'],
+  nrOfFrets: 12,
   skinType: 'boxes',
-  showNotes: true,
+  showNotes: false,
   showOctaves: false,
   showSelection: false,
   showEnharmonics: false,
