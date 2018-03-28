@@ -1,4 +1,4 @@
-Fret example:
+### Generated examples
 
 ```js
 const ContextProvider = require('styleguide/ContextProvider').default
@@ -20,6 +20,7 @@ testSuites.map(suite =>
       )
       })
     }
+    <br /><br /><br />
   </div>
 )
 ```
