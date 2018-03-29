@@ -15,7 +15,7 @@
   "globals": {
     "shallow": false,
     "mount": false,
-    "render": false,
+    "render": false
   },
   "plugins": ["react", "import"],
   "rules": {
@@ -27,7 +27,7 @@
     "react/jsx-uses-vars": 2,
     "react/react-in-jsx-scope": 2,
     "react/jsx-filename-extension": 0,
-    "react/jsx-wrap-multilines": 0,
+    "react/jsx-wrap-multilines": 0
   },
   "settings": {
     "import/resolver": "webpack"
