@@ -9,7 +9,6 @@
   },
   "dependencies": {
     "enzyme": "^3.3.0",
-    "lodash": "^4.17.5",
     "prop-types": "^15.6.1",
     "ramda": "^0.25.0",
     "react": "^16.2.0",
