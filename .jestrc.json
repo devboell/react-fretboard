@@ -1,0 +1,29 @@
+{
+  "setupFiles": ["./config/jestsetup.js"],
+  "snapshotSerializers": [
+    "<rootDir>/node_modules/enzyme-to-json/serializer"
+  ],
+  "transform": {
+    "^.+\\.js$": "babel-jest"
+  },
+  "collectCoverageFrom": [
+    "src/{components,lib}/**/*.{js,jsx}",
+    "!src/client/**/actionTypes.js",
+    "!src/client/configureStore.js",
+    "!src/client/globalStyles.js",
+    "!src/client/main.js",
+    "!src/client/initClient.js",
+    "!src/client/initStore.js",
+    "!src/client/reducers.js",
+    "!src/client/themes/**",
+    "!src/client/styleguide/**"
+  ],
+  "moduleDirectories": [
+    "node_modules",
+    "src"
+  ],
+  "roots": ["<rootDir>/src"],
+  "moduleNameMapper": {
+    "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/config/__mocks__/fileMock.js"
+  }
+}
