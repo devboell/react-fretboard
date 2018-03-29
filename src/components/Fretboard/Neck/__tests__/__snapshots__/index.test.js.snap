@@ -1,0 +1,52 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ViewPort component, snapshot 1`] = `
+<ViewPortMain
+  height={180}
+>
+  <OpenPosition
+    tuning={
+      Array [
+        "E2",
+        "A2",
+        "D3",
+        "G3",
+        "B3",
+        "E4",
+      ]
+    }
+    width={10}
+  />
+  <Nut
+    offset={10}
+    skinType="boxes"
+    tuning={
+      Array [
+        "E2",
+        "A2",
+        "D3",
+        "G3",
+        "B3",
+        "E4",
+      ]
+    }
+    width={1}
+  />
+  <Board
+    nrOfFrets={12}
+    offset={11}
+    skinType="boxes"
+    tuning={
+      Array [
+        "E2",
+        "A2",
+        "D3",
+        "G3",
+        "B3",
+        "E4",
+      ]
+    }
+    width={89}
+  />
+</ViewPortMain>
+`;

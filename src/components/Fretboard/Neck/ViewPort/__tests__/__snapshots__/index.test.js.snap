@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ViewPort component, snapshot 1`] = `
+<svg
+  height="100%"
+  width="10%"
+  x="10%"
+  y="0"
+>
+  <g />
+</svg>
+`;

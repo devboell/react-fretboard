@@ -1,0 +1,181 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Fret component -- other selection -- should not show selection if selectedLocation doesn't match 1`] = `
+<styled.div
+  onClick={[Function]}
+>
+  <styled.div
+    isHighlighted={false}
+  />
+</styled.div>
+`;
+
+exports[`Fret component -- other selection -- should not show selection if selectedNote doesn't match 1`] = `
+<styled.div
+  onClick={[Function]}
+>
+  <styled.div
+    isHighlighted={false}
+  />
+</styled.div>
+`;
+
+exports[`Fret component -- selectedLocations & highlights -- showOctaves=false, loc selected 1`] = `
+<styled.div
+  onClick={[Function]}
+>
+  <styled.div
+    isHighlighted={false}
+  />
+</styled.div>
+`;
+
+exports[`Fret component -- selectedLocations & highlights -- showOctaves=true, loc selected 1`] = `
+<styled.div
+  onClick={[Function]}
+>
+  <styled.div
+    isHighlighted={false}
+  />
+</styled.div>
+`;
+
+exports[`Fret component -- selectedLocations & labels -- showSelection=false, loc selected 1`] = `
+<styled.div
+  onClick={[Function]}
+>
+  <styled.div
+    isHighlighted={false}
+  />
+</styled.div>
+`;
+
+exports[`Fret component -- selectedLocations & labels -- showSelection=true, loc selected 1`] = `
+<styled.div
+  onClick={[Function]}
+>
+  <styled.div
+    isHighlighted={false}
+  >
+    <Content
+      content="root"
+      showEnharmonics={false}
+    />
+  </styled.div>
+</styled.div>
+`;
+
+exports[`Fret component -- selectedNotes & highlights -- showOctaves=false, note selected 1`] = `
+<styled.div
+  onClick={[Function]}
+>
+  <styled.div
+    isHighlighted={false}
+  />
+</styled.div>
+`;
+
+exports[`Fret component -- selectedNotes & highlights -- showOctaves=true, no note selected 1`] = `
+<styled.div
+  onClick={[Function]}
+>
+  <styled.div
+    color="rgb(95, 190, 244)"
+    isHighlighted={true}
+  />
+</styled.div>
+`;
+
+exports[`Fret component -- selectedNotes & highlights -- showOctaves=true, note selected 1`] = `
+<styled.div
+  onClick={[Function]}
+>
+  <styled.div
+    isHighlighted={false}
+  />
+</styled.div>
+`;
+
+exports[`Fret component -- selectedNotes & labels -- showSelection=false, showNotes=false, note selected 1`] = `
+<styled.div
+  onClick={[Function]}
+>
+  <styled.div
+    color="rgb(255, 252, 127)"
+    isHighlighted={true}
+  />
+</styled.div>
+`;
+
+exports[`Fret component -- selectedNotes & labels -- showSelection=false, showNotes=true, no note selected 1`] = `
+<styled.div
+  onClick={[Function]}
+>
+  <styled.div
+    isHighlighted={false}
+  >
+    <Content
+      content="E2"
+      showEnharmonics={false}
+    />
+  </styled.div>
+</styled.div>
+`;
+
+exports[`Fret component -- selectedNotes & labels -- showSelection=true, showNotes=false, note selected 1`] = `
+<styled.div
+  onClick={[Function]}
+>
+  <styled.div
+    color="rgb(255, 252, 127)"
+    isHighlighted={true}
+  >
+    <Content
+      content="root"
+      showEnharmonics={false}
+    />
+  </styled.div>
+</styled.div>
+`;
+
+exports[`Fret component -- selectedNotes & labels -- showSelection=true, showNotes=true, note selected 1`] = `
+<styled.div
+  onClick={[Function]}
+>
+  <styled.div
+    color="rgb(255, 252, 127)"
+    isHighlighted={true}
+  >
+    <Content
+      content="root"
+      showEnharmonics={false}
+    />
+  </styled.div>
+</styled.div>
+`;
+
+exports[`Fret component -- selectedNotes & labels -- showSelection=true, showNotes=true, note selected 2`] = `
+<styled.div
+  onClick={[Function]}
+>
+  <styled.div
+    color="rgb(255, 252, 127)"
+    isHighlighted={true}
+  >
+    <Content
+      content="E2"
+      showEnharmonics={false}
+    />
+  </styled.div>
+</styled.div>
+`;
+
+exports[`Fret component defaultContext, no selections 1`] = `
+<styled.div
+  onClick={[Function]}
+>
+  <styled.div
+    isHighlighted={false}
+  />
+</styled.div>
+`;

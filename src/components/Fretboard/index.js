@@ -1,78 +1,107 @@
-/* eslint-disable react/no-array-index-key */
-/* eslint-disable import/extensions */
 import React from 'react'
-import PropTypes from 'prop-types'
-import { range, reverse, merge } from 'lodash/fp'
+import pt from 'prop-types'
 import { ThemeProvider } from 'styled-components'
-import defaultTheme from 'themes'
-import { fretMatrix as getFretMatrix } from 'lib/fretboard'
+import defaultTheme from 'themes/fretboard-theme'
 
-import Positions from 'components/Positions'
-import Cuerda from 'components/Cuerda'
+import { locShape, noteSelectionShape, locSelectionShape } from 'lib/shapes'
+import { ensureNoteObjects, ensureLocObjects } from 'lib/fretboard'
 
-import Table from './Table'
-import Col from './Col'
 
-const defaultSettings = {
-  showNotes: false,
-  showOctaves: false,
-  showPositions: true,
-  // showNut: true,
+import Neck from './Neck'
+import PositionLabels from './PositionLabels'
+
+import Wrapper from './Wrapper'
+
+
+class Fretboard extends React.Component {
+  getChildContext() {
+    return {
+      skinType: this.props.skinType,
+      showNotes: this.props.showNotes,
+      showOctaves: this.props.showOctaves,
+      showSelection: this.props.showSelection,
+      showEnharmonics: this.props.showEnharmonics,
+      selectedNotes: ensureNoteObjects(this.props.selectedNotes),
+      selectedLocations: ensureLocObjects(this.props.selectedLocations),
+      clickAction: this.props.clickAction,
+    }
+  }
+
+
+  render() {
+    const {
+      tuning,
+      nrOfFrets,
+      showPositionLabels,
+      skinType,
+    } = this.props
+    const { dimensions } = defaultTheme
+    const { openWidth, nutWidth } = dimensions
+
+    return (
+      <ThemeProvider theme={defaultTheme}>
+        <Wrapper>
+          <Neck
+            {...{
+              tuning,
+              nrOfFrets,
+              dimensions,
+              skinType,
+            }}
+          />
+          {showPositionLabels &&
+            <PositionLabels
+              {...{
+                nutWidth,
+                openWidth,
+                nrOfFrets,
+              }}
+            />
+          }
+        </Wrapper>
+      </ThemeProvider>
+    )
+  }
 }
 
-const Fretboard = ({
-  fretMatrix,
-  settings,
-  isClickable,
-  onFretClick,
-  theme,
-}) => {
-  const mergedTheme = merge(defaultTheme, theme)
-  const mergedSettings = merge(defaultSettings, settings)
-  const width = fretMatrix[0].length
-  return (
-    <ThemeProvider theme={mergedTheme}>
-      <Table>
-        <colgroup>
-          {range(0, width).map(pos => <Col key={pos} pos={pos} width={width} />)}
-        </colgroup>
-        <tbody>
-          {reverse(fretMatrix).map((crd, i) =>
-            <Cuerda
-              key={`crd-${i}`}
-              frets={crd}
-              settings={mergedSettings}
-              {...{ isClickable, onFretClick }}
-            />)
-          }
-        </tbody>
-        <tfoot>
-          {mergedSettings.showPositions
-            ? <Positions width={width} />
-            : null
-          }
-        </tfoot>
-      </Table>
-    </ThemeProvider>
-  )
-}
+
 Fretboard.propTypes = {
-  fretMatrix: PropTypes.arrayOf(PropTypes.arrayOf(PropTypes.shape({}))),
-  settings: PropTypes.shape({}),
-  isClickable: PropTypes.bool,
-  onFretClick: PropTypes.func,
-  theme: PropTypes.shape({}),
+  tuning: pt.arrayOf(pt.string),
+  nrOfFrets: pt.number,
+  skinType: pt.string,
+  showNotes: pt.bool,
+  showOctaves: pt.bool,
+  showSelection: pt.bool,
+  showEnharmonics: pt.bool,
+  showPositionLabels: pt.bool,
+  selectedNotes: pt.arrayOf(pt.oneOfType([pt.string, noteSelectionShape])),
+  selectedLocations: pt.arrayOf(pt.oneOfType([locShape, locSelectionShape])),
+  clickAction: pt.func,
 }
-
-const width = 13
-const tuning = ['E2', 'A2', 'D3', 'G3', 'B3', 'E4']
 
 Fretboard.defaultProps = {
-  fretMatrix: getFretMatrix(tuning, width),
-  settings: defaultSettings,
-  isClickable: false,
-  onFretClick: () => null,
-  theme: defaultTheme,
+  tuning: ['E2', 'A2', 'D3', 'G3', 'B3', 'E4'],
+  nrOfFrets: 12,
+  skinType: 'boxes',
+  showNotes: false,
+  showOctaves: false,
+  showSelection: false,
+  showEnharmonics: false,
+  showPositionLabels: true,
+  selectedNotes: [],
+  selectedLocations: [],
+  clickAction: (note, loc) => ({ note, loc }),
+}
+
+Fretboard.childContextTypes = {
+  skinType: pt.string,
+  showNotes: pt.bool,
+  showOctaves: pt.bool,
+  showSelection: pt.bool,
+  showEnharmonics: pt.bool,
+  selectedNotes: pt.arrayOf(noteSelectionShape),
+  selectedLocations: pt.arrayOf(locSelectionShape),
+  clickAction: pt.func,
 }
 
 export default Fretboard

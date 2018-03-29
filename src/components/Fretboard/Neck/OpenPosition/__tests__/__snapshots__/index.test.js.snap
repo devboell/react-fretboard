@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`OpenPosition component, snapshot 1`] = `
+<ViewPort
+  offset={0}
+  width={10}
+>
+  <foreignObject
+    height="100%"
+    width="100%"
+  >
+    <Position
+      pos={0}
+      tuning={
+        Array [
+          "E2",
+          "A2",
+          "D3",
+          "G3",
+          "B3",
+          "E4",
+        ]
+      }
+      width={100}
+    />
+  </foreignObject>
+</ViewPort>
+`;

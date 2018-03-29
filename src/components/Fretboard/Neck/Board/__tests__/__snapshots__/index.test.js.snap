@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Board component, snapshot 1`] = `
+<ViewPort
+  offset={10}
+  width={90}
+>
+  <BoardGraphicStrings
+    nrOfFrets={12}
+    nrOfStrings={6}
+  />
+  <BoardPositions
+    nrOfFrets={12}
+    tuning={
+      Array [
+        "E2",
+        "A2",
+        "D3",
+        "G3",
+        "B3",
+        "E4",
+      ]
+    }
+  />
+</ViewPort>
+`;

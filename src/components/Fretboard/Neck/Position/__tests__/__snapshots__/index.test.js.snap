@@ -1,0 +1,68 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Position component, snapshot 1`] = `
+<styled.div
+  width={12}
+>
+  <WithTheme(Fret)
+    key="note-A4"
+    loc={
+      Object {
+        "pos": 5,
+        "str": 0,
+      }
+    }
+    note="A4"
+  />
+  <WithTheme(Fret)
+    key="note-E4"
+    loc={
+      Object {
+        "pos": 5,
+        "str": 1,
+      }
+    }
+    note="E4"
+  />
+  <WithTheme(Fret)
+    key="note-C4"
+    loc={
+      Object {
+        "pos": 5,
+        "str": 2,
+      }
+    }
+    note="C4"
+  />
+  <WithTheme(Fret)
+    key="note-G3"
+    loc={
+      Object {
+        "pos": 5,
+        "str": 3,
+      }
+    }
+    note="G3"
+  />
+  <WithTheme(Fret)
+    key="note-D3"
+    loc={
+      Object {
+        "pos": 5,
+        "str": 4,
+      }
+    }
+    note="D3"
+  />
+  <WithTheme(Fret)
+    key="note-A2"
+    loc={
+      Object {
+        "pos": 5,
+        "str": 5,
+      }
+    }
+    note="A2"
+  />
+</styled.div>
+`;
