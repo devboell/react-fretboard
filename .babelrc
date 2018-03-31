@@ -1,5 +1,4 @@
 {
- 
   "plugins": [
     "transform-object-rest-spread"
   ],
@@ -9,6 +8,9 @@
         ["env", { "modules": false }],
         "react"
       ]
+    },
+    "development": {
+      "presets": ["env", "react"]
     },
     "test": {
       "presets": ["env", "react"]
