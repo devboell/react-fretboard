@@ -17,12 +17,17 @@
     "mount": false,
     "render": false
   },
-  "plugins": ["react", "import"],
+  "plugins": ["import", "react"],
   "rules": {
     "no-console": 1,
     "semi": ["error", "never"],
     "import/no-unresolved": 2,
     "import/no-named-as-default": 0,
+    "import/extensions": ["error", "ignorePackages", {
+      "js": "never",
+      "mjs": "never",
+      "jsx": "never"
+    }],
     "react/jsx-uses-react": 2,
     "react/jsx-uses-vars": 2,
     "react/react-in-jsx-scope": 2,
