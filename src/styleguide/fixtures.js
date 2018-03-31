@@ -12,6 +12,7 @@ const selectedLocations = []
 
 const testCases = isSelected => [
   {
+    key: 'case1',
     description: isSelected
       ? 'no content, selection highlight'
       : 'no content, no highlight',
@@ -23,6 +24,7 @@ const testCases = isSelected => [
     },
   },
   {
+    key: 'case2',
     description: isSelected
       ? 'note content, selection highlight'
       : 'note content, no highlight',
@@ -34,6 +36,7 @@ const testCases = isSelected => [
     },
   },
   {
+    key: 'case3',
     description: isSelected
       ? 'note content, selection highlight'
       : 'note content, octave highlight',
@@ -45,6 +48,7 @@ const testCases = isSelected => [
     },
   },
   {
+    key: 'case4',
     description: isSelected
       ? 'selection content, selection highlight'
       : 'note content, octave highlight',
@@ -63,6 +67,7 @@ const defaultContext = {
 
 export default [
   {
+    key: 'suite1',
     description: 'E2, selected note, skinType=boxes',
     props: { note: noteE2, loc: locE2 },
     context: merge(defaultContext, {
@@ -73,6 +78,7 @@ export default [
     testCases: testCases(true),
   },
   {
+    key: 'suite2',
     description: 'E2, selected note, skinType=strings',
     props: { note: noteE2, loc: locE2 },
     context: merge(defaultContext, {
@@ -83,6 +89,7 @@ export default [
     testCases: testCases(true),
   },
   {
+    key: 'suite3',
     description: 'A2, selected note, skinType=boxes',
     props: { note: noteA2, loc: locA2 },
     context: merge(defaultContext, {
@@ -93,6 +100,7 @@ export default [
     testCases: testCases(false),
   },
   {
+    key: 'suite4',
     description: 'A2, unselected note, skinType=strings',
     props: { note: noteA2, loc: locA2 },
     context: merge(defaultContext, {
