@@ -2,7 +2,7 @@
 
 ```js
 const ContextProvider = require('styleguide/ContextProvider').default
-const testSuites = require('./fixtures').default
+const testSuites = require('styleguide/fixtures').default
 
 testSuites.map(suite =>
   <div>
