@@ -17,8 +17,9 @@ export const selectedLoc = (loc, selectedLocations) =>
       : acc
   ), undefined)
 
-export const decideSelectionContent = (showSelectionLabels, selection) => content =>
-  (showSelectionLabels && selection ? selection.label : content)
+export const decideSelectionContent = (showSelectionLabels, selection) =>
+  content =>
+    (showSelectionLabels && selection ? selection.label : content)
 
 export const decideShowNotesContent = (showNotes, note) => content =>
   (showNotes ? note : content)

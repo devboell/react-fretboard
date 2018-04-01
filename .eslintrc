@@ -21,6 +21,7 @@
   "rules": {
     "no-console": 1,
     "semi": ["error", "never"],
+    "max-len": ["error", { "ignoreComments": true }],
     "import/no-unresolved": 2,
     "import/no-named-as-default": 0,
     "import/extensions": ["error", "ignorePackages", {
