@@ -17,19 +17,19 @@ export const selectedLoc = (loc, selectedLocations) =>
       : acc
   ), undefined)
 
-export const decideSelectionContent = (showSelection, selection) => content =>
-  (showSelection && selection ? selection.label : content)
+export const decideSelectionContent = (showSelectionLabels, selection) => content =>
+  (showSelectionLabels && selection ? selection.label : content)
 
 export const decideShowNotesContent = (showNotes, note) => content =>
   (showNotes ? note : content)
 
 export const decideContent = (
-  showSelection,
+  showSelectionLabels,
   selection,
   showNotes,
   note,
 ) => compose(
-  decideSelectionContent(showSelection, selection),
+  decideSelectionContent(showSelectionLabels, selection),
   decideShowNotesContent(showNotes, note),
 )(undefined)
 

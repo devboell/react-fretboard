@@ -10,14 +10,14 @@
 ```js
 <Fretboard
   skinType="strings"
-  showSelection
+  showSelectionLabels
   selectedNotes={['C', 'F']}
 />
 ```
 #### multiple noteObj selection
 ```js
 <Fretboard
-  showSelection
+  showSelectionLabels
   selectedNotes={[{ note: 'C4', label: 'root' }, { note: 'F4', label: '4P' }]}
 />
 ```
@@ -26,7 +26,7 @@
 <Fretboard
   skinType="strings"
   highlightOctaves
-  showSelection
+  showSelectionLabels
   selectedLocations={[{ loc: { str: 2, pos: 5 }, label: 'C4' }]}
 />
 ```

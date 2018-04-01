@@ -20,7 +20,7 @@ ContextProvider.childContextTypes = {
   skinType: pt.string,
   showNotes: pt.bool,
   highlightOctaves: pt.bool,
-  showSelection: pt.bool,
+  showSelectionLabels: pt.bool,
   showEnharmonics: pt.bool,
   selectedNotes: pt.arrayOf(noteSelectionShape),
   selectedLocations: pt.arrayOf(locSelectionShape),

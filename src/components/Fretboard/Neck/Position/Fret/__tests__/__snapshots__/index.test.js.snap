@@ -40,7 +40,7 @@ exports[`Fret component -- selectedLocations & highlights -- highlightOctaves=tr
 </styled.div>
 `;
 
-exports[`Fret component -- selectedLocations & labels -- showSelection=false, loc selected 1`] = `
+exports[`Fret component -- selectedLocations & labels -- showSelectionLabels=false, loc selected 1`] = `
 <styled.div
   onClick={[Function]}
 >
@@ -50,7 +50,7 @@ exports[`Fret component -- selectedLocations & labels -- showSelection=false, lo
 </styled.div>
 `;
 
-exports[`Fret component -- selectedLocations & labels -- showSelection=true, loc selected 1`] = `
+exports[`Fret component -- selectedLocations & labels -- showSelectionLabels=true, loc selected 1`] = `
 <styled.div
   onClick={[Function]}
 >
@@ -96,7 +96,7 @@ exports[`Fret component -- selectedNotes & highlights -- highlightOctaves=true, 
 </styled.div>
 `;
 
-exports[`Fret component -- selectedNotes & labels -- showSelection=false, showNotes=false, note selected 1`] = `
+exports[`Fret component -- selectedNotes & labels -- showSelectionLabels=false, showNotes=false, note selected 1`] = `
 <styled.div
   onClick={[Function]}
 >
@@ -107,7 +107,7 @@ exports[`Fret component -- selectedNotes & labels -- showSelection=false, showNo
 </styled.div>
 `;
 
-exports[`Fret component -- selectedNotes & labels -- showSelection=false, showNotes=true, no note selected 1`] = `
+exports[`Fret component -- selectedNotes & labels -- showSelectionLabels=false, showNotes=true, no note selected 1`] = `
 <styled.div
   onClick={[Function]}
 >
@@ -122,7 +122,7 @@ exports[`Fret component -- selectedNotes & labels -- showSelection=false, showNo
 </styled.div>
 `;
 
-exports[`Fret component -- selectedNotes & labels -- showSelection=true, showNotes=false, note selected 1`] = `
+exports[`Fret component -- selectedNotes & labels -- showSelectionLabels=true, showNotes=false, note selected 1`] = `
 <styled.div
   onClick={[Function]}
 >
@@ -138,7 +138,7 @@ exports[`Fret component -- selectedNotes & labels -- showSelection=true, showNot
 </styled.div>
 `;
 
-exports[`Fret component -- selectedNotes & labels -- showSelection=true, showNotes=true, note selected 1`] = `
+exports[`Fret component -- selectedNotes & labels -- showSelectionLabels=true, showNotes=true, note selected 1`] = `
 <styled.div
   onClick={[Function]}
 >
@@ -154,7 +154,7 @@ exports[`Fret component -- selectedNotes & labels -- showSelection=true, showNot
 </styled.div>
 `;
 
-exports[`Fret component -- selectedNotes & labels -- showSelection=true, showNotes=true, note selected 2`] = `
+exports[`Fret component -- selectedNotes & labels -- showSelectionLabels=true, showNotes=true, note selected 2`] = `
 <styled.div
   onClick={[Function]}
 >

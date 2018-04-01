@@ -19,7 +19,7 @@ const testCases = isSelected => [
     context: {
       showNotes: false,
       highlightOctaves: false,
-      showSelection: false,
+      showSelectionLabels: false,
       showEnharmonics: false,
     },
   },
@@ -31,7 +31,7 @@ const testCases = isSelected => [
     context: {
       showNotes: true,
       highlightOctaves: false,
-      showSelection: false,
+      showSelectionLabels: false,
       showEnharmonics: false,
     },
   },
@@ -43,7 +43,7 @@ const testCases = isSelected => [
     context: {
       showNotes: true,
       highlightOctaves: true,
-      showSelection: false,
+      showSelectionLabels: false,
       showEnharmonics: false,
     },
   },
@@ -55,7 +55,7 @@ const testCases = isSelected => [
     context: {
       showNotes: true,
       highlightOctaves: true,
-      showSelection: true,
+      showSelectionLabels: true,
       showEnharmonics: false,
     },
   },

@@ -15,7 +15,7 @@ describe('Fret component', () => {
     skinType: 'boxes',
     showNotes: false,
     highlightOctaves: false,
-    showSelection: false,
+    showSelectionLabels: false,
     showEnharmonics: false,
     selectedNotes: [],
     selectedLocations: [],
@@ -28,52 +28,52 @@ describe('Fret component', () => {
   })
 
   describe('-- selectedNotes & labels --', () => {
-    it('showSelection=false, showNotes=false, note selected', () => {
+    it('showSelectionLabels=false, showNotes=false, note selected', () => {
       const selectedNotes = [{ note: 'E2', status: 'selected', label: 'root' }]
       const context = { ...defaultContext, selectedNotes }
       const wrapper = shallow(<Fret {...props} />, { context })
       expect(wrapper).toMatchSnapshot()
     })
 
-    it('showSelection=true, showNotes=false, note selected', () => {
+    it('showSelectionLabels=true, showNotes=false, note selected', () => {
       const selectedNotes = [{ note: 'E2', status: 'selected', label: 'root' }]
       const context = {
         ...defaultContext,
         selectedNotes,
-        showSelection: true,
+        showSelectionLabels: true,
       }
       const wrapper = shallow(<Fret {...props} />, { context })
       expect(wrapper).toMatchSnapshot()
     })
 
-    it('showSelection=true, showNotes=true, note selected', () => {
+    it('showSelectionLabels=true, showNotes=true, note selected', () => {
       const selectedNotes = [{ note: 'E2', status: 'selected', label: 'root' }]
       const context = {
         ...defaultContext,
         selectedNotes,
-        showSelection: true,
+        showSelectionLabels: true,
         showNotes: true,
       }
       const wrapper = shallow(<Fret {...props} />, { context })
       expect(wrapper).toMatchSnapshot()
     })
 
-    it('showSelection=false, showNotes=true, no note selected', () => {
+    it('showSelectionLabels=false, showNotes=true, no note selected', () => {
       const context = {
         ...defaultContext,
-        showSelection: false,
+        showSelectionLabels: false,
         showNotes: true,
       }
       const wrapper = shallow(<Fret {...props} />, { context })
       expect(wrapper).toMatchSnapshot()
     })
 
-    it('showSelection=true, showNotes=true, note selected', () => {
+    it('showSelectionLabels=true, showNotes=true, note selected', () => {
       const selectedNotes = [{ note: 'E2', status: 'selected', label: 'root' }]
       const context = {
         ...defaultContext,
         selectedNotes,
-        showSelection: false,
+        showSelectionLabels: false,
         showNotes: true,
       }
       const wrapper = shallow(<Fret {...props} />, { context })
@@ -111,7 +111,7 @@ describe('Fret component', () => {
   })
 
   describe('-- selectedLocations & labels --', () => {
-    it('showSelection=false, loc selected', () => {
+    it('showSelectionLabels=false, loc selected', () => {
       const loc = { str: 5, pos: 0 }
       const selectedLocations = [{ loc, status: 'foo', label: 'root' }]
       const context = { ...defaultContext, selectedLocations }
@@ -119,12 +119,12 @@ describe('Fret component', () => {
       expect(wrapper).toMatchSnapshot()
     })
 
-    it('showSelection=true, loc selected', () => {
+    it('showSelectionLabels=true, loc selected', () => {
       const loc = { str: 5, pos: 0 }
       const selectedLocations = [{ loc, status: 'foo', label: 'root' }]
       const context = {
         ...defaultContext,
-        showSelection: true,
+        showSelectionLabels: true,
         selectedLocations,
       }
       const wrapper = shallow(<Fret {...props} />, { context })

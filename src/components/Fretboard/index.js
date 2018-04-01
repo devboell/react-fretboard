@@ -19,7 +19,7 @@ class Fretboard extends React.Component {
       skinType: this.props.skinType,
       showNotes: this.props.showNotes,
       highlightOctaves: this.props.highlightOctaves,
-      showSelection: this.props.showSelection,
+      showSelectionLabels: this.props.showSelectionLabels,
       showEnharmonics: this.props.showEnharmonics,
       selectedNotes: ensureNoteObjects(this.props.selectedNotes),
       selectedLocations: ensureLocObjects(this.props.selectedLocations),
@@ -65,9 +65,9 @@ class Fretboard extends React.Component {
 }
 
 // showUnselectedNotes        showNotes
-// showSelectedNotesOrLabels  showSelectionLabels
+// showSelectedNotesOrLabels  showSelectionLabelsLabels
 // showOctaveHighlights       highlightOctaves
-// showSelectionHighlights    highlightSelections
+// showSelectionLabelsHighlights    highlightSelections
 // noteType [pitch, pc]
 // showEnharmonics
 
@@ -77,7 +77,7 @@ Fretboard.propTypes = {
   skinType: pt.string,
   showNotes: pt.bool,
   highlightOctaves: pt.bool,
-  showSelection: pt.bool,
+  showSelectionLabels: pt.bool,
   showEnharmonics: pt.bool,
   showPositionLabels: pt.bool,
   selectedNotes: pt.arrayOf(pt.oneOfType([pt.string, noteSelectionShape])),
@@ -91,7 +91,7 @@ Fretboard.defaultProps = {
   skinType: 'boxes',
   showNotes: false,
   highlightOctaves: false,
-  showSelection: false,
+  showSelectionLabels: false,
   showEnharmonics: false,
   showPositionLabels: true,
   selectedNotes: [],
@@ -103,7 +103,7 @@ Fretboard.childContextTypes = {
   skinType: pt.string,
   showNotes: pt.bool,
   highlightOctaves: pt.bool,
-  showSelection: pt.bool,
+  showSelectionLabels: pt.bool,
   showEnharmonics: pt.bool,
   selectedNotes: pt.arrayOf(noteSelectionShape),
   selectedLocations: pt.arrayOf(locSelectionShape),
