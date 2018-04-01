@@ -18,8 +18,8 @@ class Fretboard extends React.Component {
     return {
       skinType: this.props.skinType,
       showNotes: this.props.showNotes,
-      highlightOctaves: this.props.highlightOctaves,
       showSelectionLabels: this.props.showSelectionLabels,
+      highlightOctaves: this.props.highlightOctaves,
       showEnharmonics: this.props.showEnharmonics,
       selectedNotes: ensureNoteObjects(this.props.selectedNotes),
       selectedLocations: ensureLocObjects(this.props.selectedLocations),
@@ -32,8 +32,8 @@ class Fretboard extends React.Component {
     const {
       tuning,
       nrOfFrets,
-      showPositionLabels,
       skinType,
+      showPositionLabels,
     } = this.props
     const { dimensions } = defaultTheme
     const { openWidth, nutWidth } = dimensions
@@ -45,16 +45,16 @@ class Fretboard extends React.Component {
             {...{
               tuning,
               nrOfFrets,
-              dimensions,
               skinType,
+              dimensions,
             }}
           />
           {showPositionLabels &&
             <PositionLabels
               {...{
+                nrOfFrets,
                 nutWidth,
                 openWidth,
-                nrOfFrets,
               }}
             />
           }
@@ -76,8 +76,8 @@ Fretboard.propTypes = {
   nrOfFrets: pt.number,
   skinType: pt.string,
   showNotes: pt.bool,
-  highlightOctaves: pt.bool,
   showSelectionLabels: pt.bool,
+  highlightOctaves: pt.bool,
   showEnharmonics: pt.bool,
   showPositionLabels: pt.bool,
   selectedNotes: pt.arrayOf(pt.oneOfType([pt.string, noteSelectionShape])),
@@ -90,8 +90,8 @@ Fretboard.defaultProps = {
   nrOfFrets: 12,
   skinType: 'boxes',
   showNotes: false,
-  highlightOctaves: false,
   showSelectionLabels: false,
+  highlightOctaves: false,
   showEnharmonics: false,
   showPositionLabels: true,
   selectedNotes: [],
@@ -102,8 +102,8 @@ Fretboard.defaultProps = {
 Fretboard.childContextTypes = {
   skinType: pt.string,
   showNotes: pt.bool,
-  highlightOctaves: pt.bool,
   showSelectionLabels: pt.bool,
+  highlightOctaves: pt.bool,
   showEnharmonics: pt.bool,
   selectedNotes: pt.arrayOf(noteSelectionShape),
   selectedLocations: pt.arrayOf(locSelectionShape),
