@@ -19,8 +19,9 @@ class ContextProvider extends Component {
 ContextProvider.childContextTypes = {
   skinType: pt.string,
   showNotes: pt.bool,
-  highlightOctaves: pt.bool,
   showSelectionLabels: pt.bool,
+  highlightOctaves: pt.bool,
+  highlightSelections: pt.bool,
   showEnharmonics: pt.bool,
   selectedNotes: pt.arrayOf(noteSelectionShape),
   selectedLocations: pt.arrayOf(locSelectionShape),

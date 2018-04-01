@@ -14,8 +14,9 @@ describe('Fret component', () => {
   const defaultContext = {
     skinType: 'boxes',
     showNotes: false,
-    highlightOctaves: false,
     showSelectionLabels: false,
+    highlightOctaves: false,
+    highlightSelections: false,
     showEnharmonics: false,
     selectedNotes: [],
     selectedLocations: [],
@@ -89,11 +90,12 @@ describe('Fret component', () => {
       expect(wrapper).toMatchSnapshot()
     })
 
-    it('highlightOctaves=true, note selected', () => {
+    it('highlightOctaves=true, highlightSelections=true, note selected', () => {
       const selectedNotes = [{ note: 'E2', status: 'foo', label: 'root' }]
       const context = {
         ...defaultContext,
         highlightOctaves: true,
+        highlightSelections: true,
         selectedNotes,
       }
       const wrapper = shallow(<Fret {...props} />, { context })

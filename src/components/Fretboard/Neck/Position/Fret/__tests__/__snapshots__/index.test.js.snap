@@ -35,7 +35,8 @@ exports[`Fret component -- selectedLocations & highlights -- highlightOctaves=tr
   onClick={[Function]}
 >
   <styled.div
-    isHighlighted={false}
+    color="rgb(95, 190, 244)"
+    isHighlighted={true}
   />
 </styled.div>
 `;
@@ -75,6 +76,16 @@ exports[`Fret component -- selectedNotes & highlights -- highlightOctaves=false,
 </styled.div>
 `;
 
+exports[`Fret component -- selectedNotes & highlights -- highlightOctaves=true, highlightSelections=true, note selected 1`] = `
+<styled.div
+  onClick={[Function]}
+>
+  <styled.div
+    isHighlighted={false}
+  />
+</styled.div>
+`;
+
 exports[`Fret component -- selectedNotes & highlights -- highlightOctaves=true, no note selected 1`] = `
 <styled.div
   onClick={[Function]}
@@ -86,23 +97,12 @@ exports[`Fret component -- selectedNotes & highlights -- highlightOctaves=true, 
 </styled.div>
 `;
 
-exports[`Fret component -- selectedNotes & highlights -- highlightOctaves=true, note selected 1`] = `
-<styled.div
-  onClick={[Function]}
->
-  <styled.div
-    isHighlighted={false}
-  />
-</styled.div>
-`;
-
 exports[`Fret component -- selectedNotes & labels -- showSelectionLabels=false, showNotes=false, note selected 1`] = `
 <styled.div
   onClick={[Function]}
 >
   <styled.div
-    color="rgb(255, 252, 127)"
-    isHighlighted={true}
+    isHighlighted={false}
   />
 </styled.div>
 `;
@@ -127,8 +127,7 @@ exports[`Fret component -- selectedNotes & labels -- showSelectionLabels=true, s
   onClick={[Function]}
 >
   <styled.div
-    color="rgb(255, 252, 127)"
-    isHighlighted={true}
+    isHighlighted={false}
   >
     <Content
       content="root"
@@ -143,8 +142,7 @@ exports[`Fret component -- selectedNotes & labels -- showSelectionLabels=true, s
   onClick={[Function]}
 >
   <styled.div
-    color="rgb(255, 252, 127)"
-    isHighlighted={true}
+    isHighlighted={false}
   >
     <Content
       content="root"
@@ -159,8 +157,7 @@ exports[`Fret component -- selectedNotes & labels -- showSelectionLabels=true, s
   onClick={[Function]}
 >
   <styled.div
-    color="rgb(255, 252, 127)"
-    isHighlighted={true}
+    isHighlighted={false}
   >
     <Content
       content="E2"

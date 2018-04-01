@@ -14,12 +14,13 @@ const testCases = isSelected => [
   {
     key: 'case1',
     description: isSelected
-      ? 'no content, selection highlight'
+      ? 'no content, no highlight'
       : 'no content, no highlight',
     context: {
       showNotes: false,
-      highlightOctaves: false,
       showSelectionLabels: false,
+      highlightOctaves: false,
+      highlightSelections: false,
       showEnharmonics: false,
     },
   },
@@ -30,8 +31,9 @@ const testCases = isSelected => [
       : 'note content, no highlight',
     context: {
       showNotes: true,
-      highlightOctaves: false,
       showSelectionLabels: false,
+      highlightOctaves: false,
+      highlightSelections: true,
       showEnharmonics: false,
     },
   },
@@ -42,8 +44,9 @@ const testCases = isSelected => [
       : 'note content, octave highlight',
     context: {
       showNotes: true,
-      highlightOctaves: true,
       showSelectionLabels: false,
+      highlightOctaves: true,
+      highlightSelections: true,
       showEnharmonics: false,
     },
   },
@@ -54,8 +57,9 @@ const testCases = isSelected => [
       : 'note content, octave highlight',
     context: {
       showNotes: true,
-      highlightOctaves: true,
       showSelectionLabels: true,
+      highlightOctaves: true,
+      highlightSelections: true,
       showEnharmonics: false,
     },
   },
