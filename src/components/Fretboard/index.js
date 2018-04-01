@@ -12,6 +12,13 @@ import PositionLabels from './PositionLabels'
 
 import Wrapper from './Wrapper'
 
+/**
+ * **This is the main api component**
+ *
+ * Here the props get split up in roughly two categories:
+ * - props and theme props that determine the dimensions and overall look of the fretboard. They are passed directly to the children
+ * - props that determine the appearance of the individual frets, ie the content and color of a Fret. They are passed through react context, and get picked up several levels down by the Fret component.
+ */
 
 class Fretboard extends React.Component {
   getChildContext() {
