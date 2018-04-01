@@ -36,16 +36,16 @@ export const decideContent = (
 export const decideSelectionColor = (selection, theme) => content =>
   (selection ? theme.statusMap[selection.status] : content)
 
-export const decideOctaveColor = (showOctaves, note, theme) => content =>
-  (showOctaves ? theme.octaveMap[Note.oct(note)] : content)
+export const decideOctaveColor = (highlightOctaves, note, theme) => content =>
+  (highlightOctaves ? theme.octaveMap[Note.oct(note)] : content)
 
 export const decideColor = (
   selection,
   theme,
-  showOctaves,
+  highlightOctaves,
   note,
 ) => compose(
   decideSelectionColor(selection, theme),
-  decideOctaveColor(showOctaves, note, theme),
+  decideOctaveColor(highlightOctaves, note, theme),
 )(undefined)
 

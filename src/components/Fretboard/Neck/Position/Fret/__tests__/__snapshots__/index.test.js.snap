@@ -20,7 +20,7 @@ exports[`Fret component -- other selection -- should not show selection if selec
 </styled.div>
 `;
 
-exports[`Fret component -- selectedLocations & highlights -- showOctaves=false, loc selected 1`] = `
+exports[`Fret component -- selectedLocations & highlights -- highlightOctaves=false, loc selected 1`] = `
 <styled.div
   onClick={[Function]}
 >
@@ -30,7 +30,7 @@ exports[`Fret component -- selectedLocations & highlights -- showOctaves=false, 
 </styled.div>
 `;
 
-exports[`Fret component -- selectedLocations & highlights -- showOctaves=true, loc selected 1`] = `
+exports[`Fret component -- selectedLocations & highlights -- highlightOctaves=true, loc selected 1`] = `
 <styled.div
   onClick={[Function]}
 >
@@ -65,7 +65,7 @@ exports[`Fret component -- selectedLocations & labels -- showSelection=true, loc
 </styled.div>
 `;
 
-exports[`Fret component -- selectedNotes & highlights -- showOctaves=false, note selected 1`] = `
+exports[`Fret component -- selectedNotes & highlights -- highlightOctaves=false, note selected 1`] = `
 <styled.div
   onClick={[Function]}
 >
@@ -75,7 +75,7 @@ exports[`Fret component -- selectedNotes & highlights -- showOctaves=false, note
 </styled.div>
 `;
 
-exports[`Fret component -- selectedNotes & highlights -- showOctaves=true, no note selected 1`] = `
+exports[`Fret component -- selectedNotes & highlights -- highlightOctaves=true, no note selected 1`] = `
 <styled.div
   onClick={[Function]}
 >
@@ -86,7 +86,7 @@ exports[`Fret component -- selectedNotes & highlights -- showOctaves=true, no no
 </styled.div>
 `;
 
-exports[`Fret component -- selectedNotes & highlights -- showOctaves=true, note selected 1`] = `
+exports[`Fret component -- selectedNotes & highlights -- highlightOctaves=true, note selected 1`] = `
 <styled.div
   onClick={[Function]}
 >

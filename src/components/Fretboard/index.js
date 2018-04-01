@@ -18,7 +18,7 @@ class Fretboard extends React.Component {
     return {
       skinType: this.props.skinType,
       showNotes: this.props.showNotes,
-      showOctaves: this.props.showOctaves,
+      highlightOctaves: this.props.highlightOctaves,
       showSelection: this.props.showSelection,
       showEnharmonics: this.props.showEnharmonics,
       selectedNotes: ensureNoteObjects(this.props.selectedNotes),
@@ -64,13 +64,19 @@ class Fretboard extends React.Component {
   }
 }
 
+// showUnselectedNotes        showNotes
+// showSelectedNotesOrLabels  showSelectionLabels
+// showOctaveHighlights       highlightOctaves
+// showSelectionHighlights    highlightSelections
+// noteType [pitch, pc]
+// showEnharmonics
 
 Fretboard.propTypes = {
   tuning: pt.arrayOf(pt.string),
   nrOfFrets: pt.number,
   skinType: pt.string,
   showNotes: pt.bool,
-  showOctaves: pt.bool,
+  highlightOctaves: pt.bool,
   showSelection: pt.bool,
   showEnharmonics: pt.bool,
   showPositionLabels: pt.bool,
@@ -84,7 +90,7 @@ Fretboard.defaultProps = {
   nrOfFrets: 12,
   skinType: 'boxes',
   showNotes: false,
-  showOctaves: false,
+  highlightOctaves: false,
   showSelection: false,
   showEnharmonics: false,
   showPositionLabels: true,
@@ -96,7 +102,7 @@ Fretboard.defaultProps = {
 Fretboard.childContextTypes = {
   skinType: pt.string,
   showNotes: pt.bool,
-  showOctaves: pt.bool,
+  highlightOctaves: pt.bool,
   showSelection: pt.bool,
   showEnharmonics: pt.bool,
   selectedNotes: pt.arrayOf(noteSelectionShape),

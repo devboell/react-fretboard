@@ -25,7 +25,7 @@
 ```js
 <Fretboard
   skinType="strings"
-  showOctaves
+  highlightOctaves
   showSelection
   selectedLocations={[{ loc: { str: 2, pos: 5 }, label: 'C4' }]}
 />
@@ -54,18 +54,18 @@
   showNotes
 />
 ```
-#### showOctaves
+#### highlightOctaves
 ```js
 <Fretboard
   showNotes
-  showOctaves
+  highlightOctaves
 />
 ```
 ```js
 <Fretboard
   skinType="strings"
   showNotes
-  showOctaves
+  highlightOctaves
 />
 ```
 

@@ -50,7 +50,7 @@ There's a live demo with many examples here: https://react-fretboard-demo.heroku
   ```
   {
     showNotes: false,
-    showOctaves: false,
+    highlightOctaves: false,
     showPositions: true,
   }
   ```

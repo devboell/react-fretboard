@@ -18,7 +18,7 @@ const testCases = isSelected => [
       : 'no content, no highlight',
     context: {
       showNotes: false,
-      showOctaves: false,
+      highlightOctaves: false,
       showSelection: false,
       showEnharmonics: false,
     },
@@ -30,7 +30,7 @@ const testCases = isSelected => [
       : 'note content, no highlight',
     context: {
       showNotes: true,
-      showOctaves: false,
+      highlightOctaves: false,
       showSelection: false,
       showEnharmonics: false,
     },
@@ -42,7 +42,7 @@ const testCases = isSelected => [
       : 'note content, octave highlight',
     context: {
       showNotes: true,
-      showOctaves: true,
+      highlightOctaves: true,
       showSelection: false,
       showEnharmonics: false,
     },
@@ -54,7 +54,7 @@ const testCases = isSelected => [
       : 'note content, octave highlight',
     context: {
       showNotes: true,
-      showOctaves: true,
+      highlightOctaves: true,
       showSelection: true,
       showEnharmonics: false,
     },

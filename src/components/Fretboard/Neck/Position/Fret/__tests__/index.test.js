@@ -14,7 +14,7 @@ describe('Fret component', () => {
   const defaultContext = {
     skinType: 'boxes',
     showNotes: false,
-    showOctaves: false,
+    highlightOctaves: false,
     showSelection: false,
     showEnharmonics: false,
     selectedNotes: [],
@@ -82,28 +82,28 @@ describe('Fret component', () => {
   })
 
   describe('-- selectedNotes & highlights --', () => {
-    it('showOctaves=false, note selected', () => {
+    it('highlightOctaves=false, note selected', () => {
       const selectedNotes = [{ note: 'E2', status: 'foo', label: 'root' }]
       const context = { ...defaultContext, selectedNotes }
       const wrapper = shallow(<Fret {...props} />, { context })
       expect(wrapper).toMatchSnapshot()
     })
 
-    it('showOctaves=true, note selected', () => {
+    it('highlightOctaves=true, note selected', () => {
       const selectedNotes = [{ note: 'E2', status: 'foo', label: 'root' }]
       const context = {
         ...defaultContext,
-        showOctaves: true,
+        highlightOctaves: true,
         selectedNotes,
       }
       const wrapper = shallow(<Fret {...props} />, { context })
       expect(wrapper).toMatchSnapshot()
     })
 
-    it('showOctaves=true, no note selected', () => {
+    it('highlightOctaves=true, no note selected', () => {
       const context = {
         ...defaultContext,
-        showOctaves: true,
+        highlightOctaves: true,
       }
       const wrapper = shallow(<Fret {...props} />, { context })
       expect(wrapper).toMatchSnapshot()
@@ -133,7 +133,7 @@ describe('Fret component', () => {
   })
 
   describe('-- selectedLocations & highlights --', () => {
-    it('showOctaves=false, loc selected', () => {
+    it('highlightOctaves=false, loc selected', () => {
       const loc = { str: 5, pos: 0 }
       const selectedLocations = [{ loc, status: 'foo', label: 'root' }]
       const context = { ...defaultContext, selectedLocations }
@@ -141,12 +141,12 @@ describe('Fret component', () => {
       expect(wrapper).toMatchSnapshot()
     })
 
-    it('showOctaves=true, loc selected', () => {
+    it('highlightOctaves=true, loc selected', () => {
       const loc = { str: 5, pos: 0 }
       const selectedLocations = [{ loc, status: 'foo', label: 'root' }]
       const context = {
         ...defaultContext,
-        showOctaves: true,
+        highlightOctaves: true,
         selectedLocations,
       }
       const wrapper = shallow(<Fret {...props} />, { context })

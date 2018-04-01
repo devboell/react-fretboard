@@ -23,7 +23,7 @@ export class Fret extends React.Component {
     const {
       skinType,
       showNotes,
-      showOctaves,
+      highlightOctaves,
       showSelection,
       showEnharmonics,
       selectedNotes,
@@ -46,7 +46,7 @@ export class Fret extends React.Component {
     const color = decideColor(
       selection,
       theme,
-      showOctaves,
+      highlightOctaves,
       note,
     )
 
@@ -75,7 +75,7 @@ Fret.propTypes = {
 Fret.contextTypes = {
   skinType: pt.string.isRequired,
   showNotes: pt.bool.isRequired,
-  showOctaves: pt.bool.isRequired,
+  highlightOctaves: pt.bool.isRequired,
   showSelection: pt.bool.isRequired,
   showEnharmonics: pt.bool.isRequired,
   selectedNotes: pt.arrayOf(noteSelectionShape).isRequired,
