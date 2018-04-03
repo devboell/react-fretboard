@@ -3,6 +3,17 @@ export default {
   statusMap: {
     selected: 'rgb(255, 252, 127)',
     unselected: 'white',
+    '1P': '#03450d',
+    '2m': '#044d0f',
+    '2M': '#1d5e26',
+    '3m': '#36703e',
+    '3M': '#4f8257',
+    '4P': '#68946f',
+    '5P': '#81a687',
+    '6m': '#9ab79f',
+    '6M': '#b3c9b7',
+    '7m': '#ccdbcf',
+    '7M': '#e5ede7',
   },
   octaveMap: {
     2: 'rgb(95, 190, 244)',
