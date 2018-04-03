@@ -1,5 +1,6 @@
 import {
   intervalNotes,
+  namedIntervalNotes,
   chordNotes,
 } from '../selection'
 
@@ -16,6 +17,60 @@ describe('selection, intervals', () => {
     const ivl = 4 // 3M
     const expected = ['C4', 'E4']
     expect(intervalNotes(note, ivl)).toEqual(expected)
+  })
+
+  it('named pc noteObj', () => {
+    const note = 'C'
+    const ivl = 4
+    const expected = [
+      {
+        note: 'C',
+        status: 'selected',
+        label: '1P',
+      },
+      {
+        note: 'E',
+        status: 'selected',
+        label: '3M',
+      },
+    ]
+    expect(namedIntervalNotes(note, ivl)).toEqual(expected)
+  })
+
+  it('named pitch noteObj', () => {
+    const note = 'C4'
+    const ivl = 4
+    const expected = [
+      {
+        note: 'C4',
+        status: 'selected',
+        label: '1P',
+      },
+      {
+        note: 'E4',
+        status: 'selected',
+        label: '3M',
+      },
+    ]
+    expect(namedIntervalNotes(note, ivl)).toEqual(expected)
+  })
+
+  it('named pc noteObj, nameStatus', () => {
+    const note = 'C'
+    const ivl = 4
+    const expected = [
+      {
+        note: 'C',
+        status: '1P',
+        label: '1P',
+      },
+      {
+        note: 'E',
+        status: '3M',
+        label: '3M',
+      },
+    ]
+    expect(namedIntervalNotes(note, ivl, true)).toEqual(expected)
   })
 })
 
