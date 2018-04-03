@@ -3,6 +3,8 @@ import {
   namedIntervalNotes,
   chordNotes,
   namedChordNotes,
+  scaleNotes,
+  namedScaleNotes,
 } from '../selection'
 
 describe('selection, intervals', () => {
@@ -135,4 +137,70 @@ describe('selection, chords', () => {
     ]
     expect(namedChordNotes(chord, true)).toEqual(expected)
   })
+})
+
+describe('selection, scales', () => {
+  it('should return array of scale pcs', () => {
+    const tonic = 'C'
+    const scale = 'major'
+    expect(scaleNotes(tonic, scale)).toMatchSnapshot()
+  })
+
+
+  it('should return array of scale pitches', () => {
+    const tonic = 'C4'
+    const scale = 'major'
+    expect(scaleNotes(tonic, scale)).toMatchSnapshot()
+  })
+
+  it('named pc noteObj', () => {
+    const tonic = 'C4'
+    const scale = 'major'
+    expect(namedScaleNotes(tonic, scale)).toMatchSnapshot()
+  })
+/*
+  it('named pitch noteObj', () => {
+    const chord = 'C4M'
+    const expected = [
+      {
+        note: 'C4',
+        status: 'selected',
+        label: '1P',
+      },
+      {
+        note: 'E4',
+        status: 'selected',
+        label: '3M',
+      },
+      {
+        note: 'G4',
+        status: 'selected',
+        label: '5P',
+      },
+    ]
+    expect(namedChordNotes(chord)).toEqual(expected)
+  })
+
+  it('named pitch noteObj, nameStatus', () => {
+    const chord = 'C4M'
+    const expected = [
+      {
+        note: 'C4',
+        status: '1P',
+        label: '1P',
+      },
+      {
+        note: 'E4',
+        status: '3M',
+        label: '3M',
+      },
+      {
+        note: 'G4',
+        status: '5P',
+        label: '5P',
+      },
+    ]
+    expect(namedChordNotes(chord, true)).toEqual(expected)
+  })
+  */
 })

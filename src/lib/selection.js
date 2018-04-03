@@ -2,7 +2,7 @@
  * helper functions that return commonly used selection objects.
  */
 
-import { Distance, Interval, Chord } from 'tonal'
+import { Distance, Interval, Chord, Scale } from 'tonal'
 
 export const intervalNotes = (note, ivl) =>
   [
@@ -27,3 +27,9 @@ const chordTonic = chord =>
 
 export const namedChordNotes = (chord, nameStatus = false) =>
   chordNotes(chord).map(namedIntervalNote(chordTonic(chord), nameStatus))
+
+export const scaleNotes = (tonic, scale) =>
+  Scale.notes(tonic, scale)
+
+export const namedScaleNotes = (tonic, scale, nameStatus = false) =>
+  scaleNotes(tonic, scale).map(namedIntervalNote(tonic, nameStatus))
