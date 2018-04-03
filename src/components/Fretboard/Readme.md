@@ -1,5 +1,14 @@
 
+
 ### Selections
+#### namedChordNotes
+```js
+const selection = require('lib/selection')
+console.log(selection)
+;<Fretboard
+  selectedNotes={selection.namedChordNotes('C3M', true)}
+/>
+```
 #### single note selection
 ```js
 <Fretboard
