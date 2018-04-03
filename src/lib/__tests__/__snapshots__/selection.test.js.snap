@@ -1,0 +1,65 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`selection, scales named pc noteObj 1`] = `
+Array [
+  Object {
+    "label": "1P",
+    "note": "C4",
+    "status": "selected",
+  },
+  Object {
+    "label": "2M",
+    "note": "D4",
+    "status": "selected",
+  },
+  Object {
+    "label": "3M",
+    "note": "E4",
+    "status": "selected",
+  },
+  Object {
+    "label": "4P",
+    "note": "F4",
+    "status": "selected",
+  },
+  Object {
+    "label": "5P",
+    "note": "G4",
+    "status": "selected",
+  },
+  Object {
+    "label": "6M",
+    "note": "A4",
+    "status": "selected",
+  },
+  Object {
+    "label": "7M",
+    "note": "B4",
+    "status": "selected",
+  },
+]
+`;
+
+exports[`selection, scales should return array of scale pcs 1`] = `
+Array [
+  "C",
+  "D",
+  "E",
+  "F",
+  "G",
+  "A",
+  "B",
+]
+`;
+
+exports[`selection, scales should return array of scale pitches 1`] = `
+Array [
+  "C4",
+  "D4",
+  "E4",
+  "F4",
+  "G4",
+  "A4",
+  "B4",
+]
+`;
