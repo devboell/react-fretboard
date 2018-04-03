@@ -2,6 +2,7 @@ import {
   intervalNotes,
   namedIntervalNotes,
   chordNotes,
+  namedChordNotes,
 } from '../selection'
 
 describe('selection, intervals', () => {
@@ -30,24 +31,6 @@ describe('selection, intervals', () => {
       },
       {
         note: 'E',
-        status: 'selected',
-        label: '3M',
-      },
-    ]
-    expect(namedIntervalNotes(note, ivl)).toEqual(expected)
-  })
-
-  it('named pitch noteObj', () => {
-    const note = 'C4'
-    const ivl = 4
-    const expected = [
-      {
-        note: 'C4',
-        status: 'selected',
-        label: '1P',
-      },
-      {
-        note: 'E4',
         status: 'selected',
         label: '3M',
       },
@@ -85,5 +68,71 @@ describe('selection, chords', () => {
     const chord = 'C4M'
     const expected = ['C4', 'E4', 'G4']
     expect(chordNotes(chord)).toEqual(expected)
+  })
+
+  it('named pc noteObj', () => {
+    const chord = 'CM'
+    const expected = [
+      {
+        note: 'C',
+        status: 'selected',
+        label: '1P',
+      },
+      {
+        note: 'E',
+        status: 'selected',
+        label: '3M',
+      },
+      {
+        note: 'G',
+        status: 'selected',
+        label: '5P',
+      },
+    ]
+    expect(namedChordNotes(chord)).toEqual(expected)
+  })
+
+  it('named pitch noteObj', () => {
+    const chord = 'C4M'
+    const expected = [
+      {
+        note: 'C4',
+        status: 'selected',
+        label: '1P',
+      },
+      {
+        note: 'E4',
+        status: 'selected',
+        label: '3M',
+      },
+      {
+        note: 'G4',
+        status: 'selected',
+        label: '5P',
+      },
+    ]
+    expect(namedChordNotes(chord)).toEqual(expected)
+  })
+
+  it('named pitch noteObj, nameStatus', () => {
+    const chord = 'C4M'
+    const expected = [
+      {
+        note: 'C4',
+        status: '1P',
+        label: '1P',
+      },
+      {
+        note: 'E4',
+        status: '3M',
+        label: '3M',
+      },
+      {
+        note: 'G4',
+        status: '5P',
+        label: '5P',
+      },
+    ]
+    expect(namedChordNotes(chord, true)).toEqual(expected)
   })
 })

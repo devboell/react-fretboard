@@ -21,3 +21,9 @@ export const namedIntervalNotes = (note, ivl, nameStatus = false) =>
 
 export const chordNotes = chord =>
   Chord.notes(chord)
+
+const chordTonic = chord =>
+  Chord.tokenize(chord)[0]
+
+export const namedChordNotes = (chord, nameStatus = false) =>
+  chordNotes(chord).map(namedIntervalNote(chordTonic(chord), nameStatus))
