@@ -1,0 +1,81 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NoteContent component E2, pitch, enh,  1`] = `
+<div>
+  <span
+    key="letter-E2"
+  >
+    E
+  </span>
+  <span
+    key="oct-E2"
+  >
+    2
+  </span>
+</div>
+`;
+
+exports[`NoteContent component E2, pitch, no enh  1`] = `
+<div>
+  <span
+    key="letter-E2"
+  >
+    E
+  </span>
+  <span
+    key="oct-E2"
+  >
+    2
+  </span>
+</div>
+`;
+
+exports[`NoteContent component F#2, pc, enh,  1`] = `
+<div>
+  <span
+    key="letter-F#2"
+  >
+    F
+  </span>
+  <styled.span
+    key="acc-F#2"
+  >
+    ♯
+  </styled.span>
+  <span
+    key="divider"
+  >
+    /
+  </span>
+  <span
+    key="letter-Gb2"
+  >
+    G
+  </span>
+  <styled.span
+    key="acc-Gb2"
+  >
+    ♭
+  </styled.span>
+</div>
+`;
+
+exports[`NoteContent component F#2, pitch, no enh ,  1`] = `
+<div>
+  <span
+    key="letter-F#2"
+  >
+    F
+  </span>
+  <styled.span
+    key="acc-F#2"
+  >
+    ♯
+  </styled.span>
+  <span
+    key="oct-F#2"
+  >
+    2
+  </span>
+</div>
+`;

@@ -13,6 +13,7 @@ describe('Fret component', () => {
   }
   const defaultContext = {
     skinType: 'boxes',
+    noteType: 'pitch',
     showNotes: false,
     showSelectionLabels: false,
     highlightOctaves: false,

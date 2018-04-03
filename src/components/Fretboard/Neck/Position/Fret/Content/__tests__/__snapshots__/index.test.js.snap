@@ -8,12 +8,20 @@ exports[`Content component, content not note 1`] = `
 
 exports[`Content component, showEnharmonics: true 1`] = `
 <styled.div>
-  F#2/Gb2
+  <NoteContent
+    note="F#2"
+    noteType="pitch"
+    showEnharmonics={true}
+  />
 </styled.div>
 `;
 
 exports[`Content component, snapshot 1`] = `
 <styled.div>
-  E2
+  <NoteContent
+    note="E2"
+    noteType="pitch"
+    showEnharmonics={false}
+  />
 </styled.div>
 `;

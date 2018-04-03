@@ -24,6 +24,7 @@ class Fretboard extends React.Component {
   getChildContext() {
     return {
       skinType: this.props.skinType,
+      noteType: this.props.noteType,
       showNotes: this.props.showNotes,
       showSelectionLabels: this.props.showSelectionLabels,
       highlightOctaves: this.props.highlightOctaves,
@@ -83,6 +84,7 @@ Fretboard.propTypes = {
   tuning: pt.arrayOf(pt.string),
   nrOfFrets: pt.number,
   skinType: pt.string,
+  noteType: pt.string,
   showNotes: pt.bool,
   showSelectionLabels: pt.bool,
   highlightOctaves: pt.bool,
@@ -98,6 +100,7 @@ Fretboard.defaultProps = {
   tuning: ['E2', 'A2', 'D3', 'G3', 'B3', 'E4'],
   nrOfFrets: 12,
   skinType: 'boxes',
+  noteType: 'pitch',
   showNotes: false,
   showSelectionLabels: false,
   highlightOctaves: false,
@@ -111,6 +114,7 @@ Fretboard.defaultProps = {
 
 Fretboard.childContextTypes = {
   skinType: pt.string,
+  noteType: pt.string,
   showNotes: pt.bool,
   showSelectionLabels: pt.bool,
   highlightOctaves: pt.bool,

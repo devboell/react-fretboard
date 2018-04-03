@@ -4,6 +4,7 @@ import Content from '../index'
 
 const defaultProps = {
   content: 'E2',
+  noteType: 'pitch',
   showEnharmonics: false,
 }
 

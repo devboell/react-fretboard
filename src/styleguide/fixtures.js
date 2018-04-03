@@ -66,6 +66,7 @@ const testCases = isSelected => [
 ]
 
 const defaultContext = {
+  noteType: 'pitch',
   clickAction: () => {},
 }
 
