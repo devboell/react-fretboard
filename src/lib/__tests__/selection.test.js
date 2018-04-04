@@ -169,4 +169,12 @@ describe('selection, chord shapes', () => {
     const str = 2
     expect(triadShape(tuning, width, chord, str)).toMatchSnapshot()
   })
+
+  it('should return null for non existing shape', () => {
+    const chord = 'G#3m'
+    const tuning = ['E2', 'A2', 'D3', 'G3', 'B3', 'E4']
+    const width = 12
+    const str = 2
+    expect(triadShape(tuning, width, chord, str)).toBe(null)
+  })
 })
