@@ -7,7 +7,7 @@ const selection = require('lib/selection')
 const tuning = ['E2', 'A2', 'D3', 'G3', 'B3', 'E4']
 const width = 12
 ;<Fretboard
-  selectedNotes={selection.triadShape(tuning, width, 'C3M', 5)}
+  selectedLocations={selection.triadShape(tuning, width, 'C3M', 5)}
 />
 ```
 #### namedChordNotes
