@@ -5,6 +5,7 @@ import {
   namedChordNotes,
   scaleNotes,
   namedScaleNotes,
+  triadShape,
 } from '../selection'
 
 describe('selection, intervals', () => {
@@ -158,49 +159,14 @@ describe('selection, scales', () => {
     const scale = 'major'
     expect(namedScaleNotes(tonic, scale)).toMatchSnapshot()
   })
-/*
-  it('named pitch noteObj', () => {
-    const chord = 'C4M'
-    const expected = [
-      {
-        note: 'C4',
-        status: 'selected',
-        label: '1P',
-      },
-      {
-        note: 'E4',
-        status: 'selected',
-        label: '3M',
-      },
-      {
-        note: 'G4',
-        status: 'selected',
-        label: '5P',
-      },
-    ]
-    expect(namedChordNotes(chord)).toEqual(expected)
-  })
+})
 
-  it('named pitch noteObj, nameStatus', () => {
-    const chord = 'C4M'
-    const expected = [
-      {
-        note: 'C4',
-        status: '1P',
-        label: '1P',
-      },
-      {
-        note: 'E4',
-        status: '3M',
-        label: '3M',
-      },
-      {
-        note: 'G4',
-        status: '5P',
-        label: '5P',
-      },
-    ]
-    expect(namedChordNotes(chord, true)).toEqual(expected)
+describe('selection, chord shapes', () => {
+  it('should return array locs', () => {
+    const chord = 'C4m'
+    const tuning = ['E2', 'A2', 'D3', 'G3', 'B3', 'E4']
+    const width = 12
+    const str = 2
+    expect(triadShape(tuning, width, chord, str)).toMatchSnapshot()
   })
-  */
 })
