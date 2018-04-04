@@ -1,5 +1,6 @@
 import React from 'react'
 import pt from 'prop-types'
+import { merge } from 'ramda'
 import { ThemeProvider } from 'styled-components'
 import defaultTheme from 'themes/fretboard-theme'
 
@@ -43,12 +44,14 @@ class Fretboard extends React.Component {
       nrOfFrets,
       skinType,
       showPositionLabels,
+      theme,
     } = this.props
-    const { dimensions } = defaultTheme
+    const mergedTheme = merge(defaultTheme, theme)
+    const { dimensions } = mergedTheme
     const { openWidth, nutWidth } = dimensions
 
     return (
-      <ThemeProvider theme={defaultTheme}>
+      <ThemeProvider theme={mergedTheme}>
         <Wrapper>
           <Neck
             {...{
@@ -73,13 +76,6 @@ class Fretboard extends React.Component {
   }
 }
 
-// showUnselectedNotes        showNotes
-// showSelectedNotesOrLabels  showSelectionLabelsLabels
-// showOctaveHighlights       highlightOctaves
-// showSelectionLabelsHighlights    highlightSelections
-// noteType [pitch, pc]
-// showEnharmonics
-
 Fretboard.propTypes = {
   tuning: pt.arrayOf(pt.string),
   nrOfFrets: pt.number,
@@ -93,6 +89,7 @@ Fretboard.propTypes = {
   showPositionLabels: pt.bool,
   selectedNotes: pt.arrayOf(pt.oneOfType([pt.string, noteSelectionShape])),
   selectedLocations: pt.arrayOf(pt.oneOfType([locShape, locSelectionShape])),
+  theme: pt.shape({}),
   clickAction: pt.func,
 }
 
@@ -109,6 +106,7 @@ Fretboard.defaultProps = {
   showPositionLabels: true,
   selectedNotes: [],
   selectedLocations: [],
+  theme: {},
   clickAction: (note, loc) => ({ note, loc }),
 }
 
