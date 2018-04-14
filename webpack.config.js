@@ -5,8 +5,9 @@ module.exports = {
   mode: 'production',
   entry: './src/index.js',
   output: {
-    path: path.resolve(__dirname, 'build'),
-    filename: 'index.js',
+    path: path.resolve(__dirname, 'dist'),
+    filename: 'react-fretboard.js',
+    library: 'react-fretboard',
     libraryTarget: 'commonjs2',
   },
   module: {
@@ -36,5 +37,6 @@ module.exports = {
   },
   externals: {
     react: true,
+    'styled-components': true,
   },
 }

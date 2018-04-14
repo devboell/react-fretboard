@@ -3,7 +3,7 @@
   "version": "0.0.2",
   "description": "Reusable React Fretboard Component",
   "license": "MIT",
-  "main": "build/index.js",
+  "main": "dist/react-fretboard.js",
   "author": {
     "name": "Rob Boellaard",
     "email": "devboell@gmail.com"
@@ -50,6 +50,7 @@
     "react-dom": "^16.2.0",
     "react-styleguidist": "^7.0.1",
     "webpack": "^4.3.0",
+    "webpack-bundle-analyzer": "^2.11.1",
     "webpack-cli": "^2.0.13"
   }
 }
