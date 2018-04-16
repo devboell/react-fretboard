@@ -5,36 +5,45 @@
 import { contains } from 'ramda'
 import { Distance, Interval, Chord, Scale } from 'tonal'
 
-export const intervalNotes = (note, ivl) =>
+// intervals
+const intervalNoteObject = (tonic, useIvlLabel, useIvlStatus) => note => ({
+  note,
+  label: useIvlLabel ? Distance.interval(tonic, note) : note,
+  status: useIvlStatus ? Distance.interval(tonic, note) : 'selected',
+})
+
+const intervalNoteArray = (note, ivl) =>
   [
     note,
     Distance.transpose(note, Interval.fromSemitones(ivl)),
   ]
 
-const namedIntervalNote = (tonic, nameStatus) => note => ({
+export const intervalNotes = (
   note,
-  status: nameStatus ? Distance.interval(tonic, note) : 'selected',
-  label: Distance.interval(tonic, note),
-})
+  ivl,
+  useIvlLabel = false,
+  useIvlStatus = false,
+) =>
+  intervalNoteArray(note, ivl)
+    .map(intervalNoteObject(note, useIvlLabel, useIvlStatus))
 
-export const namedIntervalNotes = (note, ivl, nameStatus = false) =>
-  intervalNotes(note, ivl).map(namedIntervalNote(note, nameStatus))
 
-export const chordNotes = chord =>
-  Chord.notes(chord)
-
+// chords
 const chordTonic = chord =>
   Chord.tokenize(chord)[0]
 
-export const namedChordNotes = (chord, nameStatus = false) =>
-  chordNotes(chord).map(namedIntervalNote(chordTonic(chord), nameStatus))
+export const chordNotes = (chord, useIvlLabel, useIvlStatus) =>
+  Chord.notes(chord)
+    .map(intervalNoteObject(chordTonic(chord), useIvlLabel, useIvlStatus))
 
-export const scaleNotes = (tonic, scale) =>
+
+// scales
+export const scaleNotes = (tonic, scale, useIvlLabel, useIvlStatus) =>
   Scale.notes(tonic, scale)
+    .map(intervalNoteObject(tonic, useIvlLabel, useIvlStatus))
 
-export const namedScaleNotes = (tonic, scale, nameStatus = false) =>
-  scaleNotes(tonic, scale).map(namedIntervalNote(tonic, nameStatus))
 
+// locations
 const position = (openNote, width, note) => {
   const dist = Distance.semitones(openNote, note)
   return width > dist && dist >= 0
@@ -44,7 +53,7 @@ const position = (openNote, width, note) => {
 
 // experimental
 export const triadShape = (tuning, width, chord, str) => {
-  const notes = chordNotes(chord)
+  const notes = Chord.notes(chord)
   const positions = notes.map((note, i) =>
     position(tuning[(tuning.length - (str + 1)) + i], width, note))
   const chordExists = !contains(null, positions)

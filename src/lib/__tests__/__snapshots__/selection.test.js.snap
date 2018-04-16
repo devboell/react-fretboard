@@ -17,7 +17,47 @@ Array [
 ]
 `;
 
-exports[`selection, scales named pc noteObj 1`] = `
+exports[`selection, scales returns note objects with ivl label, and ivl status 1`] = `
+Array [
+  Object {
+    "label": "1P",
+    "note": "C4",
+    "status": "1P",
+  },
+  Object {
+    "label": "2M",
+    "note": "D4",
+    "status": "2M",
+  },
+  Object {
+    "label": "3M",
+    "note": "E4",
+    "status": "3M",
+  },
+  Object {
+    "label": "4P",
+    "note": "F4",
+    "status": "4P",
+  },
+  Object {
+    "label": "5P",
+    "note": "G4",
+    "status": "5P",
+  },
+  Object {
+    "label": "6M",
+    "note": "A4",
+    "status": "6M",
+  },
+  Object {
+    "label": "7M",
+    "note": "B4",
+    "status": "7M",
+  },
+]
+`;
+
+exports[`selection, scales returns note objects with ivl label, and status selected 1`] = `
 Array [
   Object {
     "label": "1P",
@@ -57,26 +97,82 @@ Array [
 ]
 `;
 
-exports[`selection, scales should return array of scale pcs 1`] = `
+exports[`selection, scales returns note objects with pitch label, and status selected 1`] = `
 Array [
-  "C",
-  "D",
-  "E",
-  "F",
-  "G",
-  "A",
-  "B",
+  Object {
+    "label": "C4",
+    "note": "C4",
+    "status": "selected",
+  },
+  Object {
+    "label": "D4",
+    "note": "D4",
+    "status": "selected",
+  },
+  Object {
+    "label": "E4",
+    "note": "E4",
+    "status": "selected",
+  },
+  Object {
+    "label": "F4",
+    "note": "F4",
+    "status": "selected",
+  },
+  Object {
+    "label": "G4",
+    "note": "G4",
+    "status": "selected",
+  },
+  Object {
+    "label": "A4",
+    "note": "A4",
+    "status": "selected",
+  },
+  Object {
+    "label": "B4",
+    "note": "B4",
+    "status": "selected",
+  },
 ]
 `;
 
-exports[`selection, scales should return array of scale pitches 1`] = `
+exports[`selection, scales returns note objs, with pc label, and status selected 1`] = `
 Array [
-  "C4",
-  "D4",
-  "E4",
-  "F4",
-  "G4",
-  "A4",
-  "B4",
+  Object {
+    "label": "C",
+    "note": "C",
+    "status": "selected",
+  },
+  Object {
+    "label": "D",
+    "note": "D",
+    "status": "selected",
+  },
+  Object {
+    "label": "E",
+    "note": "E",
+    "status": "selected",
+  },
+  Object {
+    "label": "F",
+    "note": "F",
+    "status": "selected",
+  },
+  Object {
+    "label": "G",
+    "note": "G",
+    "status": "selected",
+  },
+  Object {
+    "label": "A",
+    "note": "A",
+    "status": "selected",
+  },
+  Object {
+    "label": "B",
+    "note": "B",
+    "status": "selected",
+  },
 ]
 `;

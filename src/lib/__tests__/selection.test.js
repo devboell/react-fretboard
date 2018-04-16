@@ -1,163 +1,216 @@
 import {
   intervalNotes,
-  namedIntervalNotes,
   chordNotes,
-  namedChordNotes,
   scaleNotes,
-  namedScaleNotes,
   triadShape,
 } from '../selection'
 
 describe('selection, intervals', () => {
-  it('should return array of interval pcs', () => {
+  it('returns note objs, with pc label, and status selected', () => {
     const note = 'C'
     const ivl = 4 // 3M
-    const expected = ['C', 'E']
+    const expected = [
+      {
+        note: 'C',
+        label: 'C',
+        status: 'selected',
+      },
+      {
+        note: 'E',
+        label: 'E',
+        status: 'selected',
+      },
+    ]
     expect(intervalNotes(note, ivl)).toEqual(expected)
   })
 
-  it('should return array of interval pitches', () => {
+  it('returns note objects with pc label, and status selected', () => {
     const note = 'C4'
     const ivl = 4 // 3M
-    const expected = ['C4', 'E4']
+    const expected = [
+      {
+        note: 'C4',
+        label: 'C4',
+        status: 'selected',
+      },
+      {
+        note: 'E4',
+        label: 'E4',
+        status: 'selected',
+      },
+    ]
     expect(intervalNotes(note, ivl)).toEqual(expected)
   })
 
-  it('named pc noteObj', () => {
+  it('returns note objs, with ivl label, and status selected', () => {
     const note = 'C'
     const ivl = 4
     const expected = [
       {
         note: 'C',
-        status: 'selected',
         label: '1P',
+        status: 'selected',
       },
       {
         note: 'E',
-        status: 'selected',
         label: '3M',
+        status: 'selected',
       },
     ]
-    expect(namedIntervalNotes(note, ivl)).toEqual(expected)
+    expect(intervalNotes(note, ivl, true)).toEqual(expected)
   })
 
-  it('named pc noteObj, nameStatus', () => {
+  it('returns note objs, with ivl label, and ivl status', () => {
     const note = 'C'
     const ivl = 4
     const expected = [
       {
         note: 'C',
-        status: '1P',
         label: '1P',
+        status: '1P',
       },
       {
         note: 'E',
-        status: '3M',
         label: '3M',
+        status: '3M',
       },
     ]
-    expect(namedIntervalNotes(note, ivl, true)).toEqual(expected)
+    expect(intervalNotes(note, ivl, true, true)).toEqual(expected)
+  })
+
+  it('returns note objs, with pitch label, and ivl status', () => {
+    const note = 'C4'
+    const ivl = 4
+    const expected = [
+      {
+        note: 'C4',
+        label: 'C4',
+        status: '1P',
+      },
+      {
+        note: 'E4',
+        label: 'E4',
+        status: '3M',
+      },
+    ]
+    expect(intervalNotes(note, ivl, false, true)).toEqual(expected)
   })
 })
 
 describe('selection, chords', () => {
-  it('should return array of chord pcs', () => {
-    const chord = 'CM'
-    const expected = ['C', 'E', 'G']
-    expect(chordNotes(chord)).toEqual(expected)
-  })
-
-  it('should return array of chord pitches', () => {
-    const chord = 'C4M'
-    const expected = ['C4', 'E4', 'G4']
-    expect(chordNotes(chord)).toEqual(expected)
-  })
-
-  it('named pc noteObj', () => {
+  it('returns note objs, with pc label, and status selected', () => {
     const chord = 'CM'
     const expected = [
       {
         note: 'C',
+        label: 'C',
         status: 'selected',
-        label: '1P',
       },
       {
         note: 'E',
+        label: 'E',
         status: 'selected',
-        label: '3M',
       },
       {
         note: 'G',
+        label: 'G',
         status: 'selected',
-        label: '5P',
       },
     ]
-    expect(namedChordNotes(chord)).toEqual(expected)
+    expect(chordNotes(chord)).toEqual(expected)
   })
 
-  it('named pitch noteObj', () => {
+  it('returns note objs, with pitch label, and status selected', () => {
     const chord = 'C4M'
     const expected = [
       {
         note: 'C4',
+        label: 'C4',
         status: 'selected',
-        label: '1P',
       },
       {
         note: 'E4',
+        label: 'E4',
         status: 'selected',
-        label: '3M',
       },
       {
         note: 'G4',
+        label: 'G4',
         status: 'selected',
-        label: '5P',
       },
     ]
-    expect(namedChordNotes(chord)).toEqual(expected)
+    expect(chordNotes(chord)).toEqual(expected)
   })
 
-  it('named pitch noteObj, nameStatus', () => {
+  it('returns note objs, with ivl label, and status selected', () => {
+    const chord = 'CM'
+    const expected = [
+      {
+        note: 'C',
+        label: '1P',
+        status: 'selected',
+      },
+      {
+        note: 'E',
+        label: '3M',
+        status: 'selected',
+      },
+      {
+        note: 'G',
+        label: '5P',
+        status: 'selected',
+      },
+    ]
+    expect(chordNotes(chord, true)).toEqual(expected)
+  })
+
+  it('returns note objs, with ivl label, and ivl status', () => {
     const chord = 'C4M'
     const expected = [
       {
         note: 'C4',
+        label: '1P',
         status: '1P',
-        label: '1P',
       },
       {
         note: 'E4',
-        status: '3M',
         label: '3M',
+        status: '3M',
       },
       {
         note: 'G4',
-        status: '5P',
         label: '5P',
+        status: '5P',
       },
     ]
-    expect(namedChordNotes(chord, true)).toEqual(expected)
+    expect(chordNotes(chord, true, true)).toEqual(expected)
   })
 })
 
 describe('selection, scales', () => {
-  it('should return array of scale pcs', () => {
+  it('returns note objs, with pc label, and status selected', () => {
     const tonic = 'C'
     const scale = 'major'
     expect(scaleNotes(tonic, scale)).toMatchSnapshot()
   })
 
 
-  it('should return array of scale pitches', () => {
+  it('returns note objects with pitch label, and status selected', () => {
     const tonic = 'C4'
     const scale = 'major'
     expect(scaleNotes(tonic, scale)).toMatchSnapshot()
   })
 
-  it('named pc noteObj', () => {
+  it('returns note objects with ivl label, and status selected', () => {
     const tonic = 'C4'
     const scale = 'major'
-    expect(namedScaleNotes(tonic, scale)).toMatchSnapshot()
+    expect(scaleNotes(tonic, scale, true)).toMatchSnapshot()
+  })
+
+  it('returns note objects with ivl label, and ivl status', () => {
+    const tonic = 'C4'
+    const scale = 'major'
+    expect(scaleNotes(tonic, scale, true, true)).toMatchSnapshot()
   })
 })
 

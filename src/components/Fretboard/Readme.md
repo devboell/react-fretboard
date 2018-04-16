@@ -10,19 +10,19 @@ const width = 12
   selectedLocations={selection.triadShape(tuning, width, 'C3M', 5)}
 />
 ```
-#### namedChordNotes
+#### chordNotes
 ```js
 const selection = require('lib/selection')
 ;<Fretboard
-  selectedNotes={selection.namedChordNotes('C3M', true)}
+  selectedNotes={selection.chordNotes('C3M', true, true)}
 />
 ```
 
-#### namedScaleNotes, chromatic for checking colormap
+#### scaleNotes, chromatic for checking colormap
 ```js
 const selection = require('lib/selection')
 ;<Fretboard
-  selectedNotes={selection.namedScaleNotes('C', 'chromatic', true)}
+  selectedNotes={selection.scaleNotes('C', 'chromatic', true, true)}
 />
 ```
 
