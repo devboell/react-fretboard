@@ -17,6 +17,15 @@ const selection = require('lib/selection')
   selectedNotes={selection.namedChordNotes('C3M', true)}
 />
 ```
+
+#### namedScaleNotes, chromatic for checking colormap
+```js
+const selection = require('lib/selection')
+;<Fretboard
+  selectedNotes={selection.namedScaleNotes('C', 'chromatic', true)}
+/>
+```
+
 #### single note selection
 ```js
 <Fretboard
@@ -47,6 +56,7 @@ const selection = require('lib/selection')
   selectedLocations={[{ loc: { str: 2, pos: 5 }, label: 'C4' }]}
 />
 ```
+
 
 ### No Selections
 #### default fretboard
