@@ -1,6 +1,6 @@
 import React from 'react'
 import pt from 'prop-types'
-import { merge } from 'ramda'
+import { mergeDeepRight } from 'ramda'
 import { ThemeProvider } from 'styled-components'
 import defaultTheme from 'themes/fretboard-theme'
 
@@ -46,7 +46,7 @@ class Fretboard extends React.Component {
       showPositionLabels,
       theme,
     } = this.props
-    const mergedTheme = merge(defaultTheme, theme)
+    const mergedTheme = mergeDeepRight(defaultTheme, theme)
     const { dimensions } = mergedTheme
     const { openWidth, nutWidth } = dimensions
 
