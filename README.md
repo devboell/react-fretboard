@@ -23,7 +23,7 @@ const App = () =>
   <div>
     <Fretboard
       skinType="strings"
-      selectedNotes={chordNotes('Cmaj7')}
+      selectedNotes={['C3', 'E3', 'G3']}
     />
   </div>
 
