@@ -48,7 +48,7 @@ You can also clone the repo and run styleguidist (`yarn styleguide`), which will
   **nrOfFrets**  
   *number*
 
-  This sets the width of the fretboard. The number includes the open position, so 12 frets will need `width={13}`. 13 is also the default.
+  This sets the width of the fretboard. The number includes the open position, so 12 frets will need `nrOfFrets={13}`. 13 is also the default.
 
   **skinType**  
   *oneOf(['boxes', 'strings'])*
