@@ -79,8 +79,8 @@ class Fretboard extends React.Component {
 Fretboard.propTypes = {
   tuning: pt.arrayOf(pt.string),
   nrOfFrets: pt.number,
-  skinType: pt.string,
-  noteType: pt.string,
+  skinType: pt.oneOf(['boxes', 'strings']),
+  noteType: pt.oneOf(['pc', 'pitch']),
   showNotes: pt.bool,
   showSelectionLabels: pt.bool,
   highlightOctaves: pt.bool,
