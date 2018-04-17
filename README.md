@@ -23,7 +23,6 @@ const App = () =>
   <div>
     <Fretboard
       skinType="strings"
-      showSelectionLabels
       selectedNotes={chordNotes('Cmaj7')}
     />
   </div>
@@ -74,7 +73,7 @@ You can also clone the repo and run styleguidist (`yarn styleguide`), which will
 
 
   Determines whether to show the selected note label. (This overrides the showNotes prop)  
-  Default is false
+  Default is true
 
   **highlightOctaves**  
   *bool*
@@ -86,7 +85,7 @@ You can also clone the repo and run styleguidist (`yarn styleguide`), which will
   *bool*
 
   Determines wether to show a selected fret's background color. (This overrides the octave color). (see selectedNotes below for more information)  
-  Default is false
+  Default is true
 
   **showEnharmonics**  
   *bool*

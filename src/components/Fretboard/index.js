@@ -99,7 +99,7 @@ Fretboard.defaultProps = {
   skinType: 'boxes',
   noteType: 'pitch',
   showNotes: false,
-  showSelectionLabels: false,
+  showSelectionLabels: true,
   highlightOctaves: false,
   highlightSelections: true,
   showEnharmonics: false,
