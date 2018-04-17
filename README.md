@@ -54,7 +54,7 @@ You can also clone the repo and run styleguidist (`yarn styleguide`), which will
   **skinType**  
   *oneOf(['boxes', 'strings'])*
 
-  Determines the overall lookof the fretboard. 'boxes' displays the frets as divs with a border, and 'strings' looks more like a standard fretboard diagram.  
+  Determines the overall look of the fretboard. 'boxes' displays the frets as divs with a border, and 'strings' looks more like a standard fretboard diagram.  
   Default is 'boxes'
 
   **noteType**  
@@ -140,7 +140,7 @@ You can also clone the repo and run styleguidist (`yarn styleguide`), which will
   ]))*  
 
 Lets you select frets based on their location on the fretboard. The top (1st) string is `str: 0`, and bottom string is `str: tuning.length - 1`.
-This prop behaves almost identcally to selectedNotes, except that instead of the note string, you'd use a loc object.
+This prop behaves almost identically to selectedNotes, except that instead of the note string, you'd use a loc object.
 
   **theme**
 
@@ -162,7 +162,7 @@ This prop behaves almost identcally to selectedNotes, except that instead of the
   `selectedNotes={Tonal.Chord.notes('CM')}` using the [Tonal library](https://github.com/danigb/tonal/)  
   `selectedNotes={chordNotes('CM')}`  
 
-  They become useful when, instead of note names, you want to show the relative intervals of selected notes, by using the `useIvlLabel` and `useIvlStatus` params. With `useIvlLabel = true` the selection labels will be set to interval names.  With `useIvlStatus = true` the highlight color will be theme.statusMap.[ivlName]. Check the examples below.
+  They become more useful when, instead of note names, you want to show the relative intervals of selected notes, by using the `useIvlLabel` and `useIvlStatus` params. With `useIvlLabel = true` the selection labels will be set to interval names.  With `useIvlStatus = true` the highlight color will be theme.statusMap.[ivlName]. Check the examples below.
   
   **intervalNotes(note, ivl, useIvlLabel = false, useIvlStatus = false)**
   
