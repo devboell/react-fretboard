@@ -21,7 +21,7 @@ describe('Fret component', () => {
     showEnharmonics: false,
     selectedNotes: [],
     selectedLocations: [],
-    clickAction,
+    clickAction: undefined,
   }
 
   it('defaultContext, no selections', () => {
@@ -174,9 +174,17 @@ describe('Fret component', () => {
     })
   })
 
-  it('clickAction gets called with correct args', () => {
-    const wrapper = shallow(<Fret {...props} />, { context: defaultContext })
+  it('clickAction is called with correct arg', () => {
+    const context = {
+      ...defaultContext,
+      clickAction,
+    }
+    const wrapper = shallow(<Fret {...props} />, { context })
+    const expected = {
+      note: 'E2',
+      loc: { str: 5, pos: 0 },
+    }
     wrapper.simulate('click')
-    expect(clickAction).toBeCalledWith('E2', { str: 5, pos: 0 })
+    expect(clickAction).toBeCalledWith(expected)
   })
 })

@@ -107,7 +107,7 @@ Fretboard.defaultProps = {
   selectedNotes: [],
   selectedLocations: [],
   theme: {},
-  clickAction: (note, loc) => ({ note, loc }),
+  clickAction: undefined,
 }
 
 Fretboard.childContextTypes = {

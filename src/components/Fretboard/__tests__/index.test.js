@@ -37,8 +37,6 @@ it('should return component w/out positionLabels', () => {
 it('should check the clickAction', () => {
   const wrapper = shallow(<Fretboard {...defaultProps} />)
   const { clickAction } = wrapper.instance().getChildContext()
-  const note = 'E2'
-  const loc = { str: 5, pos: 0 }
-  const expected = { note, loc }
-  expect(clickAction(note, loc)).toEqual(expected)
+
+  expect(clickAction).toBeUndefined()
 })

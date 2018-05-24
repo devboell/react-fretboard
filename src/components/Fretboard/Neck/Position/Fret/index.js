@@ -56,9 +56,13 @@ export class Fret extends React.Component {
     const isHighlighted = !isNil(color)
 
     const SkinWrapper = fretWrapper(skinType)
+    const isClickable = !isNil(clickAction) && isNil(selection)
+    const onClickAction = isClickable
+      ? (() => clickAction({ note, loc }))
+      : undefined
 
     return (
-      <Wrapper onClick={() => clickAction(note, loc)}>
+      <Wrapper onClick={onClickAction} isClickable={isClickable}>
         <SkinWrapper {...{ isHighlighted, color }}>
           {content &&
             <Content {...{ content, noteType, showEnharmonics }} />
@@ -85,7 +89,7 @@ Fret.contextTypes = {
   showEnharmonics: pt.bool.isRequired,
   selectedNotes: pt.arrayOf(noteSelectionShape).isRequired,
   selectedLocations: pt.arrayOf(locSelectionShape).isRequired,
-  clickAction: pt.func.isRequired,
+  clickAction: pt.func,
 }
 
 export default withTheme(Fret)
