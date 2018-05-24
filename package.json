@@ -1,6 +1,6 @@
 {
   "name": "react-fretboard",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "Reusable React Fretboard Component",
   "license": "MIT",
   "main": "dist/react-fretboard.js",
