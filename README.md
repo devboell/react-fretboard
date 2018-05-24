@@ -148,7 +148,7 @@ This prop behaves almost identically to selectedNotes, except that instead of th
   **clickAction**  
   *func*  
 
-  Provide a callback that will be called when a fret is clicked. The args passed are (note, loc)  
+  Provide a callback that will be called when a fret is clicked. The arg passed is an object with props: { note, loc }  
 
 
 ### functions<a name="functions"></a>
