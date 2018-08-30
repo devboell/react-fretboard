@@ -56,7 +56,7 @@ export class Fret extends React.Component {
     const isHighlighted = !isNil(color)
 
     const SkinWrapper = fretWrapper(skinType)
-    const isClickable = !isNil(clickAction) && isNil(selection)
+    const isClickable = !isNil(clickAction)
     const onClickAction = isClickable
       ? (() => clickAction({ note, loc }))
       : undefined
