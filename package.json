@@ -4,6 +4,7 @@
   "description": "Reusable React Fretboard Component",
   "license": "MIT",
   "main": "dist/react-fretboard.js",
+  "repository": "devboell/react-fretboard",
   "author": {
     "name": "Rob Boellaard",
     "email": "devboell@gmail.com"
